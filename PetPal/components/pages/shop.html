@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!--Background images for the header of the shop page-->
+            <h1>Everything your furry friend needs</h1>
+            <h2>Shop now</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">PetPal</a></li>
+                    <li><a href="breeds.html">Breeds</a></li>
+                    <li><a href="caretips&training.html">Caretips & Training</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+                <form class="search-container" action="/search" method="GET">
+                    <input type="text" name="query" placeholder="Search..." required>
+                    <button type="submit">
+                        <img src="" alt="Search" class="search-image-button" />
+                    </button>
+                </form>
+
+                <img><!--Add image which is linked to going back to the checkout and takes the user back when clicked on-->
+                <a href="checkout.html">Checkout</a>
+            </nav>
+        </header>
+
+        <section class="products">
+            <h2>Our Products</h2>
+
+            <section id="filter-section">
+                <h2>Filter By</h2>
+
+                <form>
+                    <!-- Category Filter -->
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                    </select>
+
+                    <!-- Price Range Filter -->
+                    <fieldset>
+                        <legend>Price Range:</legend>
+                        <label><input type="radio" name="price" value="low" /> $0 - $50</label><br />
+                        <label><input type="radio" name="price" value="mid" /> $50 - $200</label><br />
+                        <label><input type="radio" name="price" value="high" /> $200+</label>
+                    </fieldset>
+
+                    <!-- Availability -->
+                    <label>
+                        <input type="checkbox" name="in-stock" /> In Stock Only
+                    </label>
+
+                    <!-- Filter Button -->
+                    <button type="submit">Apply Filters</button>
+
+                    <!--Feel free to add more filters for each of the sections to filter the products by.-->
+                </form>
+            </section>
+
+            <!--The code to be used on product boxes, (product-boxes) the containers for the products being sold-->
+            <div class="product-box">
+                <h3>Dog collar</h3>
+                <a href="#">
+                    <picture>
+                        <source srcset="null" media="size">
+                        <img src="null" alt="dog collar">
+                    </picture>
+                </a>
+                <p class="price">Price</p>
+                <p>A furry accesory to keep your furry friend looking good and stylish all the time</p>
+                <a class="buy-now" href="#">Buy now</a>
+            </div>
+
+
+            <div class="product-box">
+                <h3>Dog bowl</h3>
+                <a href="#">
+                    <picture>
+                        <source srcset="null" media="size">
+                        <img src="null" alt="dog bowl">
+                    </picture>
+                </a>
+                <p class="price">Price</p>
+                <p>A comfortable place to keep your dog fed and on a full stomach</p>
+                <a class="buy-now" href="#">Buy now</a>
+            </div>
+
+            <!--Must copy code for the product boxes and use it on the content for each of the shop products-->
+        </section>
+    </div>
+</body>
+
+</html>
