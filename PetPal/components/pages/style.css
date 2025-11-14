@@ -270,7 +270,7 @@ header {
 .about-us {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 40px;
   padding: 60px 10%;
@@ -294,7 +294,7 @@ header {
 
 .about-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 450px;
   border-radius: 8px;
   object-fit: cover;
 }
