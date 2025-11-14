@@ -109,7 +109,6 @@ header {
 }
 
 .hero-image {
-  background-color: #ffffff;
   text-align: center;
   padding: 60px 20px 40px;
 }
@@ -123,7 +122,7 @@ header {
 
 .hero-image img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   height: auto;
   border-radius: 10px;
 }
@@ -318,12 +317,6 @@ button a:visited {
   padding: 50px 20px;
 }
 
-.dog-journey h2 {
-  color: #8a5200;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .hero-video {
   width: 100%;
   max-width: 900px;
@@ -333,6 +326,101 @@ button a:visited {
   display: block;
   margin: 0 auto 25px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+#happy-tails {
+  max-width: 1250px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+#happy-tails h2 {
+  margin-bottom: 18px;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  color: #8a5200;
+}
+
+/* Carousel layout */
+.ht-carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ht-window {
+  flex: 1;
+  overflow: hidden;
+}
+.ht-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.story-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  align-items: center;
+}
+.story-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.story-text h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #5c999b;
+}
+.story-text p {
+  margin: 4px 0;
+  color: #444;
+}
+.paw {
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+/* Arrows */
+.ht-arrow {
+  border: none;
+  background: #5c999b;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+.ht-arrow:hover {
+  background: #488586;
+  transform: translateY(-1px);
+}
+.ht-arrow[disabled] {
+  opacity: 0.4;
+  cursor: default;
+  transform: none;
+}
+
+/* Responsive: stack image on top on small screens */
+@media (max-width: 650px) {
+  .story-card {
+    grid-template-columns: 1fr;
+  }
+  .story-card img {
+    height: 200px;
+  }
 }
 
 /* Buttons container */
