@@ -1,3 +1,5 @@
+//This strictly Java script coding for the payment gateway simulation
+
 const form = document.getElementById('checkoutForm');
 const successMessage = document.getElementById('successMessage');
 const extraContent = document.getElementById('extraContent');
