@@ -324,10 +324,142 @@ h2 {
   background: #0050cc;
 }
 
-/* Footer */
-footer {
+/*FOOTER*/
+.site-footer {
+  background-color: #0a364e;
+  border-top: 1px solid #e0ddc8;
+  padding: 32px 16px 28px;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.3fr;
+  gap: 32px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin: 0 0 12px;
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #ffffff;
+}
+
+.footer-intro h3 {
+  font-size: 1.6rem;
+}
+
+.footer-intro svg {
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
+}
+
+.footer-intro p {
+  margin: 0 0 6px;
+  color: #fffad8;
+  line-height: 1.4;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-col a {
+  color: #fcffc9;
+  /* teal-ish links */
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-brand {
+  border-left: 1px solid #dedac5;
+  padding-left: 20px;
+}
+
+.footer-logo {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #5c999b;
+  /* PetPal teal */
+  margin-bottom: 10px;
+}
+
+.footer-address,
+.footer-contact {
+  margin: 0 0 10px;
+  color: #e0ddc8;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: #529597;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+}
+
+.footer-social svg {
+  width: 22px;
+  height: 22px;
+  fill: #e0ddc8;
+}
+
+.footer-social a:hover {
+  transform: translateY(-1px);
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+  }
+
+  .footer-brand {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Copyright {
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
   color: #777;
   font-size: 0.9rem;
 }
