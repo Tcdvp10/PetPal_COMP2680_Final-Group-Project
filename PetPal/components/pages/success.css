@@ -29,7 +29,7 @@ body {
     height: 50px;
     border-left: 5px solid #61a6ab;
     border-bottom: 5px solid #61a6ab;
-    transform: rotate(-45deg);
+    transform: rotate(45deg) scaleX(-1);
     animation: tickAnim 0.5s ease forwards 0.5s;
 }
 
