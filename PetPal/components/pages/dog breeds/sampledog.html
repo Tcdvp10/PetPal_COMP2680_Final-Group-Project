@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PetPal – Golden Retriever Profile</title>
+    <!-- reuse your existing styles -->
+    <link rel="stylesheet" href="dogbreeds.css">
+</head>
+<body>
+<div class="page">
+
+    <!-- HEADER (same as your other pages) -->
+    <div class="box">
+        <header>
+            <nav class="nav">
+                <div class="logo"><a href="index.html">PetPal</a></div>
+
+                <div class="nav-links">
+                    <a href="breeds.html" class="active">Breeds</a>
+                    <a href="caretips.html">Caretips &amp; Training</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="header-right">
+                    <form class="search-container" id="breed-search-form">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208z" />
+                        </svg>
+                        <input type="text" placeholder="Search breeds" name="q" />
+                    </form>
+
+                    <button class="cart-icon" id="cart-button" aria-label="Go to cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16z" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- ========= MAIN BREED PROFILE ========= -->
+    <main class="breed-main">
+
+        <!-- HERO: image + summary -->
+        <section class="breed-hero">
+            <div class="breed-hero-image">
+                <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     alt="Golden Retriever sitting outside">
+            </div>
+
+            <div class="breed-hero-info">
+                <h1 class="breed-name">Golden Retriever</h1>
+                <p class="breed-tagline">
+                    Friendly, loyal, and always ready for an adventure with the family.
+                </p>
+
+                <dl class="breed-stats">
+                    <div class="breed-stat">
+                        <dt>Size</dt>
+                        <dd>Medium–Large (55–75 lb / 25–34 kg)</dd>
+                    </div>
+                    <div class="breed-stat">
+                        <dt>Lifespan</dt>
+                        <dd>10–12 years</dd>
+                    </div>
+                    <div class="breed-stat">
+                        <dt>Temperament</dt>
+                        <dd>Gentle, social, eager to please</dd>
+                    </div>
+                    <div class="breed-stat">
+                        <dt>Coat</dt>
+                        <dd>Medium length, double coat, shades of gold</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- TABS -->
+        <section class="breed-tabs">
+            <button class="breed-tab active" data-breed-tab="overview">Overview</button>
+            <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+            <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+            <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+        </section>
+
+        <!-- PANELS -->
+        <section class="breed-panels">
+
+            <!-- OVERVIEW -->
+            <article class="breed-panel" data-breed-panel="overview">
+                <h2 class="section-title section-title--left">Overview</h2>
+                <p>
+                    Golden Retrievers are one of the world’s most popular family dogs.
+                    They are known for their kind expression, balanced energy, and love
+                    for people of all ages.
+                </p>
+                <p>
+                    Originally bred in Scotland as hunting companions, Goldens are
+                    athletic yet easy-going. They thrive in active homes where they
+                    can join walks, hikes, or swims, then relax on the couch afterward.
+                </p>
+                <p>
+                    They usually get along well with other dogs and animals, and with
+                    proper socialisation they make excellent companions for children.
+                    Because they are so people-oriented, they don’t enjoy being left
+                    alone for long hours every day.
+                </p>
+
+                <div class="overview-highlight">
+                    <h3>Best home for a Golden Retriever</h3>
+                    <ul>
+                        <li>Families or individuals who enjoy daily walks and playtime.</li>
+                        <li>Homes with space to move – a yard is great but not required.</li>
+                        <li>Owners willing to brush their coat a few times a week.</li>
+                        <li>People who want a soft-natured, affectionate companion.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- TRAINING -->
+            <article class="breed-panel" data-breed-panel="training" hidden>
+                <h2 class="section-title section-title--left">Training Tips</h2>
+
+                <p>
+                    Golden Retrievers are highly trainable and love to work with their
+                    people. Short, fun sessions are the key to keeping their attention.
+                </p>
+
+                <div class="two-column training-grid">
+                    <div class="training-card">
+                        <h3>Puppy &amp; Basic Manners</h3>
+                        <ul>
+                            <li>Start socialisation early – new people, places, and sounds.</li>
+                            <li>Teach sit, down, stay, and recall using treats and praise.</li>
+                            <li>Keep sessions 5–10 minutes and end on a success.</li>
+                            <li>Use puzzle feeders to keep their brain busy indoors.</li>
+                        </ul>
+                    </div>
+
+                    <div class="training-card">
+                        <h3>Exercise &amp; Enrichment</h3>
+                        <ul>
+                            <li>Plan 60–90 minutes of activity per day for adults.</li>
+                            <li>Mix walks, fetch, swimming, and sniffy exploration.</li>
+                            <li>Avoid long, hard runs until growth plates are closed.</li>
+                            <li>Try activities like obedience, agility, or scent work.</li>
+                        </ul>
+                    </div>
+
+                    <div class="training-card">
+                        <h3>Common Training Challenges</h3>
+                        <ul>
+                            <li><strong>Mouthing &amp; chewing:</strong> provide safe chew toys,
+                                redirect gently, and avoid rough play with hands.</li>
+                            <li><strong>Pulling on leash:</strong> reward walking beside you,
+                                practise in low-distraction areas first.</li>
+                            <li><strong>Jumping up:</strong> ignore jumping and reward
+                                four paws on the floor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="training-card">
+                        <h3>Health &amp; Safety Notes</h3>
+                        <ul>
+                            <li>Keep Goldens at a healthy weight to protect their joints.</li>
+                            <li>Ask your vet before starting intense running or sports.</li>
+                            <li>Teach a strong “leave it” to avoid scavenging on walks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FUN FACTS -->
+            <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                <h2 class="section-title section-title--left">Fun Facts</h2>
+                <ul class="funfacts-list">
+                    <li>Goldens were developed in Scotland in the late 1800s as
+                        hunting and retrieving dogs.</li>
+                    <li>Their water-repellent double coat helps them stay warm
+                        while swimming in cold lakes.</li>
+                    <li>They are one of the most common breeds used as guide dogs,
+                        therapy dogs, and search-and-rescue partners.</li>
+                    <li>Most Golden Retrievers love carrying toys or objects in their
+                        mouths – it’s literally in their job description.</li>
+                    <li>Despite their fluff, they are usually very tolerant of grooming
+                        and enjoy the extra attention.</li>
+                </ul>
+            </article>
+
+            <!-- PHOTO GALLERY -->
+            <article class="breed-panel" data-breed-panel="gallery" hidden>
+                <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                <div class="photo-grid">
+                    <img src="https://plus.unsplash.com/premium_photo-1661951641996-3685492b78ed?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Golden Retriever close-up">
+                    <img src="https://images.unsplash.com/photo-1612774412771-005ed8e861d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Golden Retriever running">
+                    <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?q=80&w=1014&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Golden Retriever with family">
+                    <img src="https://images.unsplash.com/photo-1602241628512-459cdd3234fe?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Golden Retriever by the lake">
+                    <img src="https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Golden Retriever puppy">
+                    <img src="https://plus.unsplash.com/premium_photo-1664303897799-9772870b5c48?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Golden Retriever in field">
+                </div>
+            </article>
+        </section>
+
+        <!-- SIMILAR BREEDS -->
+        <section class="similar-section">
+    <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+    <div class="similar-grid">
+
+        <!-- CARD 1: Labrador -->
+        <a href="labrador.html" class="similar-card">
+            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=800&auto=format&fit=crop"
+                 alt="Labrador Retriever">
+            <h3>Labrador Retriever</h3>
+            <p>Outgoing, enthusiastic, and another classic family retriever.</p>
+        </a>
+
+        <!-- CARD 2: Flat-Coated -->
+        <a href="flat-coated-retriever.html" class="similar-card">
+            <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?q=80&w=800&auto=format&fit=crop"
+                 alt="Flat-Coated Retriever">
+            <h3>Flat-Coated Retriever</h3>
+            <p>Happy, bouncy dogs with a shiny black or liver coat.</p>
+        </a>
+
+        <!-- CARD 3: Nova Scotia Duck Tolling -->
+        <a href="nova-scotia-duck-tolling-retriever.html" class="similar-card">
+            <img src="https://images.unsplash.com/photo-1597718378746-922a14b3a4be?q=80&w=800&auto=format&fit=crop"
+                 alt="Nova Scotia Duck Tolling Retriever">
+            <h3>Nova Scotia Duck Tolling Retriever</h3>
+            <p>Smaller red retriever with big energy and a playful nature.</p>
+        </a>
+
+    </div>
+</section>
+    </main>
+
+    <!--footer-->
+    <footer class="site-footer">
+            <div class="footer-inner">
+
+                <!-- Column 1: Tagline -->
+                <div class="footer-col footer-intro">
+                    <h3>Find your pet pal <span class="paw">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                            </svg>
+                        </span></h3>
+                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                    <p>Save favourites and share them with friends and family.</p>
+                    <p>Start your adoption journey with PetPal today.</p>
+                </div>
+
+                <!-- Column 2: Information & Resources -->
+                <div class="footer-col">
+                    <h4>Information &amp; Resources</h4>
+                    <ul>
+                        <li><a href="#">Adoption FAQ</a></li>
+                        <li><a href="#">Preparing for Your New Pet</a></li>
+                        <li><a href="#">Care &amp; Training Guides</a></li>
+                        <li><a href="#">Health &amp; Nutrition Tips</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Events &amp; Meetups</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                        <li><a href="#">Shelter Partners</a></li>
+                        <li><a href="#">Newsletter Sign-up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Logo / Contact -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">PetPal</div>
+                    <p class="footer-address">
+                        123 PetPal Lane<br>
+                        Kamloops, BC<br>
+                        Canada
+                    </p>
+
+                    <p class="footer-contact">
+                        <strong>Contact us</strong><br>
+                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+    </div>
+    
+</div>
+
+<!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+<script>
+    // Tabs
+    const breedTabs = document.querySelectorAll('[data-breed-tab]');
+    const breedPanels = document.querySelectorAll('[data-breed-panel]');
+
+    breedTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = btn.dataset.breedTab;
+
+            breedTabs.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            breedPanels.forEach(panel => {
+                panel.hidden = panel.dataset.breedPanel !== target;
+            });
+        });
+    });
+
+    // Cart button -> checkout
+    const cartButton = document.getElementById('cart-button');
+    if (cartButton) {
+        cartButton.addEventListener('click', () => {
+            window.location.href = 'checkout.html';
+        });
+    }
+
+    // Simple breed search: go back to breeds page with ?q=
+    const breedSearchForm = document.getElementById('breed-search-form');
+    if (breedSearchForm) {
+        breedSearchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const term = breedSearchForm.q.value.trim();
+            if (!term) return;
+            window.location.href = 'breeds.html?q=' + encodeURIComponent(term);
+        });
+    }
+</script>
+</body>
+</html>

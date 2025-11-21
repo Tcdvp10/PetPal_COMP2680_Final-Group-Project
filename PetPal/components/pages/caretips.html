@@ -1,818 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Pet Pal - Care and Tips</title>
     <link rel="stylesheet" href="caretips.css">
 </head>
+
 <body>
 
-<div class="page">
+    <div class="page">
 
-    <!-- =============== HEADER =============== -->
-    <div class="box">
-  <header>
-    <nav class="nav">
-        <div class="logo"><a href="index.html">PetPal</a></div>
+        <!-- =============== HEADER =============== -->
+        <div class="box">
+            <header>
+                <nav class="nav">
+                    <div class="logo"><a href="index.html">PetPal</a></div>
 
-        <div class="nav-links">
-            <a href="breeds.html">Breeds</a>
-            <a href="caretips.html" class="active">Caretips &amp; Training</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About</a>
-        </div>
-
-        <div class="header-right">
-            <div class="search-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208z" />
-                </svg>
-                <input type="text" placeholder="Search" />
-            </div>
-
-            <i class="cart-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                    <path
-                        d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16z" />
-                </svg>
-            </i>
-        </div>
-    </nav>
-</header>
-    </div>
-
-    <!-- =============== MAIN CARE & TRAINING CONTENT =============== -->
-    <main class="care-main">
-
-        <!-- HERO -->
-        <section class="hero">
-            <div class="hero-banner">
-                <h1>Your Complete Guide To Dog Care &amp; Training</h1>
-            </div>
-
-            <div class="hero-actions">
-                <a class="pill-btn" href="caretips.html">Learn Care Tips</a>
-                <a class="pill-btn pill-btn--outline" href="training.html">Start Training</a>
-            </div>
-        </section>
-
-        <!-- CATEGORY TABS -->
-        <section class="care-categories">
-            <button class="category-card active" data-category-tab="health">Health &amp; Vet</button>
-            <button class="category-card" data-category-tab="feeding">Feeding &amp; Nutrition</button>
-            <button class="category-card" data-category-tab="grooming">Grooming</button>
-            <button class="category-card" data-category-tab="exercise">Exercise</button>
-            <button class="category-card" data-category-tab="comfort">Comfort &amp; Sleep</button>
-        </section>
-
-        <!-- ========== HEALTH & VET PANEL (DEFAULT VISIBLE) ========== -->
-        <section class="category-panel" data-category-panel="health">
-           <!-- Common Diseases -->
-<section class="section diseases-section">
-    <h2 class="section-title">Common Diseases</h2>
-
-    <div class="disease-grid">
-
-        <!-- Disease 1 -->
-        <div class="disease-card flip-card">
-            <div class="flip-inner">
-                <!-- FRONT -->
-                <div class="flip-front">
-                    <img 
-                        src="https://images.unsplash.com/photo-1618294454352-eb84462415b0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                        class="disease-image">
-                    <p class="disease-name">Rabies</p>
-                </div>
-
-                <!-- BACK -->
-                <div class="flip-back">
-                    <h3>Rabies</h3>
-                    <p><strong>Symptoms:</strong> Fever, aggression, drooling, paralysis.</p>
-                    <p><strong>Prevention:</strong> Vaccination is essential.</p>
-                    <p><strong>Why it matters:</strong> Rabies is fatal — always vaccinate.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Disease 2 -->
-        <div class="disease-card flip-card">
-            <div class="flip-inner">
-                <!-- FRONT -->
-                <div class="flip-front">
-                    <img 
-                        src="https://images.unsplash.com/photo-1711374490954-986ad72da25b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                        class="disease-image">
-                    <p class="disease-name">Parvovirus</p>
-                </div>
-
-                <!-- BACK -->
-                <div class="flip-back">
-                    <h3>Parvovirus</h3>
-                    <p><strong>Symptoms:</strong> Bloody diarrhea, vomiting, severe lethargy.</p>
-                    <p><strong>Prevention:</strong> Puppy vaccination (DHPP).</p>
-                    <p><strong>Why it matters:</strong> Highly contagious and dangerous.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Disease 3 -->
-        <div class="disease-card flip-card">
-            <div class="flip-inner">
-                <!-- FRONT -->
-                <div class="flip-front">
-                    <img 
-                        src="https://plus.unsplash.com/premium_photo-1663012999448-7f5ec5324f4e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                        class="disease-image">
-                    <p class="disease-name">Kennel Cough</p>
-                </div>
-
-                <!-- BACK -->
-                <div class="flip-back">
-                    <h3>Kennel Cough</h3>
-                    <p><strong>Symptoms:</strong> Dry/hacking cough, gagging.</p>
-                    <p><strong>Prevention:</strong> Bordetella vaccine & avoiding crowded areas.</p>
-                    <p><strong>Why it matters:</strong> Common in social dogs / daycares.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-            <!-- Vaccines + When to call vet -->
-            <section class="section two-column">
-                <div class="card vaccination">
-                    <h3>Vaccination Checklist</h3>
-                    <p class="vaccine-intro">Tick each vaccine when your dog is up to date:</p>
-                    <ul class="vaccine-list">
-                        <li><label><input type="checkbox"> Core puppy shots (DHPP)</label></li>
-                        <li><label><input type="checkbox"> Rabies vaccine</label></li>
-                        <li><label><input type="checkbox"> Bordetella (Kennel Cough)</label></li>
-                        <li><label><input type="checkbox"> Leptospirosis</label></li>
-                        <li><label><input type="checkbox"> Lyme disease (if high-risk area)</label></li>
-                    </ul>
-                </div>
-
-                <div class="card vet-call">
-                    <h3>When to call the Vet?</h3>
-                    <p>Call your vet right away if your dog:</p>
-                    <ul>
-                        <li>Is very tired, won’t eat or drink, or is hiding.</li>
-                        <li>Has trouble breathing, nonstop coughing, or blue gums.</li>
-                        <li>Vomits or has diarrhea many times in a day, especially with blood.</li>
-                        <li>Has a swollen face, hives, or sudden collapse (possible allergy).</li>
-                        <li>Is in visible pain, limping badly, or crying when touched.</li>
-                    </ul>
-                    <p class="vet-note">
-                        If something feels “off” and you are worried, it’s always okay to call your vet.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Bonus Quiz -->
-            <section class="section quiz">
-                <h2 class="section-title">Bonus Quiz</h2>
-
-                <div class="quiz-card quiz-card-animated">
-                    <p class="quiz-progress">
-                        Question <span id="quiz-current">1</span> of <span id="quiz-total">5</span>
-                    </p>
-
-                    <div class="quiz-inner" id="quiz-inner">
-                        <p class="quiz-question" id="quiz-question"></p>
-                        <div class="quiz-options" id="quiz-options"></div>
+                    <div class="nav-links">
+                        <a href="breeds.html">Breeds</a>
+                        <a href="caretips.html" class="active">Caretips &amp; Training</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="about.html">About</a>
                     </div>
 
-                    <button class="quiz-next-btn" id="quiz-next" disabled>Next question</button>
+                    <div class="header-right">
+                        <div class="search-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208z" />
+                            </svg>
+                            <input type="text" placeholder="Search" />
+                        </div>
 
-                    <p class="quiz-feedback" id="quiz-feedback"></p>
+                        <i class="cart-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16z" />
+                            </svg>
+                        </i>
+                    </div>
+                </nav>
+            </header>
+        </div>
 
-                    <div class="quiz-score" id="quiz-score" hidden></div>
+        <!-- =============== MAIN CARE & TRAINING CONTENT =============== -->
+        <main class="care-main">
+
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-banner">
+                    <h1>Your Complete Guide To Dog Care &amp; Training</h1>
+                </div>
+
+                <div class="hero-actions">
+                    <a class="pill-btn" href="caretips.html">Learn Care Tips</a>
+                    <a class="pill-btn pill-btn--outline" href="training.html">Start Training</a>
                 </div>
             </section>
-        </section>
 
-        <!-- ========== FEEDING & NUTRITION PANEL ========== -->
-      <section class="category-panel" data-category-panel="feeding" hidden>
+            <!-- CATEGORY TABS -->
+            <section class="care-categories">
+                <button class="category-card active" data-category-tab="health">Health &amp; Vet</button>
+                <button class="category-card" data-category-tab="feeding">Feeding &amp; Nutrition</button>
+                <button class="category-card" data-category-tab="grooming">Grooming</button>
+                <button class="category-card" data-category-tab="exercise">Exercise</button>
+                <button class="category-card" data-category-tab="comfort">Comfort &amp; Sleep</button>
+            </section>
 
-    <!-- BOX 1: INFO -->
-    <section class="section">
-        <h2 class="section-title">Feeding &amp; Nutrition</h2>
+            <!-- ========== HEALTH & VET PANEL (DEFAULT VISIBLE) ========== -->
+            <section class="category-panel" data-category-panel="health">
+                <!-- Common Diseases -->
+                <section class="section diseases-section">
+                    <h2 class="section-title">Common Diseases</h2>
 
-        <p class="panel-text">
-            A balanced diet keeps your dog energized, supports healthy digestion,
-            and helps maintain a shiny coat and strong immune system.
-        </p>
+                    <div class="disease-grid">
 
-        <ul class="panel-list">
-            <li><strong>Puppies:</strong> 3–4 small meals per day with puppy-formula food.</li>
-            <li><strong>Adults:</strong> 2 meals per day, ideally at the same times each day.</li>
-            <li><strong>Seniors:</strong> lower calories with extra joint and digestive support.</li>
-            <li>Measure meals with a cup instead of guessing to prevent obesity.</li>
-            <li>Introduce new food over 5–7 days to avoid stomach upset.</li>
-            <li>Always provide fresh, clean water in a washed bowl.</li>
-            <li>Avoid dangerous foods like chocolate, grapes, raisins, onions, and xylitol.</li>
-        </ul>
-    </section>
+                        <!-- Disease 1 -->
+                        <div class="disease-card flip-card">
+                            <div class="flip-inner">
+                                <!-- FRONT -->
+                                <div class="flip-front">
+                                    <img src="https://images.unsplash.com/photo-1618294454352-eb84462415b0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        class="disease-image">
+                                    <p class="disease-name">Rabies</p>
+                                </div>
 
-    <!-- BOX 2: QUIZ -->
-    <section class="section">
-        <div class="panel-questions">
-            <h3>Feeding &amp; Nutrition Quiz</h3>
+                                <!-- BACK -->
+                                <div class="flip-back">
+                                    <h3>Rabies</h3>
+                                    <p><strong>Symptoms:</strong> Fever, aggression, drooling, paralysis.</p>
+                                    <p><strong>Prevention:</strong> Vaccination is essential.</p>
+                                    <p><strong>Why it matters:</strong> Rabies is fatal — always vaccinate.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="quiz-card">
-                <p class="quiz-progress">
-                    Question <span id="feed-current">1</span> of <span id="feed-total">3</span>
-                </p>
+                        <!-- Disease 2 -->
+                        <div class="disease-card flip-card">
+                            <div class="flip-inner">
+                                <!-- FRONT -->
+                                <div class="flip-front">
+                                    <img src="https://images.unsplash.com/photo-1711374490954-986ad72da25b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        class="disease-image">
+                                    <p class="disease-name">Parvovirus</p>
+                                </div>
 
-                <div class="quiz-inner" id="feed-inner">
-                    <p class="quiz-question" id="feed-question"></p>
-                    <div class="quiz-options" id="feed-options"></div>
-                </div>
+                                <!-- BACK -->
+                                <div class="flip-back">
+                                    <h3>Parvovirus</h3>
+                                    <p><strong>Symptoms:</strong> Bloody diarrhea, vomiting, severe lethargy.</p>
+                                    <p><strong>Prevention:</strong> Puppy vaccination (DHPP).</p>
+                                    <p><strong>Why it matters:</strong> Highly contagious and dangerous.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <button class="quiz-next-btn" id="feed-next" disabled>Next question</button>
+                        <!-- Disease 3 -->
+                        <div class="disease-card flip-card">
+                            <div class="flip-inner">
+                                <!-- FRONT -->
+                                <div class="flip-front">
+                                    <img src="https://plus.unsplash.com/premium_photo-1663012999448-7f5ec5324f4e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        class="disease-image">
+                                    <p class="disease-name">Kennel Cough</p>
+                                </div>
 
-                <p class="quiz-feedback" id="feed-feedback"></p>
-                <div class="quiz-score" id="feed-score" hidden></div>
-            </div>
-        </div>
-    </section>
+                                <!-- BACK -->
+                                <div class="flip-back">
+                                    <h3>Kennel Cough</h3>
+                                    <p><strong>Symptoms:</strong> Dry/hacking cough, gagging.</p>
+                                    <p><strong>Prevention:</strong> Bordetella vaccine & avoiding crowded areas.</p>
+                                    <p><strong>Why it matters:</strong> Common in social dogs / daycares.</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- BOX 3: BREED SEARCH -->
-    <section class="section">
-        <div class="breed-search">
-            <h3>Want feeding tips for your dog’s breed?</h3>
-            <p>Type your dog’s breed to see more information on the Breeds page.</p>
-            <form class="breed-form">
-                <input type="text" name="breed" placeholder="e.g. Chihuahua" required>
-                <button type="submit">Go to breed page</button>
-            </form>
-        </div>
-    </section>
+                    </div>
+                </section>
 
-</section>
-        
-<!-- ========== GROOMING PANEL ========== -->
-<section class="category-panel" data-category-panel="grooming" hidden>
+                <!-- Vaccines + When to call vet -->
+                <section class="section two-column">
+                    <div class="card vaccination">
+                        <h3>Vaccination Checklist</h3>
+                        <p class="vaccine-intro">Tick each vaccine when your dog is up to date:</p>
+                        <ul class="vaccine-list">
+                            <li><label><input type="checkbox"> Core puppy shots (DHPP)</label></li>
+                            <li><label><input type="checkbox"> Rabies vaccine</label></li>
+                            <li><label><input type="checkbox"> Bordetella (Kennel Cough)</label></li>
+                            <li><label><input type="checkbox"> Leptospirosis</label></li>
+                            <li><label><input type="checkbox"> Lyme disease (if high-risk area)</label></li>
+                        </ul>
+                    </div>
 
-    <!-- BOX 1: INFO -->
-    <section class="section">
-        <h2 class="section-title">Grooming</h2>
+                    <div class="card vet-call">
+                        <h3>When to call the Vet?</h3>
+                        <p>Call your vet right away if your dog:</p>
+                        <ul>
+                            <li>Is very tired, won’t eat or drink, or is hiding.</li>
+                            <li>Has trouble breathing, nonstop coughing, or blue gums.</li>
+                            <li>Vomits or has diarrhea many times in a day, especially with blood.</li>
+                            <li>Has a swollen face, hives, or sudden collapse (possible allergy).</li>
+                            <li>Is in visible pain, limping badly, or crying when touched.</li>
+                        </ul>
+                        <p class="vet-note">
+                            If something feels “off” and you are worried, it’s always okay to call your vet.
+                        </p>
+                    </div>
+                </section>
 
-        <p class="panel-text">
-            Regular grooming keeps your dog comfortable and lets you check their skin,
-            ears, and coat for problems early.
-        </p>
+                <!-- Bonus Quiz -->
+                <section class="section quiz">
+                    <h2 class="section-title">Bonus Quiz</h2>
 
-        <ul class="panel-list">
-            <li><strong>Brushing:</strong>
-                Small dogs – brush gently from neck to tail in short strokes.
-                Long coats – use a slicker brush &amp; detangling spray.
-                Short coats – soft bristle brushes are usually enough.
-            </li>
-            <li><strong>Bathing:</strong> bathe every 3–6 weeks with dog-safe shampoo; rinse thoroughly.</li>
-            <li><strong>Ears:</strong> check weekly for redness, bad smell, or dark wax.</li>
-            <li><strong>Nails:</strong> trim when you hear clicking on the floor.</li>
-            <li><strong>Teeth:</strong> brush 2–3 times a week with dog toothpaste.</li>
-            <li><strong>Paws:</strong> check pads for cuts or cracks after walks.</li>
-        </ul>
-    </section>
+                    <div class="quiz-card quiz-card-animated">
+                        <p class="quiz-progress">
+                            Question <span id="quiz-current">1</span> of <span id="quiz-total">5</span>
+                        </p>
 
-    <!-- BOX 2: QUIZ -->
-    <section class="section">
-        <div class="panel-questions">
-            <h3>Grooming Quiz</h3>
+                        <div class="quiz-inner" id="quiz-inner">
+                            <p class="quiz-question" id="quiz-question"></p>
+                            <div class="quiz-options" id="quiz-options"></div>
+                        </div>
 
-            <div class="quiz-card">
-                <p class="quiz-progress">
-                    Question <span id="groom-current">1</span> of <span id="groom-total">3</span>
-                </p>
+                        <button class="quiz-next-btn" id="quiz-next" disabled>Next question</button>
 
-                <div class="quiz-inner" id="groom-inner">
-                    <p class="quiz-question" id="groom-question"></p>
-                    <div class="quiz-options" id="groom-options"></div>
-                </div>
+                        <p class="quiz-feedback" id="quiz-feedback"></p>
 
-                <button class="quiz-next-btn" id="groom-next" disabled>Next question</button>
+                        <div class="quiz-score" id="quiz-score" hidden></div>
+                    </div>
+                </section>
+            </section>
 
-                <p class="quiz-feedback" id="groom-feedback"></p>
-                <div class="quiz-score" id="groom-score" hidden></div>
-            </div>
-        </div>
-    </section>
+            <!-- ========== FEEDING & NUTRITION PANEL ========== -->
+            <section class="category-panel" data-category-panel="feeding" hidden>
 
-    <!-- BOX 3: BREED SEARCH -->
-    <section class="section">
-        <div class="breed-search">
-            <h3>Need grooming tips for a specific breed?</h3>
-            <p>Type your dog’s breed to see more grooming details on the Breeds page.</p>
-            <form class="breed-form">
-                <input type="text" name="breed" placeholder="e.g. Poodle" required>
-                <button type="submit">Go to breed page</button>
-            </form>
-        </div>
-    </section>
+                <!-- BOX 1: INFO -->
+                <section class="section">
+                    <h2 class="section-title">Feeding &amp; Nutrition</h2>
 
-</section>
+                    <p class="panel-text">
+                        A balanced diet keeps your dog energized, supports healthy digestion,
+                        and helps maintain a shiny coat and strong immune system.
+                    </p>
 
-        <!-- ========== EXERCISE PANEL ========== -->
-<section class="category-panel" data-category-panel="exercise" hidden>
+                    <ul class="panel-list">
+                        <li><strong>Puppies:</strong> 3–4 small meals per day with puppy-formula food.</li>
+                        <li><strong>Adults:</strong> 2 meals per day, ideally at the same times each day.</li>
+                        <li><strong>Seniors:</strong> lower calories with extra joint and digestive support.</li>
+                        <li>Measure meals with a cup instead of guessing to prevent obesity.</li>
+                        <li>Introduce new food over 5–7 days to avoid stomach upset.</li>
+                        <li>Always provide fresh, clean water in a washed bowl.</li>
+                        <li>Avoid dangerous foods like chocolate, grapes, raisins, onions, and xylitol.</li>
+                    </ul>
+                </section>
 
-    <!-- BOX 1: INFO -->
-    <section class="section">
-        <h2 class="section-title">Exercise</h2>
+                <!-- BOX 2: QUIZ -->
+                <section class="section">
+                    <div class="panel-questions">
+                        <h3>Feeding &amp; Nutrition Quiz</h3>
 
-        <p class="panel-text">
-            Exercise keeps your dog’s body strong and their mind calm. The amount depends
-            on age, size, and breed.
-        </p>
+                        <div class="quiz-card">
+                            <p class="quiz-progress">
+                                Question <span id="feed-current">1</span> of <span id="feed-total">3</span>
+                            </p>
 
-        <ul class="panel-list">
-            <li><strong>Puppies:</strong> short play sessions and gentle walks; avoid long runs to protect growing joints.</li>
-            <li><strong>Adult dogs:</strong> 30–90 minutes of activity per day depending on breed and energy level.</li>
-            <li><strong>Senior dogs:</strong> shorter, more gentle walks to keep joints moving.</li>
-            <li>Mix walks with sniff time, fetch, and simple training games.</li>
-            <li>Use puzzle toys and indoor games on rainy or snowy days.</li>
-            <li>Watch for heavy panting, limping, or slowing down — those mean it’s time to rest.</li>
-        </ul>
-    </section>
+                            <div class="quiz-inner" id="feed-inner">
+                                <p class="quiz-question" id="feed-question"></p>
+                                <div class="quiz-options" id="feed-options"></div>
+                            </div>
 
-    <!-- BOX 2: QUIZ -->
-    <section class="section">
-        <div class="panel-questions">
-            <h3>Exercise Quiz</h3>
+                            <button class="quiz-next-btn" id="feed-next" disabled>Next question</button>
 
-            <div class="quiz-card">
-                <p class="quiz-progress">
-                    Question <span id="exercise-current">1</span> of <span id="exercise-total">3</span>
-                </p>
+                            <p class="quiz-feedback" id="feed-feedback"></p>
+                            <div class="quiz-score" id="feed-score" hidden></div>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="quiz-inner" id="exercise-inner">
-                    <p class="quiz-question" id="exercise-question"></p>
-                    <div class="quiz-options" id="exercise-options"></div>
-                </div>
+                <!-- BOX 3: BREED SEARCH -->
+                <section class="section">
+                    <div class="breed-search">
+                        <h3>Want feeding tips for your dog’s breed?</h3>
+                        <p>Type your dog’s breed to see more information on the Breeds page.</p>
+                        <form class="breed-form">
+                            <input type="text" name="breed" placeholder="e.g. Chihuahua" required>
+                            <button type="submit">Go to breed page</button>
+                        </form>
+                    </div>
+                </section>
 
-                <button class="quiz-next-btn" id="exercise-next" disabled>Next question</button>
+            </section>
 
-                <p class="quiz-feedback" id="exercise-feedback"></p>
-                <div class="quiz-score" id="exercise-score" hidden></div>
-            </div>
-        </div>
-    </section>
+            <!-- ========== GROOMING PANEL ========== -->
+            <section class="category-panel" data-category-panel="grooming" hidden>
 
-    <!-- BOX 3: BREED SEARCH -->
-    <section class="section">
-        <div class="breed-search">
-            <h3>Want exercise ideas for your breed?</h3>
-            <p>Type your dog’s breed to see more exercise suggestions on the Breeds page.</p>
-            <form class="breed-form">
-                <input type="text" name="breed" placeholder="e.g. Border Collie" required>
-                <button type="submit">Go to breed page</button>
-            </form>
-        </div>
-    </section>
+                <!-- BOX 1: INFO -->
+                <section class="section">
+                    <h2 class="section-title">Grooming</h2>
 
-</section> 
+                    <p class="panel-text">
+                        Regular grooming keeps your dog comfortable and lets you check their skin,
+                        ears, and coat for problems early.
+                    </p>
 
-        <!-- ========== COMFORT & SLEEP PANEL ========== -->
-      
-<section class="category-panel" data-category-panel="comfort" hidden>
+                    <ul class="panel-list">
+                        <li><strong>Brushing:</strong>
+                            Small dogs – brush gently from neck to tail in short strokes.
+                            Long coats – use a slicker brush &amp; detangling spray.
+                            Short coats – soft bristle brushes are usually enough.
+                        </li>
+                        <li><strong>Bathing:</strong> bathe every 3–6 weeks with dog-safe shampoo; rinse thoroughly.
+                        </li>
+                        <li><strong>Ears:</strong> check weekly for redness, bad smell, or dark wax.</li>
+                        <li><strong>Nails:</strong> trim when you hear clicking on the floor.</li>
+                        <li><strong>Teeth:</strong> brush 2–3 times a week with dog toothpaste.</li>
+                        <li><strong>Paws:</strong> check pads for cuts or cracks after walks.</li>
+                    </ul>
+                </section>
 
-    <!-- BOX 1: INFO -->
-    <section class="section">
-        <h2 class="section-title">Comfort &amp; Sleep</h2>
+                <!-- BOX 2: QUIZ -->
+                <section class="section">
+                    <div class="panel-questions">
+                        <h3>Grooming Quiz</h3>
 
-        <p class="panel-text">
-            Dogs need a calm, cozy space to relax. Good sleep helps them recover, learn,
-            and stay in a good mood.
-        </p>
+                        <div class="quiz-card">
+                            <p class="quiz-progress">
+                                Question <span id="groom-current">1</span> of <span id="groom-total">3</span>
+                            </p>
 
-        <ul class="panel-list">
-            <li>Choose a soft, supportive bed sized for your dog.</li>
-            <li>Place the bed away from drafts, loud doors, and busy walkways.</li>
-            <li>Keep a simple bedtime routine: potty break → water → lights down.</li>
-            <li>Puppies may sleep 18–20 hours a day — this is normal while they grow.</li>
-            <li>Anxious dogs may like covered crates, calming toys, or white noise.</li>
-            <li>Wash bedding weekly to remove dirt, dander, and bacteria.</li>
-        </ul>
-    </section>
+                            <div class="quiz-inner" id="groom-inner">
+                                <p class="quiz-question" id="groom-question"></p>
+                                <div class="quiz-options" id="groom-options"></div>
+                            </div>
 
-    <!-- BOX 2: QUIZ -->
-    <section class="section">
-        <div class="panel-questions">
-            <h3>Comfort &amp; Sleep Quiz</h3>
+                            <button class="quiz-next-btn" id="groom-next" disabled>Next question</button>
 
-            <div class="quiz-card">
-                <p class="quiz-progress">
-                    Question <span id="comfort-current">1</span> of <span id="comfort-total">3</span>
-                </p>
+                            <p class="quiz-feedback" id="groom-feedback"></p>
+                            <div class="quiz-score" id="groom-score" hidden></div>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="quiz-inner" id="comfort-inner">
-                    <p class="quiz-question" id="comfort-question"></p>
-                    <div class="quiz-options" id="comfort-options"></div>
-                </div>
+                <!-- BOX 3: BREED SEARCH -->
+                <section class="section">
+                    <div class="breed-search">
+                        <h3>Need grooming tips for a specific breed?</h3>
+                        <p>Type your dog’s breed to see more grooming details on the Breeds page.</p>
+                        <form class="breed-form">
+                            <input type="text" name="breed" placeholder="e.g. Poodle" required>
+                            <button type="submit">Go to breed page</button>
+                        </form>
+                    </div>
+                </section>
 
-                <button class="quiz-next-btn" id="comfort-next" disabled>Next question</button>
+            </section>
 
-                <p class="quiz-feedback" id="comfort-feedback"></p>
-                <div class="quiz-score" id="comfort-score" hidden></div>
-            </div>
-        </div>
-    </section>
+            <!-- ========== EXERCISE PANEL ========== -->
+            <section class="category-panel" data-category-panel="exercise" hidden>
 
-    <!-- BOX 3: BREED SEARCH -->
-    <section class="section">
-        <div class="breed-search">
-            <h3>Looking for comfort tips for your breed?</h3>
-            <p>Type your dog’s breed to see more comfort &amp; sleep tips on the Breeds page.</p>
-            <form class="breed-form">
-                <input type="text" name="breed" placeholder="e.g. Shih Tzu" required>
-                <button type="submit">Go to breed page</button>
-            </form>
-        </div>
-    </section>
+                <!-- BOX 1: INFO -->
+                <section class="section">
+                    <h2 class="section-title">Exercise</h2>
 
-</section>
-    </main>
+                    <p class="panel-text">
+                        Exercise keeps your dog’s body strong and their mind calm. The amount depends
+                        on age, size, and breed.
+                    </p>
 
-</div>
+                    <ul class="panel-list">
+                        <li><strong>Puppies:</strong> short play sessions and gentle walks; avoid long runs to protect
+                            growing joints.</li>
+                        <li><strong>Adult dogs:</strong> 30–90 minutes of activity per day depending on breed and energy
+                            level.</li>
+                        <li><strong>Senior dogs:</strong> shorter, more gentle walks to keep joints moving.</li>
+                        <li>Mix walks with sniff time, fetch, and simple training games.</li>
+                        <li>Use puzzle toys and indoor games on rainy or snowy days.</li>
+                        <li>Watch for heavy panting, limping, or slowing down — those mean it’s time to rest.</li>
+                    </ul>
+                </section>
 
-<!-- =============== JS: TABS + QUIZ + BREED SEARCH =============== -->
-<script>
-    /* ----- TAB SWITCHING ----- */
-    const tabButtons = document.querySelectorAll('[data-category-tab]');
-    const panels = document.querySelectorAll('[data-category-panel]');
+                <!-- BOX 2: QUIZ -->
+                <section class="section">
+                    <div class="panel-questions">
+                        <h3>Exercise Quiz</h3>
 
-    tabButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const target = btn.dataset.categoryTab;
+                        <div class="quiz-card">
+                            <p class="quiz-progress">
+                                Question <span id="exercise-current">1</span> of <span id="exercise-total">3</span>
+                            </p>
 
-            tabButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+                            <div class="quiz-inner" id="exercise-inner">
+                                <p class="quiz-question" id="exercise-question"></p>
+                                <div class="quiz-options" id="exercise-options"></div>
+                            </div>
 
-            panels.forEach(panel => {
-                panel.hidden = panel.dataset.categoryPanel !== target;
+                            <button class="quiz-next-btn" id="exercise-next" disabled>Next question</button>
+
+                            <p class="quiz-feedback" id="exercise-feedback"></p>
+                            <div class="quiz-score" id="exercise-score" hidden></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOX 3: BREED SEARCH -->
+                <section class="section">
+                    <div class="breed-search">
+                        <h3>Want exercise ideas for your breed?</h3>
+                        <p>Type your dog’s breed to see more exercise suggestions on the Breeds page.</p>
+                        <form class="breed-form">
+                            <input type="text" name="breed" placeholder="e.g. Border Collie" required>
+                            <button type="submit">Go to breed page</button>
+                        </form>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- ========== COMFORT & SLEEP PANEL ========== -->
+
+            <section class="category-panel" data-category-panel="comfort" hidden>
+
+                <!-- BOX 1: INFO -->
+                <section class="section">
+                    <h2 class="section-title">Comfort &amp; Sleep</h2>
+
+                    <p class="panel-text">
+                        Dogs need a calm, cozy space to relax. Good sleep helps them recover, learn,
+                        and stay in a good mood.
+                    </p>
+
+                    <ul class="panel-list">
+                        <li>Choose a soft, supportive bed sized for your dog.</li>
+                        <li>Place the bed away from drafts, loud doors, and busy walkways.</li>
+                        <li>Keep a simple bedtime routine: potty break → water → lights down.</li>
+                        <li>Puppies may sleep 18–20 hours a day — this is normal while they grow.</li>
+                        <li>Anxious dogs may like covered crates, calming toys, or white noise.</li>
+                        <li>Wash bedding weekly to remove dirt, dander, and bacteria.</li>
+                    </ul>
+                </section>
+
+                <!-- BOX 2: QUIZ -->
+                <section class="section">
+                    <div class="panel-questions">
+                        <h3>Comfort &amp; Sleep Quiz</h3>
+
+                        <div class="quiz-card">
+                            <p class="quiz-progress">
+                                Question <span id="comfort-current">1</span> of <span id="comfort-total">3</span>
+                            </p>
+
+                            <div class="quiz-inner" id="comfort-inner">
+                                <p class="quiz-question" id="comfort-question"></p>
+                                <div class="quiz-options" id="comfort-options"></div>
+                            </div>
+
+                            <button class="quiz-next-btn" id="comfort-next" disabled>Next question</button>
+
+                            <p class="quiz-feedback" id="comfort-feedback"></p>
+                            <div class="quiz-score" id="comfort-score" hidden></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOX 3: BREED SEARCH -->
+                <section class="section">
+                    <div class="breed-search">
+                        <h3>Looking for comfort tips for your breed?</h3>
+                        <p>Type your dog’s breed to see more comfort &amp; sleep tips on the Breeds page.</p>
+                        <form class="breed-form">
+                            <input type="text" name="breed" placeholder="e.g. Shih Tzu" required>
+                            <button type="submit">Go to breed page</button>
+                        </form>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+
+    </div>
+
+    <!-- =============== JS: TABS + QUIZ + BREED SEARCH =============== -->
+    <script>
+        /* ----- TAB SWITCHING ----- */
+        const tabButtons = document.querySelectorAll('[data-category-tab]');
+        const panels = document.querySelectorAll('[data-category-panel]');
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.categoryTab;
+
+                tabButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                panels.forEach(panel => {
+                    panel.hidden = panel.dataset.categoryPanel !== target;
+                });
             });
         });
-    });
 
-    /* ----- BONUS QUIZ ----- */
-    const quizQuestions = [
-        {
-            question: "How often should a healthy adult dog have a full vet check-up?",
-            options: ["Every month", "Once a year", "Every 5 years", "Only when sick"],
-            correctIndex: 1
-        },
-        {
-            question: "Which sign means you should call the vet quickly?",
-            options: ["Sleeping after a walk", "Sudden trouble breathing", "Normal appetite", "Playing with toys"],
-            correctIndex: 1
-        },
-        {
-            question: "Why are vaccinations important for dogs?",
-            options: ["Change eye colour", "Protect from serious diseases", "Make them bark less", "Help with grooming"],
-            correctIndex: 1
-        },
-        {
-            question: "What should you do if your dog vomits many times in one day?",
-            options: ["Ignore it", "Give more treats", "Call the vet for advice", "Wait a week"],
-            correctIndex: 2
-        },
-        {
-            question: "Which behaviour can be a sign your dog is in pain?",
-            options: ["Limping and crying when touched", "Eating normally", "Running happily", "Sleeping peacefully"],
-            correctIndex: 0
-        }
-    ];
+        /* ----- BONUS QUIZ ----- */
+        const quizQuestions = [
+            {
+                question: "How often should a healthy adult dog have a full vet check-up?",
+                options: ["Every month", "Once a year", "Every 5 years", "Only when sick"],
+                correctIndex: 1
+            },
+            {
+                question: "Which sign means you should call the vet quickly?",
+                options: ["Sleeping after a walk", "Sudden trouble breathing", "Normal appetite", "Playing with toys"],
+                correctIndex: 1
+            },
+            {
+                question: "Why are vaccinations important for dogs?",
+                options: ["Change eye colour", "Protect from serious diseases", "Make them bark less", "Help with grooming"],
+                correctIndex: 1
+            },
+            {
+                question: "What should you do if your dog vomits many times in one day?",
+                options: ["Ignore it", "Give more treats", "Call the vet for advice", "Wait a week"],
+                correctIndex: 2
+            },
+            {
+                question: "Which behaviour can be a sign your dog is in pain?",
+                options: ["Limping and crying when touched", "Eating normally", "Running happily", "Sleeping peacefully"],
+                correctIndex: 0
+            }
+        ];
 
-    const totalQuestions = quizQuestions.length;
-    const questionEl = document.getElementById("quiz-question");
-    const optionsEl = document.getElementById("quiz-options");
-    const nextBtn = document.getElementById("quiz-next");
-    const feedbackEl = document.getElementById("quiz-feedback");
-    const scoreEl = document.getElementById("quiz-score");
-    const currentNumberEl = document.getElementById("quiz-current");
-    const totalNumberEl = document.getElementById("quiz-total");
-    const quizInner = document.getElementById("quiz-inner");
+        const totalQuestions = quizQuestions.length;
+        const questionEl = document.getElementById("quiz-question");
+        const optionsEl = document.getElementById("quiz-options");
+        const nextBtn = document.getElementById("quiz-next");
+        const feedbackEl = document.getElementById("quiz-feedback");
+        const scoreEl = document.getElementById("quiz-score");
+        const currentNumberEl = document.getElementById("quiz-current");
+        const totalNumberEl = document.getElementById("quiz-total");
+        const quizInner = document.getElementById("quiz-inner");
 
-    if (totalNumberEl) totalNumberEl.textContent = totalQuestions;
+        if (totalNumberEl) totalNumberEl.textContent = totalQuestions;
 
-    let currentIndex = 0;
-    let selectedIndex = null;
-    let score = 0;
-
-    function loadQuestion() {
-        const q = quizQuestions[currentIndex];
-        questionEl.textContent = q.question;
-        currentNumberEl.textContent = currentIndex + 1;
-        feedbackEl.textContent = "";
-        nextBtn.disabled = true;
-        selectedIndex = null;
-
-        quizInner.classList.remove("animate-in");
-        void quizInner.offsetWidth;
-        quizInner.classList.add("animate-in");
-
-        optionsEl.innerHTML = "";
-        q.options.forEach((optionText, idx) => {
-            const btn = document.createElement("button");
-            btn.className = "quiz-option-btn";
-            btn.textContent = optionText;
-            btn.addEventListener("click", () => selectOption(idx, btn));
-            optionsEl.appendChild(btn);
-        });
-
-        nextBtn.textContent = currentIndex === totalQuestions - 1 ? "See your score" : "Next question";
-    }
-
-    function selectOption(idx, btnElement) {
-        selectedIndex = idx;
-        nextBtn.disabled = false;
-
-        const allButtons = optionsEl.querySelectorAll(".quiz-option-btn");
-        allButtons.forEach(b => b.classList.remove("selected"));
-        btnElement.classList.add("selected");
-
-        const q = quizQuestions[currentIndex];
-        if (idx === q.correctIndex) {
-            feedbackEl.textContent = "Nice! That’s correct ✅";
-        } else {
-            feedbackEl.textContent = "Good try! Check the tips above and try the next one 💡";
-        }
-    }
-
-    function handleNext() {
-        if (selectedIndex === null) return;
-
-        const q = quizQuestions[currentIndex];
-        if (selectedIndex === q.correctIndex) {
-            score++;
-        }
-
-        currentIndex++;
-        if (currentIndex < totalQuestions) {
-            loadQuestion();
-        } else {
-            showScore();
-        }
-    }
-
-    function showScore() {
-        quizInner.style.display = "none";
-        nextBtn.style.display = "none";
-        feedbackEl.textContent = "";
-
-        const percent = Math.round((score / totalQuestions) * 100);
-        scoreEl.innerHTML = `
-            <p>You scored <strong>${score}</strong> out of <strong>${totalQuestions}</strong> (${percent}%).</p>
-            <p>${
-                percent === 100
-                    ? "Perfect! Your dog would be proud 🐶✨"
-                    : percent >= 60
-                    ? "Great job! You know a lot about dog health."
-                    : "Nice start! Review the tips above and try again."
-            }</p>
-        `;
-        scoreEl.hidden = false;
-        scoreEl.classList.add("score-pop");
-    }
-
-    if (nextBtn) {
-        nextBtn.addEventListener("click", handleNext);
-        loadQuestion();
-    }
-
-    /* ----- BREED SEARCH (ALL PANELS) ----- */
-    const breedForms = document.querySelectorAll('.breed-form');
-
-    breedForms.forEach(form => {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const input = form.querySelector('input[name="breed"]');
-            const breed = input.value.trim();
-            if (!breed) return;
-
-            // Example alternative: 'breeds.html#' + slug;
-            const url = 'breeds.html?breed=' + encodeURIComponent(breed);
-            window.location.href = url;
-        });
-    });
-        /* ----- COMMON DISEASES FLIP CARDS ----- */
-    const diseaseFlipCards = document.querySelectorAll('.disease-card');
-
-    diseaseFlipCards.forEach(card => {
-        card.addEventListener('click', () => {
-
-            // optionally close others first:
-            diseaseFlipCards.forEach(c => {
-                if (c !== card) c.classList.remove('flipped');
-            });
-
-            card.classList.toggle('flipped');
-        });
-    });
-
-        /* ----- SMALL QUIZZES FOR ALL PANELS (ONE QUESTION AT A TIME) ----- */
-
-    const feedingQuestions = [
-        {
-            question: "How many meals do most healthy adult dogs need per day?",
-            options: [
-                "One large meal whenever they’re hungry",
-                "Two measured meals, morning and evening",
-                "Free access to food all day",
-                "Only treats, no full meals"
-            ],
-            correctIndex: 1
-        },
-        {
-            question: "What is the safest way to switch your dog to a new food?",
-            options: [
-                "Change everything in one day",
-                "Mix more new food over 5–7 days",
-                "Offer only the new food and wait",
-                "Give the new food only as treats"
-            ],
-            correctIndex: 1
-        },
-        {
-            question: "Which of these foods is dangerous for dogs?",
-            options: [
-                "Plain cooked carrots",
-                "Grapes and raisins",
-                "Boiled chicken without seasoning",
-                "Plain green beans"
-            ],
-            correctIndex: 1
-        }
-    ];
-
-    const groomingQuestions = [
-        {
-            question: "How often do long-haired dogs usually need brushing?",
-            options: [
-                "Once a year",
-                "Once a month",
-                "A few times a week or daily",
-                "Never, they groom themselves"
-            ],
-            correctIndex: 2
-        },
-        {
-            question: "Which sign means you should check your dog’s ears or call the vet?",
-            options: [
-                "Clean, pale pink ears with no smell",
-                "Dark wax, bad odour, or redness",
-                "Ears that move when listening",
-                "Ears that feel slightly warm"
-            ],
-            correctIndex: 1
-        },
-        {
-            question: "When should you trim your dog’s nails?",
-            options: [
-                "Only if nails break on their own",
-                "When you hear clicking on the floor",
-                "Never, they wear down",
-                "Only once as a puppy"
-            ],
-            correctIndex: 1
-        }
-    ];
-
-    const exerciseQuestions = [
-        {
-            question: "What can be a sign your dog isn’t getting enough exercise?",
-            options: [
-                "Calm, relaxed behaviour at home",
-                "Chewing, digging, or barking from boredom",
-                "Sleeping peacefully at night",
-                "Eating their regular meals"
-            ],
-            correctIndex: 1
-        },
-        {
-            question: "When is it safest to walk your dog on a very hot day?",
-            options: [
-                "Midday in full sun",
-                "Late morning on hot pavement",
-                "Early morning or later in the evening",
-                "Any time, heat doesn’t matter"
-            ],
-            correctIndex: 2
-        },
-        {
-            question: "Which dog should NOT go on long runs?",
-            options: [
-                "A healthy adult sports breed",
-                "A young puppy with growing joints",
-                "A trained agility dog",
-                "A healthy adult herding dog"
-            ],
-            correctIndex: 1
-        }
-    ];
-
-    const comfortQuestions = [
-        {
-            question: "Where is the best place to put your dog’s bed?",
-            options: [
-                "In a loud hallway with doors slamming",
-                "Next to a drafty window",
-                "In a quiet, cozy corner away from heavy traffic",
-                "Outside in the yard all year"
-            ],
-            correctIndex: 2
-        },
-        {
-            question: "About how long might a young puppy sleep in a day?",
-            options: [
-                "4–6 hours",
-                "8–10 hours",
-                "12–14 hours",
-                "18–20 hours"
-            ],
-            correctIndex: 3
-        },
-        {
-            question: "Which habit can help an anxious dog relax at night?",
-            options: [
-                "No routine, bedtime changes every night",
-                "A calm, predictable routine and potty break",
-                "Loud TV and bright lights",
-                "Skipping walks during the day"
-            ],
-            correctIndex: 1
-        }
-    ];
-
-    function setupPanelQuiz(prefix, questions) {
-        const questionEl = document.getElementById(prefix + "-question");
-        const optionsEl  = document.getElementById(prefix + "-options");
-        const nextBtn    = document.getElementById(prefix + "-next");
-        const feedbackEl = document.getElementById(prefix + "-feedback");
-        const scoreEl    = document.getElementById(prefix + "-score");
-        const currentEl  = document.getElementById(prefix + "-current");
-        const totalEl    = document.getElementById(prefix + "-total");
-        const innerEl    = document.getElementById(prefix + "-inner");
-
-        if (!questionEl || !optionsEl || !nextBtn) return;
-
-        const total = questions.length;
-        totalEl.textContent = total;
-
-        let index = 0;
+        let currentIndex = 0;
         let selectedIndex = null;
         let score = 0;
 
         function loadQuestion() {
-            const q = questions[index];
+            const q = quizQuestions[currentIndex];
             questionEl.textContent = q.question;
-            currentEl.textContent = index + 1;
+            currentNumberEl.textContent = currentIndex + 1;
             feedbackEl.textContent = "";
             nextBtn.disabled = true;
             selectedIndex = null;
 
-            innerEl.classList.remove("animate-in");
-            void innerEl.offsetWidth;
-            innerEl.classList.add("animate-in");
+            quizInner.classList.remove("animate-in");
+            void quizInner.offsetWidth;
+            quizInner.classList.add("animate-in");
 
             optionsEl.innerHTML = "";
-            q.options.forEach((text, i) => {
+            q.options.forEach((optionText, idx) => {
                 const btn = document.createElement("button");
                 btn.className = "quiz-option-btn";
-                btn.textContent = text;
-                btn.addEventListener("click", () => selectOption(i, btn));
+                btn.textContent = optionText;
+                btn.addEventListener("click", () => selectOption(idx, btn));
                 optionsEl.appendChild(btn);
             });
 
-            nextBtn.textContent = index === total - 1 ? "See your score" : "Next question";
+            nextBtn.textContent = currentIndex === totalQuestions - 1 ? "See your score" : "Next question";
         }
 
-        function selectOption(i, btn) {
-            selectedIndex = i;
+        function selectOption(idx, btnElement) {
+            selectedIndex = idx;
             nextBtn.disabled = false;
 
-            const all = optionsEl.querySelectorAll(".quiz-option-btn");
-            all.forEach(b => b.classList.remove("selected"));
-            btn.classList.add("selected");
+            const allButtons = optionsEl.querySelectorAll(".quiz-option-btn");
+            allButtons.forEach(b => b.classList.remove("selected"));
+            btnElement.classList.add("selected");
 
-            const q = questions[index];
-            if (i === q.correctIndex) {
+            const q = quizQuestions[currentIndex];
+            if (idx === q.correctIndex) {
                 feedbackEl.textContent = "Nice! That’s correct ✅";
             } else {
-                feedbackEl.textContent = "Good try! Read the tips above and try the next one 💡";
+                feedbackEl.textContent = "Good try! Check the tips above and try the next one 💡";
             }
         }
 
         function handleNext() {
             if (selectedIndex === null) return;
-            const q = questions[index];
-            if (selectedIndex === q.correctIndex) score++;
 
-            index++;
-            if (index < total) {
+            const q = quizQuestions[currentIndex];
+            if (selectedIndex === q.correctIndex) {
+                score++;
+            }
+
+            currentIndex++;
+            if (currentIndex < totalQuestions) {
                 loadQuestion();
             } else {
                 showScore();
@@ -820,132 +561,389 @@
         }
 
         function showScore() {
-            innerEl.style.display = "none";
+            quizInner.style.display = "none";
             nextBtn.style.display = "none";
             feedbackEl.textContent = "";
 
-            const percent = Math.round((score / total) * 100);
+            const percent = Math.round((score / totalQuestions) * 100);
             scoreEl.innerHTML = `
-                <p>You scored <strong>${score}</strong> out of <strong>${total}</strong> (${percent}%).</p>
-                <p>${
-                    percent === 100
-                        ? "Perfect! Your dog would be proud 🐶✨"
-                        : percent >= 60
-                        ? "Great job! You know a lot about this topic."
+            <p>You scored <strong>${score}</strong> out of <strong>${totalQuestions}</strong> (${percent}%).</p>
+            <p>${percent === 100
+                    ? "Perfect! Your dog would be proud 🐶✨"
+                    : percent >= 60
+                        ? "Great job! You know a lot about dog health."
                         : "Nice start! Review the tips above and try again."
                 }</p>
-            `;
+        `;
             scoreEl.hidden = false;
             scoreEl.classList.add("score-pop");
         }
 
-        nextBtn.addEventListener("click", handleNext);
-        loadQuestion();
-    }
+        if (nextBtn) {
+            nextBtn.addEventListener("click", handleNext);
+            loadQuestion();
+        }
 
-    // Initialise quizzes for all panels
-    setupPanelQuiz("feed", feedingQuestions);
-    setupPanelQuiz("groom", groomingQuestions);
-    setupPanelQuiz("exercise", exerciseQuestions);
-    setupPanelQuiz("comfort", comfortQuestions);
-</script>
+        /* ----- BREED SEARCH (ALL PANELS) ----- */
+        const breedForms = document.querySelectorAll('.breed-form');
 
-<footer class="site-footer">
-            <div class="footer-inner">
+        breedForms.forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const input = form.querySelector('input[name="breed"]');
+                const breed = input.value.trim();
+                if (!breed) return;
 
-                <!-- Column 1: Tagline -->
-                <div class="footer-col footer-intro">
-                    <h3>Find your pet pal <span class="paw">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
-                            </svg>
-                        </span></h3>
-                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
-                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
-                    <p>Save favourites and share them with friends and family.</p>
-                    <p>Start your adoption journey with PetPal today.</p>
-                </div>
+                // Example alternative: 'breeds.html#' + slug;
+                const url = 'breeds.html?breed=' + encodeURIComponent(breed);
+                window.location.href = url;
+            });
+        });
+        /* ----- COMMON DISEASES FLIP CARDS ----- */
+        const diseaseFlipCards = document.querySelectorAll('.disease-card');
 
-                <!-- Column 2: Information & Resources -->
-                <div class="footer-col">
-                    <h4>Information &amp; Resources</h4>
-                    <ul>
-                        <li><a href="#">Adoption FAQ</a></li>
-                        <li><a href="#">Preparing for Your New Pet</a></li>
-                        <li><a href="#">Care &amp; Training Guides</a></li>
-                        <li><a href="#">Health &amp; Nutrition Tips</a></li>
-                        <li><a href="#">Emergency Contacts</a></li>
-                    </ul>
-                </div>
+        diseaseFlipCards.forEach(card => {
+            card.addEventListener('click', () => {
 
-                <!-- Column 3: Community -->
-                <div class="footer-col">
-                    <h4>Community</h4>
-                    <ul>
-                        <li><a href="#">Success Stories</a></li>
-                        <li><a href="#">Events &amp; Meetups</a></li>
-                        <li><a href="#">Volunteer Opportunities</a></li>
-                        <li><a href="#">Shelter Partners</a></li>
-                        <li><a href="#">Newsletter Sign-up</a></li>
-                    </ul>
-                </div>
+                // optionally close others first:
+                diseaseFlipCards.forEach(c => {
+                    if (c !== card) c.classList.remove('flipped');
+                });
 
-                <!-- Column 4: Logo / Contact -->
-                <div class="footer-col footer-brand">
-                    <div class="footer-logo">PetPal</div>
-                    <p class="footer-address">
-                        123 PetPal Lane<br>
-                        Kamloops, BC<br>
-                        Canada
-                    </p>
+                card.classList.toggle('flipped');
+            });
+        });
 
-                    <p class="footer-contact">
-                        <strong>Contact us</strong><br>
-                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
-                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
-                    </p>
+        /* ----- SMALL QUIZZES FOR ALL PANELS (ONE QUESTION AT A TIME) ----- */
 
-                    <div class="footer-social">
-                        <a href="#" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="TikTok">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                <path
-                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
-                            </svg>
-                        </a>
-                    </div>
+        const feedingQuestions = [
+            {
+                question: "How many meals do most healthy adult dogs need per day?",
+                options: [
+                    "One large meal whenever they’re hungry",
+                    "Two measured meals, morning and evening",
+                    "Free access to food all day",
+                    "Only treats, no full meals"
+                ],
+                correctIndex: 1
+            },
+            {
+                question: "What is the safest way to switch your dog to a new food?",
+                options: [
+                    "Change everything in one day",
+                    "Mix more new food over 5–7 days",
+                    "Offer only the new food and wait",
+                    "Give the new food only as treats"
+                ],
+                correctIndex: 1
+            },
+            {
+                question: "Which of these foods is dangerous for dogs?",
+                options: [
+                    "Plain cooked carrots",
+                    "Grapes and raisins",
+                    "Boiled chicken without seasoning",
+                    "Plain green beans"
+                ],
+                correctIndex: 1
+            }
+        ];
+
+        const groomingQuestions = [
+            {
+                question: "How often do long-haired dogs usually need brushing?",
+                options: [
+                    "Once a year",
+                    "Once a month",
+                    "A few times a week or daily",
+                    "Never, they groom themselves"
+                ],
+                correctIndex: 2
+            },
+            {
+                question: "Which sign means you should check your dog’s ears or call the vet?",
+                options: [
+                    "Clean, pale pink ears with no smell",
+                    "Dark wax, bad odour, or redness",
+                    "Ears that move when listening",
+                    "Ears that feel slightly warm"
+                ],
+                correctIndex: 1
+            },
+            {
+                question: "When should you trim your dog’s nails?",
+                options: [
+                    "Only if nails break on their own",
+                    "When you hear clicking on the floor",
+                    "Never, they wear down",
+                    "Only once as a puppy"
+                ],
+                correctIndex: 1
+            }
+        ];
+
+        const exerciseQuestions = [
+            {
+                question: "What can be a sign your dog isn’t getting enough exercise?",
+                options: [
+                    "Calm, relaxed behaviour at home",
+                    "Chewing, digging, or barking from boredom",
+                    "Sleeping peacefully at night",
+                    "Eating their regular meals"
+                ],
+                correctIndex: 1
+            },
+            {
+                question: "When is it safest to walk your dog on a very hot day?",
+                options: [
+                    "Midday in full sun",
+                    "Late morning on hot pavement",
+                    "Early morning or later in the evening",
+                    "Any time, heat doesn’t matter"
+                ],
+                correctIndex: 2
+            },
+            {
+                question: "Which dog should NOT go on long runs?",
+                options: [
+                    "A healthy adult sports breed",
+                    "A young puppy with growing joints",
+                    "A trained agility dog",
+                    "A healthy adult herding dog"
+                ],
+                correctIndex: 1
+            }
+        ];
+
+        const comfortQuestions = [
+            {
+                question: "Where is the best place to put your dog’s bed?",
+                options: [
+                    "In a loud hallway with doors slamming",
+                    "Next to a drafty window",
+                    "In a quiet, cozy corner away from heavy traffic",
+                    "Outside in the yard all year"
+                ],
+                correctIndex: 2
+            },
+            {
+                question: "About how long might a young puppy sleep in a day?",
+                options: [
+                    "4–6 hours",
+                    "8–10 hours",
+                    "12–14 hours",
+                    "18–20 hours"
+                ],
+                correctIndex: 3
+            },
+            {
+                question: "Which habit can help an anxious dog relax at night?",
+                options: [
+                    "No routine, bedtime changes every night",
+                    "A calm, predictable routine and potty break",
+                    "Loud TV and bright lights",
+                    "Skipping walks during the day"
+                ],
+                correctIndex: 1
+            }
+        ];
+
+        function setupPanelQuiz(prefix, questions) {
+            const questionEl = document.getElementById(prefix + "-question");
+            const optionsEl = document.getElementById(prefix + "-options");
+            const nextBtn = document.getElementById(prefix + "-next");
+            const feedbackEl = document.getElementById(prefix + "-feedback");
+            const scoreEl = document.getElementById(prefix + "-score");
+            const currentEl = document.getElementById(prefix + "-current");
+            const totalEl = document.getElementById(prefix + "-total");
+            const innerEl = document.getElementById(prefix + "-inner");
+
+            if (!questionEl || !optionsEl || !nextBtn) return;
+
+            const total = questions.length;
+            totalEl.textContent = total;
+
+            let index = 0;
+            let selectedIndex = null;
+            let score = 0;
+
+            function loadQuestion() {
+                const q = questions[index];
+                questionEl.textContent = q.question;
+                currentEl.textContent = index + 1;
+                feedbackEl.textContent = "";
+                nextBtn.disabled = true;
+                selectedIndex = null;
+
+                innerEl.classList.remove("animate-in");
+                void innerEl.offsetWidth;
+                innerEl.classList.add("animate-in");
+
+                optionsEl.innerHTML = "";
+                q.options.forEach((text, i) => {
+                    const btn = document.createElement("button");
+                    btn.className = "quiz-option-btn";
+                    btn.textContent = text;
+                    btn.addEventListener("click", () => selectOption(i, btn));
+                    optionsEl.appendChild(btn);
+                });
+
+                nextBtn.textContent = index === total - 1 ? "See your score" : "Next question";
+            }
+
+            function selectOption(i, btn) {
+                selectedIndex = i;
+                nextBtn.disabled = false;
+
+                const all = optionsEl.querySelectorAll(".quiz-option-btn");
+                all.forEach(b => b.classList.remove("selected"));
+                btn.classList.add("selected");
+
+                const q = questions[index];
+                if (i === q.correctIndex) {
+                    feedbackEl.textContent = "Nice! That’s correct ✅";
+                } else {
+                    feedbackEl.textContent = "Good try! Read the tips above and try the next one 💡";
+                }
+            }
+
+            function handleNext() {
+                if (selectedIndex === null) return;
+                const q = questions[index];
+                if (selectedIndex === q.correctIndex) score++;
+
+                index++;
+                if (index < total) {
+                    loadQuestion();
+                } else {
+                    showScore();
+                }
+            }
+
+            function showScore() {
+                innerEl.style.display = "none";
+                nextBtn.style.display = "none";
+                feedbackEl.textContent = "";
+
+                const percent = Math.round((score / total) * 100);
+                scoreEl.innerHTML = `
+                <p>You scored <strong>${score}</strong> out of <strong>${total}</strong> (${percent}%).</p>
+                <p>${percent === 100
+                        ? "Perfect! Your dog would be proud 🐶✨"
+                        : percent >= 60
+                            ? "Great job! You know a lot about this topic."
+                            : "Nice start! Review the tips above and try again."
+                    }</p>
+            `;
+                scoreEl.hidden = false;
+                scoreEl.classList.add("score-pop");
+            }
+
+            nextBtn.addEventListener("click", handleNext);
+            loadQuestion();
+        }
+
+        // Initialise quizzes for all panels
+        setupPanelQuiz("feed", feedingQuestions);
+        setupPanelQuiz("groom", groomingQuestions);
+        setupPanelQuiz("exercise", exerciseQuestions);
+        setupPanelQuiz("comfort", comfortQuestions);
+    </script>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <!-- Column 1: Tagline -->
+            <div class="footer-col footer-intro">
+                <h3>Find your pet pal <span class="paw">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                        </svg>
+                    </span></h3>
+                <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                <p>Save favourites and share them with friends and family.</p>
+                <p>Start your adoption journey with PetPal today.</p>
+            </div>
+
+            <!-- Column 2: Information & Resources -->
+            <div class="footer-col">
+                <h4>Information &amp; Resources</h4>
+                <ul>
+                    <li><a href="#">Adoption FAQ</a></li>
+                    <li><a href="#">Preparing for Your New Pet</a></li>
+                    <li><a href="#">Care &amp; Training Guides</a></li>
+                    <li><a href="#">Health &amp; Nutrition Tips</a></li>
+                    <li><a href="#">Emergency Contacts</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Community -->
+            <div class="footer-col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Events &amp; Meetups</a></li>
+                    <li><a href="#">Volunteer Opportunities</a></li>
+                    <li><a href="#">Shelter Partners</a></li>
+                    <li><a href="#">Newsletter Sign-up</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Logo / Contact -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">PetPal</div>
+                <p class="footer-address">
+                    123 PetPal Lane<br>
+                    Kamloops, BC<br>
+                    Canada
+                </p>
+
+                <p class="footer-contact">
+                    <strong>Contact us</strong><br>
+                    <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                    <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+    <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
     </div>
     <script src="shop-checkout.js"></script>
 </body>
 
 </html>
-
-
