@@ -1,4 +1,4 @@
-// Breed data from the Google Doc
+// Breed data from the Google Doc// Breed data from the Google Doc
 const breedsData = [
     {
         id: 'labrador',
@@ -97,7 +97,12 @@ function displayBreeds(breedsToShow) {
     const container = document.getElementById('breeds-container');
     container.innerHTML = '';
 
-    breedsToShow.forEach(breed => {
+    // Always show breeds in alphabetical order by name
+    const sorted = [...breedsToShow].sort((a, b) =>
+        a.name.localeCompare(b.name)
+    );
+
+    sorted.forEach(breed => {
         const card = document.createElement('div');
         card.className = 'breed-card';
         card.innerHTML = `
@@ -149,13 +154,49 @@ function viewBreedProfile(breedId) {
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function () {
+    // 1. Show all breeds initially
     displayBreeds(breedsData);
 
+    // 2. Filter buttons
     document.getElementById('apply-filters').addEventListener('click', filterBreeds);
     document.getElementById('reset-filters').addEventListener('click', resetFilters);
 
-    // Add event listeners to all checkboxes and select for real-time filtering
+    // Real-time filtering when checkboxes or origin change
     document.querySelectorAll('input[type="checkbox"], #origin-filter').forEach(element => {
         element.addEventListener('change', filterBreeds);
     });
+
+    // 3. Sidebar toggle logic
+    const toggleBtn = document.getElementById('filterToggle');
+    const sidebar = document.querySelector('.filters-sidebar');
+    const breedsContainer = document.querySelector('.breeds-container');
+
+    if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener('click', function () {
+            if (window.innerWidth <= 900) {
+                // mobile open/close
+                sidebar.classList.toggle('open');
+            } else {
+                // desktop collapse + expand cards area
+                sidebar.classList.toggle('collapsed');
+                if (breedsContainer) {
+                    breedsContainer.classList.toggle('sidebar-collapsed');
+                }
+            }
+        });
+    }
+
+    // 4. Breed name search
+    const searchInput = document.getElementById('breedSearch');
+    if (searchInput) {
+        searchInput.addEventListener('input', function () {
+            const query = searchInput.value.toLowerCase().trim();
+
+            const filtered = breedsData.filter(breed =>
+                breed.name.toLowerCase().includes(query)
+            );
+
+            displayBreeds(filtered);
+        });
+    }
 });

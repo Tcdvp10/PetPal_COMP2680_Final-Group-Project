@@ -97,6 +97,11 @@ body {
     align-items: start;
 }
 
+/* When sidebar is collapsed, switch to 1-column layout */
+.breeds-container.sidebar-collapsed {
+    grid-template-columns: 1fr !important;
+}
+
 /* Filter Sidebar */
 .filters-sidebar {
     background: white;
@@ -385,4 +390,126 @@ body {
     .search-container input {
         width: 150px;
     }
+}
+
+.breeds-filters {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* 2. Make breed cards appear 3 per row */
+.breeds-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* --- Sidebar Toggle + 3-Column Grid Fixes --- */
+
+/* Move sidebar more left */
+.filters-sidebar {
+    margin-left: -30px !important;
+    /* adjust higher number for more left */
+    transition: transform 0.3s ease;
+}
+
+/* Hidden (collapsed) state */
+.filters-sidebar.collapsed {
+    transform: translateX(-120%);
+}
+
+/* Toggle Filter Button */
+.filter-toggle-btn {
+    display: block !important;
+    position: fixed;
+    top: 110px;
+    left: 15px;
+    z-index: 2000;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Make 3 cards per row */
+.breeds-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Mobile behavior */
+@media (max-width: 900px) {
+    .filter-toggle-btn {
+        display: block;
+    }
+
+    .filters-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        margin-left: 0 !important;
+        transform: translateX(-120%);
+        padding: 20px;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+        z-index: 1500;
+    }
+
+    .filters-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .breeds-container {
+        grid-template-columns: 1fr;
+    }
+
+    .breeds-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .breeds-grid {
+        transition: margin 0.3s ease;
+    }
+
+}
+
+/* When sidebar is collapsed (desktop) → show 4 cards per row */
+.filters-sidebar.collapsed~.breeds-grid .breeds-cards-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+    margin-left: 0;
+    /* shift grid to the left */
+}
+
+/* When sidebar is open (normal) → show 3 cards per row */
+.breeds-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* When the sidebar is collapsed, remove the left column entirely */
+.filters-sidebar.collapsed {
+    transform: translateX(-120%);
+}
+
+.filters-sidebar.collapsed~.breeds-grid {
+    grid-column: 1 / -1 !important;
+    /* span full width */
+}
+
+.filters-sidebar.collapsed~.breeds-grid .breeds-cards-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+/* Also change main grid layout so no space is reserved */
+.filters-sidebar.collapsed {
+    position: fixed;
+}
+
+.filters-sidebar.collapsed~.breeds-grid {
+    margin-left: 0 !important;
 }
