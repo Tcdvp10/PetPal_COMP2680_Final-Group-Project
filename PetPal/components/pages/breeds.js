@@ -5,7 +5,7 @@ const breedsData = [
     {
         id: 'affenpinscher',
         name: 'Affenpinscher',
-        image: 'https://picsum.photos/400/300?random=101',
+        image: 'https://i0.wp.com/affenpinscherclub.co.uk/wp-content/uploads/2021/01/cropped-3D_GiGi-scaled-1.jpg?fit=512%2C512&ssl=1',
         size: 'small',
         coat: 'rough',
         temperament: ['confident', 'curious', 'amusing', 'stubborn'],
@@ -21,7 +21,7 @@ const breedsData = [
     {
         id: 'afghan-hound',
         name: 'Afghan Hound',
-        image: 'https://picsum.photos/400/300?random=102',
+        image: 'https://eleveurs.ca/storage/user_ZoPza5yzkG/3145/L%C3%A9vrier-Afghan-L%27%C3%A9l%C3%A9gance.jpg',
         size: 'large',
         coat: 'long',
         temperament: ['independent', 'elegant', 'sensitive', 'aloof'],
@@ -37,7 +37,7 @@ const breedsData = [
     {
         id: 'airedale-terrier',
         name: 'Airedale Terrier',
-        image: 'https://picsum.photos/400/300?random=103',
+        image: 'https://eu-central-1.graphassets.com/AnwjgMYRvQfWK3bRPjoq3z/resize=height:404,width:718/output=format:webp/8PGsAL36TPyvcr92kdK9',
         size: 'large',
         coat: 'rough',
         temperament: ['confident', 'outgoing', 'intelligent', 'playful'],
@@ -53,7 +53,7 @@ const breedsData = [
     {
         id: 'akita',
         name: 'Akita',
-        image: 'https://picsum.photos/400/300?random=104',
+        image: 'https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/akita-dog-breed-info.jpeg',
         size: 'large',
         coat: 'double',
         temperament: ['dignified', 'loyal', 'courageous', 'independent'],
@@ -69,7 +69,7 @@ const breedsData = [
     {
         id: 'alaskan-klee-kai',
         name: 'Alaskan Klee Kai',
-        image: 'https://picsum.photos/400/300?random=105',
+        image: 'https://www.dailypaws.com/thmb/nP0gxEuNnl2bKyTEYpRs5CxfyFY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/alaskan-klee-kai-brick-wall-1301601151-2000-0ea483eb888640be88a8b4ffead6a01d.jpg',
         size: 'small',
         coat: 'double',
         temperament: ['intelligent', 'alert', 'energetic', 'reserved'],
@@ -85,7 +85,7 @@ const breedsData = [
     {
         id: 'alaskan-malamute',
         name: 'Alaskan Malamute',
-        image: 'https://picsum.photos/400/300?random=106',
+        image: 'https://pet-health-content-media.chewy.com/wp-content/uploads/2024/09/11180751/202105iStock-1257427111-scaled-1.jpg',
         size: 'large',
         coat: 'double',
         temperament: ['friendly', 'independent', 'strong-willed', 'affectionate'],
@@ -101,7 +101,7 @@ const breedsData = [
     {
         id: 'american-bulldog',
         name: 'American Bulldog',
-        image: 'https://picsum.photos/400/300?random=107',
+        image: 'https://www.carecredit.com/sites/cc/image/american_bulldog_hero.jpg',
         size: 'large',
         coat: 'short',
         temperament: ['confident', 'loyal', 'protective', 'athletic'],
@@ -117,7 +117,7 @@ const breedsData = [
     {
         id: 'american-english-coonhound',
         name: 'American English Coonhound',
-        image: 'https://picsum.photos/400/300?random=108',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HEXI0vLgUY9_O2OfnvyMxTrp45BjmQ2eFA&s',
         size: 'large',
         coat: 'short',
         temperament: ['energetic', 'friendly', 'sociable', 'vocal'],
@@ -133,7 +133,7 @@ const breedsData = [
     {
         id: 'american-eskimo-dog',
         name: 'American Eskimo Dog',
-        image: 'https://picsum.photos/400/300?random=109',
+        image: 'https://articles.hepper.com/wp-content/uploads/2022/11/American-Eskimo-dog_Cameron-Archibald_Shutterstock.jpg',
         size: 'medium',
         coat: 'double',
         temperament: ['intelligent', 'alert', 'social', 'playful'],
@@ -149,7 +149,7 @@ const breedsData = [
     {
         id: 'american-foxhound',
         name: 'American Foxhound',
-        image: 'https://picsum.photos/400/300?random=110',
+        image: 'https://i.cdn.newsbytesapp.com/images/l10420250117113106.png',
         size: 'large',
         coat: 'short',
         temperament: ['gentle', 'friendly', 'independent', 'energetic'],
@@ -165,7 +165,7 @@ const breedsData = [
     {
         id: 'american-hairless-terrier',
         name: 'American Hairless Terrier',
-        image: 'https://picsum.photos/400/300?random=111',
+        image: 'https://consumer-cms.petfinder.com/sites/default/files/images/content/American%20Hairless%20Terrier%204.jpg',
         size: 'small',
         coat: 'hairless',
         temperament: ['playful', 'alert', 'curious', 'affectionate'],
@@ -181,7 +181,7 @@ const breedsData = [
     {
         id: 'american-leopard-hound',
         name: 'American Leopard Hound',
-        image: 'https://picsum.photos/400/300?random=112',
+        image: 'https://thumbs.dreamstime.com/b/portrait-leopard-hound-dog-green-246296696.jpg',
         size: 'large',
         coat: 'short',
         temperament: ['energetic', 'intelligent', 'independent', 'affectionate'],
@@ -197,7 +197,7 @@ const breedsData = [
     {
         id: 'american-staffordshire-terrier',
         name: 'American Staffordshire Terrier',
-        image: 'https://picsum.photos/400/300?random=113',
+        image: 'https://www.zooplus.co.uk/magazine/wp-content/uploads/2025/04/AdobeStock_219130672.webp',
         size: 'medium',
         coat: 'short',
         temperament: ['confident', 'loyal', 'affectionate', 'courageous'],
@@ -213,7 +213,7 @@ const breedsData = [
     {
         id: 'american-water-spaniel',
         name: 'American Water Spaniel',
-        image: 'https://picsum.photos/400/300?random=114',
+        image: 'https://www.purina.com/sites/default/files/styles/social_share/public/2025-09/american_water_spaniel_1.jpg?h=82f92a78&itok=wrtguDq-',
         size: 'medium',
         coat: 'curly',
         temperament: ['friendly', 'energetic', 'intelligent', 'affectionate'],
@@ -229,7 +229,7 @@ const breedsData = [
     {
         id: 'anatolian-shepherd-dog',
         name: 'Anatolian Shepherd Dog',
-        image: 'https://picsum.photos/400/300?random=115',
+        image: 'https://consumer-cms.petfinder.com/sites/default/files/images/content/Anatolian%20Shepherd%20Dog%204.jpg',
         size: 'giant',
         coat: 'double',
         temperament: ['independent', 'protective', 'loyal', 'calm'],
@@ -245,7 +245,7 @@ const breedsData = [
     {
         id: 'appenzeller-sennenhund',
         name: 'Appenzeller Sennenhund',
-        image: 'https://picsum.photos/400/300?random=116',
+        image: 'https://cdn-fastly.petguide.com/media/2022/02/16/8205092/appenzeller-sennenhunde.jpg?size=720x845&nocrop=1',
         size: 'medium',
         coat: 'double',
         temperament: ['energetic', 'intelligent', 'alert', 'loyal'],
@@ -261,7 +261,7 @@ const breedsData = [
     {
         id: 'australian-cattle-dog',
         name: 'Australian Cattle Dog',
-        image: 'https://picsum.photos/400/300?random=117',
+        image: 'https://image.petmd.com/files/styles/863x625/public/2022-10/Australian_Cattle_Dog.jpeg',
         size: 'medium',
         coat: 'double',
         temperament: ['energetic', 'loyal', 'intelligent', 'alert'],
@@ -277,7 +277,7 @@ const breedsData = [
     {
         id: 'australian-kelpie',
         name: 'Australian Kelpie',
-        image: 'https://picsum.photos/400/300?random=118',
+        image: 'https://images.ctfassets.net/440y9b545yd9/3pRA8hd6Wf1MbZQQRUAC8M/441f590202d2f2f8f9433d3f28a0ea2a/Australian_kelpie850.jpg',
         size: 'medium',
         coat: 'short',
         temperament: ['energetic', 'intelligent', 'loyal', 'hardworking'],
