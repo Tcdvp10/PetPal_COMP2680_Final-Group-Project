@@ -416,6 +416,101 @@ const breedsData = [
         idealHome: "Best for families who appreciate a calm but alert guardian, can manage coat maintenance, and want a loyal, steady companion.",
         funFact: "Despite their heavy-looking coat, Bergamascos shed very little once the flocks are fully formed."
     },
+    {
+        id: 'biewer-terrier',
+        name: 'Biewer Terrier',
+        image: 'https://dogacademy.org/blog/wp-content/uploads/2023/10/biewer-terrier-running-with-golf-ball.jpg',
+        size: 'small',
+        coat: 'long',
+        temperament: ['playful', 'affectionate', 'inquisitive', 'gentle'],
+        origin: 'germany',
+        weight: '4–8 lb (2–4 kg)',
+        lifespan: '16+ years',
+        about: "A cheerful, loving toy breed with a beautiful long, silky coat. Biewer Terriers are playful, alert, and less yappy than many terriers, making them delightful companions.",
+        care: "Their long coat requires daily brushing and regular baths to stay tangle-free. They need gentle exercise, socialization, positive training, and careful handling due to their tiny size.",
+        idealHome: "Perfect for adults or families with older, gentle children who want a small, affectionate companion and can maintain regular grooming.",
+        funFact: "The breed began from a single rare puppy born in a Yorkshire Terrier litter in Germany."
+    },
+
+    {
+        id: 'bolognese',
+        name: 'Bolognese',
+        image: 'https://www.dogster.com/wp-content/uploads/2019/11/bolognese-outdoor.jpg',
+        size: 'small',
+        coat: 'long',
+        temperament: ['loyal', 'calm', 'devoted', 'gentle'],
+        origin: 'italy',
+        weight: '5.5–9 lb (2.5–4 kg)',
+        lifespan: '12–14 years',
+        about: "The Bolognese is a sweet, calm, devoted companion dog with a fluffy cotton-like coat. They bond deeply with their owners and thrive on affection and closeness.",
+        care: "Their long, soft coat requires daily brushing and professional grooming. They need gentle exercise, social interaction, and early training to prevent separation anxiety.",
+        idealHome: "Great for quiet households, retirees, or families with older children who want a loving lapdog and can provide companionship throughout the day.",
+        funFact: "The Bolognese was a favorite lapdog of European nobility and often gifted among royalty."
+    },
+
+    {
+        id: 'doberman-pinscher',
+        name: 'Doberman Pinscher',
+        image: 'https://www.mindenpictures.com/cache/pcache/00169144.jpg',
+        size: 'large',
+        coat: 'short',
+        temperament: ['loyal', 'fearless', 'alert', 'intelligent'],
+        origin: 'germany',
+        weight: '60–100 lb (27–45 kg)',
+        lifespan: '10–12 years',
+        about: "A powerful, loyal, and highly intelligent working breed known for its protective instincts and devotion to family.",
+        care: "Low grooming needs, but they require 1–2 hours of daily vigorous exercise and mental work. Early socialization and consistent positive training are essential.",
+        idealHome: "Best for experienced, active owners who can provide structure, leadership, and plenty of physical and mental activity.",
+        funFact: "The breed was created by a German tax collector, Louis Dobermann, who wanted the perfect personal protection dog."
+    },
+
+    {
+        id: 'golden-retriever',
+        name: 'Golden Retriever',
+        image: 'https://images.squarespace-cdn.com/content/v1/55ede48ee4b0f67fc8251118/1612268124443-5Z5DPY42GV65GKJ9O4ZN/Golden+retriever+at+beach',
+        size: 'large',
+        coat: 'double',
+        temperament: ['friendly', 'intelligent', 'devoted', 'gentle'],
+        origin: 'scotland',
+        weight: '55–75 lb (25–34 kg)',
+        lifespan: '10–12 years',
+        about: "Golden Retrievers are friendly, intelligent, and one of the most beloved family dogs. They are gentle, trainable, and known for their stable temperament and eagerness to please.",
+        care: "They shed heavily and need brushing several times weekly. Provide daily exercise, training, mental stimulation, a balanced diet, and regular vet checks for joints and allergies.",
+        idealHome: "Perfect for active families who want a gentle, playful, loyal companion and can meet their physical and mental exercise needs.",
+        funFact: "Golden Retrievers are excellent swimmers thanks to their water-repellent coats and strong tails used like a rudder."
+    },
+
+    {
+        id: 'indie',
+        name: 'Indie (Indian Pariah Dog)',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dog_00154.JPG/1200px-Dog_00154.JPG',
+        size: 'medium',
+        coat: 'short',
+        temperament: ['alert', 'intelligent', 'independent', 'loyal'],
+        origin: 'india',
+        weight: '33–55 lb (15–25 kg)',
+        lifespan: '13–16 years',
+        about: "A natural landrace breed, the Indie is highly intelligent, alert, and incredibly adaptable. They are loyal to their family but often reserved with strangers.",
+        care: "Very low grooming needs due to their short coat. They need daily exercise, early socialization, and positive training to manage their strong prey drive and independent nature.",
+        idealHome: "Best for homes that understand their sensitive, intelligent nature and can provide exercise, training, and a calm environment.",
+        funFact: "The Indie is one of the world's oldest naturally evolved dog breeds, perfectly adapted to the Indian climate."
+    },
+    {
+        id: 'pembroke-welsh-corgi',
+        name: 'Pembroke Welsh Corgi',
+        image: 'https://cdn.britannica.com/80/232780-050-404D6708/Pembroke-welsh-corgi-dog.jpg',
+        size: 'small',
+        coat: 'double',
+        temperament: ['intelligent', 'alert', 'affectionate', 'bold'],
+        origin: 'wales',
+        weight: '24–30 lb (11–14 kg)',
+        lifespan: '12–13 years',
+        about: "A smart, affectionate, and energetic herding breed known for its short legs, long body, and bright expression. They are loyal and outgoing companions.",
+        care: "Their double coat sheds heavily year-round and needs regular brushing. They need daily exercise and mental stimulation to prevent boredom and manage herding instincts.",
+        idealHome: "Great for families who want a small but active dog and can manage barking and herding behaviors.",
+        funFact: "According to Welsh legend, Corgis were the preferred mounts of fairy warriors."
+    },
+
 
 ];
 
