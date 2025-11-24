@@ -293,7 +293,7 @@ const breedsData = [
     {
         id: 'australian-shepherd',
         name: 'Australian Shepherd',
-        image: 'https://picsum.photos/400/300?random=119',
+        image: 'https://www.akc.org/wp-content/uploads/2017/11/Australian-Shepherd.1.jpg',
         size: 'medium',
         coat: 'double',
         temperament: ['intelligent', 'energetic', 'loyal', 'affectionate'],
@@ -309,7 +309,7 @@ const breedsData = [
     {
         id: 'australian-stumpy-tail-cattle-dog',
         name: 'Australian Stumpy Tail Cattle Dog',
-        image: 'https://picsum.photos/400/300?random=120',
+        image: 'https://www.dogpackapp.com/blog/wp-content/uploads/2024/10/australian-stumpy-tail-cattle-dog-lawn.webp',
         size: 'medium',
         coat: 'short',
         temperament: ['energetic', 'loyal', 'alert', 'strong-willed'],
@@ -325,7 +325,7 @@ const breedsData = [
     {
         id: 'australian-terrier',
         name: 'Australian Terrier',
-        image: 'https://picsum.photos/400/300?random=121',
+        image: 'https://cdn.britannica.com/29/128429-050-7D0D0231/Norwich-terrier.jpg',
         size: 'small',
         coat: 'rough',
         temperament: ['alert', 'spirited', 'affectionate', 'brave'],
@@ -341,7 +341,7 @@ const breedsData = [
     {
         id: 'azawakh',
         name: 'Azawakh',
-        image: 'https://picsum.photos/400/300?random=122',
+        image: 'https://www.akc.org/wp-content/uploads/2017/11/Azawakh_178091272.jpg',
         size: 'large',
         coat: 'short',
         temperament: ['independent', 'loyal', 'reserved', 'graceful'],
@@ -357,7 +357,7 @@ const breedsData = [
     {
         id: 'barbado-da-terceira',
         name: 'Barbado da Terceira',
-        image: 'https://picsum.photos/400/300?random=123',
+        image: 'https://www.dogpackapp.com/blog/wp-content/uploads/2024/09/barbado-da-terceira-in-nature.webp',
         size: 'large',
         coat: 'long',
         temperament: ['courageous', 'docile', 'intelligent', 'vigilant'],
