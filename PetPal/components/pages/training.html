@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pet Pal - Care and Tips</title>
-    <link rel="stylesheet" href="training.css">
+    <link rel="stylesheet" href="caretips.css">
 </head>
 
 <body>
@@ -294,7 +294,7 @@
 
             </section>
 
-            <!-- ========== GROOMING PANEL ========== -->
+            <!-- ========== Behaviour Training PANEL ========== -->
             <section class="category-panel" data-category-panel="Behaviour Training" hidden>
 
                 <!-- BOX 1: INFO -->
@@ -355,8 +355,8 @@
                 <!-- BOX 3: BREED SEARCH -->
                 <section class="section">
                     <div class="breed-search">
-                        <h3>Need grooming tips for a specific breed?</h3>
-                        <p>Type your dog’s breed to see more grooming details on the Breeds page.</p>
+                        <h3>Need training tips for a specific breed?</h3>
+                        <p>Type your dogs breed to see more training details on the Breeds page.</p>
                         <form class="breed-form">
                             <input type="text" name="breed" placeholder="e.g. Poodle" required>
                             <button type="submit">Go to breed page</button>
@@ -621,7 +621,7 @@
             <p>${percent === 100
                     ? "Perfect! Your dog would be proud 🐶✨"
                     : percent >= 60
-                        ? "Great job! You know a lot about dog health."
+                        ? "Great job! You know a lot about dog training."
                         : "Nice start! Review the tips above and try again."
                 }</p>
         `;
@@ -668,7 +668,7 @@
 
         const feedingQuestions = [
             {
-                question: "How many meals do most healthy adult dogs need per day?",
+                question: "How many times does your dog go on a walk for?",
                 options: [
                     "One large meal whenever they’re hungry",
                     "Two measured meals, morning and evening",
