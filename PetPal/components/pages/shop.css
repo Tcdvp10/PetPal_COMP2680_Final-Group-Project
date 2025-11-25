@@ -7,11 +7,11 @@
 }
 
 body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     /*hides horizontal scroll*/
-    font-family: "Poppins", sans-serif;
-    background-color: #f8f8ec;
-    color: #5a3d0b;
+    background-color: white;
+    color: #3495db;
 }
 
 /* Header */
@@ -23,13 +23,21 @@ header {
     width: 100%;
     max-width: 100%;
     height: 60px;
-    background-color: #61a6ab;
-    color: #f1f2e0;
+    background: linear-gradient(135deg, #2c3e50, #3495db);
+    color: white;
     padding: 15px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
 .nav {
@@ -75,13 +83,13 @@ header {
     background: transparent;
     padding: 6px 8px;
     font-size: 14px;
-    color: #3a9995;
+    color: #3495db;
 }
 
 .search-container svg {
     width: 20px;
     height: 20px;
-    fill: #3a9995;
+    fill: #3495db;
 }
 
 .cart-icon {
@@ -184,7 +192,7 @@ header {
 
 .title-under-slideshow {
     text-align: center;
-    color: #5a3d0b;
+    color: #3495db;
     margin-top: 70px;
 }
 
@@ -200,7 +208,7 @@ header {
 }
 
 .product-box {
-    background: #fff;
+    background: white;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -242,7 +250,7 @@ header {
 
 .filter-btn {
     padding: 10px 16px;
-    background: #5a3d0b;
+    background: #3495db;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -279,7 +287,7 @@ header {
 
 .filter-panel h3 {
     margin-top: 0;
-    color: #5a3d0b;
+    color: #3495db;
 }
 
 .filter-group {
