@@ -450,7 +450,7 @@ const breedsData = [
     {
         id: 'boerboel',
         name: 'Boerboel',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Boerboel_pup.JPG',
+        image: 'https://jordandogtraining.com.au/wp-content/uploads/2025/06/Boerbull-800x534.webp',
         size: 'giant',
         coat: 'short',
         temperament: ['confident', 'dominant', 'loyal', 'fearless'],
@@ -465,7 +465,7 @@ const breedsData = [
     {
         id: 'chihuahua',
         name: 'Chihuahua',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Chihuahua_1.jpg',
+        image: 'https://cdn05.zipify.com/tkRa741txC_y6bLjIhwYg7VSc18=/fit-in/3840x0/902277ac20b349afb8089d51d130b76b/5.jpeg',
         size: 'small',
         coat: 'short',
         temperament: ['alert', 'charming', 'bold', 'devoted'],
@@ -529,7 +529,7 @@ const breedsData = [
     {
         id: 'kai-ken',
         name: 'Kai Ken',
-        image: 'https://cdn.britannica.com/51/233451-050-1E1B7B5A/Kai-Ken-dog.jpg',
+        image: 'https://usserviceanimals.org/blog/wp-content/uploads/2019/07/kai-ken.jpg',
         size: 'medium',
         coat: 'double',
         temperament: ['brave', 'agile', 'loyal', 'alert'],
@@ -544,7 +544,7 @@ const breedsData = [
     {
         id: 'keeshond',
         name: 'Keeshond',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Keeshond_Male.jpg',
+        image: 'https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/MjAxOTYxMzM1ODIxNjQxNjUx/keeshond-guide.jpg?arena_f_auto',
         size: 'medium',
         coat: 'double',
         temperament: ['friendly', 'outgoing', 'lively', 'alert'],
@@ -556,8 +556,21 @@ const breedsData = [
         idealHome: "Excellent for families with kids, first-time owners, and anyone who wants a social, affectionate indoor companion.",
         funFact: "Their distinctive facial markings resemble eyeglasses, giving them a naturally expressive look."
     },
-
-
+    {
+        id: 'newfoundland',
+        name: 'Newfoundland',
+        image: 'images/breeds/newfoundland.jpg',
+        size: 'giant',
+        coat: 'double',
+        temperament: ['gentle', 'patient', 'sweet-tempered', 'loyal'],
+        origin: 'canada',
+        weight: '100–150 lb (45–68 kg)',
+        lifespan: '9–10 years',
+        about: "A gentle giant known for its calm, sweet nature and natural instinct for water rescue. Newfoundlands are loving, steady, and famously patient with children.",
+        care: "High-maintenance coat requiring several brushings per week, daily grooming during shedding season, and careful temperature management due to heat sensitivity. Requires early socialization and gentle, consistent training.",
+        idealHome: "Families wanting a gentle, affectionate giant breed. Best for cooler climates and homes with plenty of space and access to water.",
+        funFact: "Newfoundlands have webbed feet and incredible swimming ability; they are historically famous for saving lives at sea."
+    },
     {
         id: 'pembroke-welsh-corgi',
         name: 'Pembroke Welsh Corgi',
@@ -573,6 +586,82 @@ const breedsData = [
         idealHome: "Great for families who want a small but active dog and can manage barking and herding behaviors.",
         funFact: "According to Welsh legend, Corgis were the preferred mounts of fairy warriors."
     },
+    {
+        id: 'romanian-mioritic-shepherd',
+        name: 'Romanian Mioritic Shepherd',
+        image: 'images/breeds/romanian-mioritic-shepherd.jpg',
+        size: 'giant',
+        coat: 'long',
+        temperament: ['calm', 'courageous', 'protective', 'loyal'],
+        origin: 'romania',
+        weight: '90–130 lb (40–60 kg)',
+        lifespan: '12–14 years',
+        about: "A powerful livestock guardian with a calm, devoted, and protective nature. Known for deep loyalty to family and natural suspicion of strangers.",
+        care: "Long, thick coat requiring brushing 2–3 times per week (daily during shedding). Needs confident, patient training and early socialization. Sensitive to heat.",
+        idealHome: "Large rural properties or homes needing a guardian. Best for experienced owners who understand independent guardian breeds.",
+        funFact: "This breed’s thick, shaggy coat helps protect it from harsh mountain weather and predators."
+    },
+    {
+        id: 'russian-tsvetnaya-bolonka',
+        name: 'Russian Tsvetnaya Bolonka',
+        image: 'images/breeds/russian-tsvetnaya-bolonka.jpg',
+        size: 'small',
+        coat: 'long',
+        temperament: ['playful', 'affectionate', 'alert', 'intelligent'],
+        origin: 'russia',
+        weight: '4–11 lb (2–5 kg)',
+        lifespan: '12–16 years',
+        about: "A cheerful, loving toy breed with a soft, non-shedding coat. They are devoted companions, lively, and adaptable to apartment living.",
+        care: "High-maintenance coat needing daily brushing and professional grooming every 4–6 weeks. Sensitive and thrives on gentle training and regular socialization.",
+        idealHome: "Best for adults or families with older, gentle children. Perfect for apartments and owners wanting a small, affectionate companion.",
+        funFact: "The breed was developed during the Soviet era as a companion dog for families living in small urban apartments."
+    },
+    {
+        id: 'russian-toy',
+        name: 'Russian Toy',
+        image: 'images/breeds/russian-toy.jpg',
+        size: 'small',
+        coat: 'short',
+        temperament: ['active', 'playful', 'devoted', 'alert'],
+        origin: 'russia',
+        weight: 'up to 6.5 lb (3 kg)',
+        lifespan: '12–14 years',
+        about: "A tiny, lively, and affectionate toy breed with a big personality. Russian Toys are cheerful, sensitive, and extremely devoted to their owners.",
+        care: "Smooth coats need light brushing; long coats need 2–3 grooming sessions weekly. Very sensitive to cold and requires gentle handling and early socialization.",
+        idealHome: "Adults or families with older, careful children. Ideal for apartments and people wanting a tiny but energetic companion.",
+        funFact: "Though tiny, the Russian Toy originated from larger terrier lines and retains their bold, fearless attitude."
+    },
+    {
+        id: 'rottweiler',
+        name: 'Rottweiler',
+        image: 'images/breeds/rottweiler.jpg',
+        size: 'large',
+        coat: 'short',
+        temperament: ['loyal', 'confident', 'protective', 'courageous'],
+        origin: 'germany',
+        weight: '80–135 lb (36–61 kg)',
+        lifespan: '9–10 years',
+        about: "A powerful working breed known for loyalty, intelligence, and strong protective instincts. Calm, confident, and deeply devoted to family.",
+        care: "Short coat requiring weekly brushing. Needs early training, extensive socialization, and plenty of physical and mental exercise.",
+        idealHome: "Experienced owners who can provide structure, leadership, and daily activity. Great for people wanting a loyal guardian.",
+        funFact: "Originally used to drive cattle and guard money for Roman soldiers, earning the nickname 'butcher’s dog'."
+    },
+    {
+        id: 'shetland-sheepdog',
+        name: 'Shetland Sheepdog',
+        image: 'images/breeds/shetland-sheepdog.jpg',
+        size: 'medium',
+        coat: 'long',
+        temperament: ['intelligent', 'lively', 'gentle', 'loyal'],
+        origin: 'scotland',
+        weight: '15–25 lb (7–11 kg)',
+        lifespan: '12–14 years',
+        about: "A smart, gentle herding breed known for its affectionate nature, agility, and strong bond with family. Highly trainable and eager to please.",
+        care: "Long double coat requiring brushing 2–3 times a week, daily during shedding season. Needs mental stimulation, training, and regular exercise.",
+        idealHome: "Active families who want a loyal, intelligent companion. Great for kids, training, and dog sports.",
+        funFact: "Shelties are famous for excelling in obedience and agility competitions due to their sharp intelligence."
+    },
+
 
 
 ];
