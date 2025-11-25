@@ -1,5 +1,5 @@
 // -------------------------------
-// LOAD BREED FROM URL
+// BREED FROM URL
 // -------------------------------
 function getBreedIdFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -7,7 +7,7 @@ function getBreedIdFromURL() {
 }
 
 // -------------------------------
-// FIND BREED FROM breedsData
+// BREED FROM breedsData
 // -------------------------------
 function getBreedData(breedId) {
     if (!breedId) return null;
@@ -39,7 +39,7 @@ function populateBreedProfile(breed) {
     document.getElementById("ideal-home-text").textContent = breed.idealHome;
     document.getElementById("funfact-text").textContent = breed.funFact;
 
-    // OPTIONAL EXTENDED FIELDS (Option C)
+    // EXTENDED FIELDS 
     if (breed.health) {
         document.getElementById("health-section").style.display = "block";
         document.getElementById("health-text").textContent = breed.health;

@@ -18,7 +18,7 @@ body {
     padding: 0 20px;
 }
 
-/* Your Existing Header Styles */
+/* Header Styles */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,7 @@ body {
     align-items: start;
 }
 
-/* When sidebar is collapsed, switch to 1-column layout */
+/* 1-column layout */
 .breeds-container.sidebar-collapsed {
     grid-template-columns: 1fr !important;
 }
@@ -397,14 +397,14 @@ body {
     padding-left: 0 !important;
 }
 
-/* 2. Make breed cards appear 3 per row */
+/* 2.breed cards appear 3 per row */
 .breeds-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-/* --- Sidebar Toggle + 3-Column Grid Fixes --- */
+/* --- Sidebar Toggle + 3-Column Grid --- */
 
 /* Move sidebar more left */
 .filters-sidebar {
