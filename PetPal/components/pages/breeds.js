@@ -510,6 +510,183 @@ const breedsData = [
         idealHome: "Great for families who want a small but active dog and can manage barking and herding behaviors.",
         funFact: "According to Welsh legend, Corgis were the preferred mounts of fairy warriors."
     },
+    
+  {
+    id: 'newfoundland',
+    name: 'Newfoundland',
+    image: 'https://image.petmd.com/files/styles/863x625/public/2025-01/newfoundland.jpg',
+    size: 'large / giant',
+    coat: 'double (thick, water-resistant)',
+    temperament: ['gentle', 'patient', 'watchful', 'loyal'],
+    origin: 'Newfoundland, Canada',
+    weight: '100–150 lb (45–68 kg)',
+    lifespan: '9–10 years',
+    about: "Originally used by fishermen, the Newfoundland is a massive working dog — famous as a gentle giant that’s calm, protective, and especially great with children; historically regarded as a “nanny dog.”",
+    care: "Their heavy double coat needs regular brushing, and due to their size they need enough living space. Moderate daily exercise or swimming helps them stay healthy; avoid overfeeding to prevent excessive weight.",
+    idealHome: "Large house preferably with yard or access to water, for families wanting a protective, tolerant, and affectionate large-breed companion.",
+    funFact: "Newfoundlands have webbed paws and a water-resistant coat, making them excellent rescue swimmers — historically used in water rescues."
+  },
+
+  {
+    id: 'romanian-mioritic-shepherd',
+    name: 'Romanian Mioritic Shepherd Dog',
+    image: 'https://www.akc.org/wp-content/uploads/2018/07/Romanian-Mioritic-Shepherd-Dog-laying-outdoors.jpg',
+    size: 'large / giant',
+    coat: 'long, thick (suitable for mountain weather)',
+    temperament: ['calm', 'protective', 'well-mannered', 'devoted'],
+    origin: 'Romania',
+    weight: '≈ 88–110 lb (40–50 kg) (typical for large shepherd breed)',  // approximate
+    lifespan: '12–14 years',  // per breed standard reference :contentReference[oaicite:0]{index=0}
+    about: "A traditional flock-guardian breed from Romania — calm and reliable, historically used to protect sheep from predators, and strongly devoted to its family.",
+    care: "Their long thick coat requires regular grooming; they need daily exercise and space — preferably countryside or large yard — and socialization/training from a young age to harness protective instincts properly.",
+    idealHome: "Rural or suburban home with large outdoor space; good for owners who want a vigilant guardian and are comfortable managing a large, protective dog.",
+    funFact: "The breed’s name comes from the Romanian word “mioară” meaning young sheep — a nod to its history as a sheep-guardian."
+  },
+
+  {
+    id: 'russian-tsvetnaya-bolonka',
+    name: 'Russian Tsvetnaya Bolonka',
+    image: 'https://alaskadogworks.com/wp-content/uploads/2021/10/Russian-Tsvetnaya-Bolonka-head-portrait-outdoors.jpeg',
+    size: 'small / toy',
+    coat: 'dense, soft, curly or wavy (profuse coat)',
+    temperament: ['cheerful', 'friendly', 'even-tempered', 'alert'],
+    origin: 'Russia',
+    weight: '≈ 6–10 lb (2.7–4.5 kg)',  // typical toy-breed range
+    lifespan: '12–14 years',  // typical small-breed lifespan (exact varies)
+    about: "A small, sturdy toy breed developed in Russia — known for being lively, friendly, and well-suited as a companion dog. Originally considered a lapdog and noble gift dog.",
+    care: "Their thick curly/wavy coat needs regular brushing to avoid mats; as a small dog they require moderate exercise and plenty of social interaction; ideal for apartment or city living.",
+    idealHome: "Apartment or smaller home; families or individuals wanting a small, affectionate companion that adapts well to indoor living.",
+    funFact: "Also called the Russian Lapdog — a small toy breed developed from ancestors like Bichon Frise, Toy Poodle, and Shih Tzu, bred as companion dogs rather than working dogs." 
+  },
+
+  {
+    id: 'russian-toy',
+    name: 'Russian Toy',
+    image: 'https://www.akc.org/wp-content/uploads/2017/11/Russian-Toy.4.jpg',
+    size: 'toy / very small',
+    coat: 'short or long (depending on variety), fine and smooth or slightly wavy',
+    temperament: ['alert', 'intelligent', 'lively', 'affectionate'],
+    origin: 'Russia',
+    weight: '≈ 4–6 lb (1.5–3 kg)',  // typical toy-breed size
+    lifespan: '10–14 years',  // typical toy-breed range
+    about: "One of the smallest officially recognized dog breeds — the Russian Toy is energetic, alert, and affectionate, suited as a devoted companion dog.",
+    care: "Due to small size, they need only moderate exercise (short walks and indoor play), and minimal grooming depending on coat type; their delicate frame means careful handling; great for small homes/apartments.",
+    idealHome: "Individuals or families in apartments or small houses wanting a tiny, loving and loyal pet; best for owners comfortable with a small fragile dog.",
+    funFact: "The Russian Toy shares roots with the English Toy Terrier from which it descends; despite its tiny size, it remains alert and often makes a good watchdog because of its noisier barking."
+  },
+
+  {
+    id: 'rottweiler',
+    name: 'Rottweiler',
+    image: 'https://headsupfortails.com/cdn/shop/articles/Rottweiler_Dog_Breed_Guide-_Temperament_Appearance_Care_History.jpg?v=1758005579',
+    size: 'large',
+    coat: 'short, dense, medium-length (straight coat)',
+    temperament: ['confident', 'protective', 'calm', 'loyal'],
+    origin: 'Germany (historically southwestern Europe / Roman drover dogs to herders and guards)',
+    weight: '80–135 lb (36–61 kg) depending on sex and line',
+    lifespan: '8–10 years',  // many sources suggest about 9 years median life span :contentReference[oaicite:2]{index=2}
+    about: "Originally bred for droving cattle and later as guard and working dogs — Rottweilers are powerful, intelligent and protective. Loyal to family, they make excellent guard or working dogs when properly trained.",
+    care: "Short coat requires minimal grooming, but they need strong physical and mental exercise, socialization and training. Regular joint and health monitoring is important due to predispositions to joint and bone issues.",
+    idealHome: "Active owners or families with space (house and yard), who can commit to training and socializing; good for individuals/families wanting a protective, loyal companion or working dog.",
+    funFact: "Despite their tough appearance, many Rottweilers are calm and affectionate with family — a well-raised Rottie can be a devoted and gentle protector rather than a guard dog." 
+  },
+
+  {
+    id: 'shetland-sheepdog',
+    name: 'Shetland Sheepdog',
+    image: 'https://cdn.britannica.com/02/240502-050-154C4544/Shetland-Sheepdog-Sheltie.jpg',
+    size: 'small to medium',
+    coat: 'double (long straight outer coat + soft undercoat)',
+    temperament: ['intelligent', 'alert', 'energetic', 'loyal'],
+    origin: 'Shetland Islands, Scotland',
+    weight: '15–25 lb (7–11 kg)',
+    lifespan: '12–14 years',  // typical small/medium herding breed longevity
+    about: "Often called “mini-Collie” — the Sheltie is a small herding dog known for its agility and sharp intelligence. They are quick learners and often excel in obedience and agility tasks.",
+    care: "Their long double coat needs frequent brushing (especially during shedding seasons). They need daily exercise and mental stimulation to stay happy and avoid destructive behaviour.",
+    idealHome: "Active families or individuals who can provide daily walks/mental stimulation; good for homes that appreciate energetic, intelligent dogs and are willing to maintain regular grooming.",
+    funFact: "Despite small size, Shelties were bred to work in the harsh conditions of the Shetland Islands — they are hardy, agile and can handle tough weather while guarding sheep." 
+  },
+
+  {
+    id: 'french-bulldog',
+    name: 'French Bulldog',
+    image: 'https://www.akc.org/wp-content/uploads/2017/11/French-Bulldog-standing-outdoors.jpg',
+    size: 'small / compact',
+    coat: 'short, smooth, fine',
+    temperament: ['affectionate', 'playful', 'adaptable', 'friendly'],
+    origin: 'France (originally bred as companion dogs / small-size bulldog variants)',
+    weight: '16–28 lb (7–13 kg)',
+    lifespan: '10–12 years',  // typical for small/medium companion dogs
+    about: "A popular companion breed — the French Bulldog is affectionate, playful, and adapts well to apartment or city living. Their friendly and easy-going manner makes them excellent companions for many lifestyles.",
+    care: "Short coat needs minimal grooming, but care must be taken with breathing and overheating (due to brachycephalic skull). Moderate exercise is enough; they thrive with regular human companionship and moderate indoor activity.",
+    idealHome: "Apartment dwellers or families wanting a small, friendly, low-maintenance companion dog with affectionate temperament.",
+    funFact: "French Bulldogs were historically bred from miniature bulldogs and were especially popular among 19th-century lace-makers in England before becoming popular worldwide as companion dogs."
+  },
+
+  {
+    id: 'flat-coated-retriever',
+    name: 'Flat-Coated Retriever',
+    image: 'https://www.borrowmydoggy.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4ij0poqn%2Fproduction%2Fe0c40ee5a5d66b40699c8f95bedb1b1825046752-800x600.jpg&w=1080&q=80',
+    size: 'medium to large',
+    coat: 'medium-length, dense, water-resistant, slightly wavy or straight',
+    temperament: ['friendly', 'outgoing', 'energetic', 'intelligent'],
+    origin: 'United Kingdom',
+    weight: '60–70 lb (27–32 kg)',
+    lifespan: '10–12 years',  // typical for retrievers of this size
+    about: "Bred originally for retrieving game birds, Flat-Coated Retrievers are lively, friendly, and intelligent sporting dogs — they make excellent companions for active families and outdoors enthusiasts.",
+    care: "Coat requires regular brushing and occasional trimming to avoid mats; they need regular exercise, swimming or fetching, and mental stimulation to stay happy and well-behaved.",
+    idealHome: "Active families or individuals with space and time for exercise; ideal for homes that enjoy outdoor activities, hiking, swimming or long walks.",
+    funFact: "Flat-Coated Retrievers are sometimes called the “Peter Pan” of the retriever world — retaining a youthful, playful and joyful personality well into adulthood." 
+  },
+
+  {
+    id: 'cavalier-king-charles-spaniel',
+    name: 'Cavalier King Charles Spaniel',
+    image: 'https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel-standing-in-the-grass.jpg',
+    size: 'small',
+    coat: 'silky, medium-length',
+    temperament: ['gentle', 'affectionate', 'friendly', 'sociable'],
+    origin: 'United Kingdom',
+    weight: '10–18 lb (4.5–8 kg)',
+    lifespan: '9–12 years',  // many sources give 10–12 (some variation) :contentReference[oaicite:3]{index=3}
+    about: "A classic companion breed — Cavaliers are gentle, loving, and enjoy being close to their people. Adaptable and friendly, they often do well in families or apartments.",
+    care: "Their silky coat benefits from regular brushing; moderate daily walks or play suffice for exercise; as companion dogs they need plenty of social interaction and mental stimulation.",
+    idealHome: "Families, singles, or apartment dwellers looking for a friendly, sociable, and affectionate lap or companion dog.",
+    funFact: "The Cavalier’s ancestors were companion dogs of English nobility — the breed’s name reflects its aristocratic heritage." 
+  },
+
+  {
+    id: 'irish-red-and-white-setter',
+    name: 'Irish Red and White Setter',
+    image: 'https://www.ckc.ca/CanadianKennelClub/media/Breed-Images/Sporting%20Dogs/SetterIrishRedWhite-F.jpg',
+    size: 'medium to large',
+    coat: 'medium-length, silky, feathered (feathers on ears, legs, tail) with red and white patches',  // per breed description :contentReference[oaicite:4]{index=4}
+    temperament: ['friendly', 'energetic', 'affectionate', 'loyal'],
+    origin: 'Ireland',
+    weight: '50–70 lb (22.5–32 kg)',  // typical range :contentReference[oaicite:5]{index=5}
+    lifespan: '10–12 years',  // per breed info from multiple sources :contentReference[oaicite:6]{index=6}
+    about: "A classic gundog and sporting breed — the Irish Red and White Setter is active, friendly, and loyal; originally bred to hunt game birds but also a devoted family companion when properly exercised.",
+    care: "Feathered coat should be brushed regularly, especially after outdoor activities; due to high energy they need daily exercise (running, hiking, field work), and mental stimulation to avoid restlessness.",
+    idealHome: "Active families or individuals with space (large yard, suburban or rural home) who enjoy outdoor activities and can offer plenty of physical exercise and companionship.",
+    funFact: "Although similar to the Irish Setter, the Red and White Setter nearly went extinct in the late 19th century — dedicated breeders revived it in the 1920s, and it remains a rare but distinguished breed today."
+  },
+
+  {
+    id: 'working-kelpie',
+    name: 'Working Kelpie',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxoWd5uYdVmonG-kIPaWrhjyjaGCZw9NOPw&s',
+    size: 'medium',
+    coat: 'short to medium, dense, weather-resistant',
+    temperament: ['energetic', 'intelligent', 'active', 'loyal'],
+    origin: 'Australia',
+    weight: '30–45 lb (14–20 kg)',  // typical range for working lines
+    lifespan: '10–14 years',  // common for medium working dogs
+    about: "A highly energetic and intelligent herding breed — Working Kelpies excel in stock work and are known for their endurance, agility, and strong work drive. Great for active owners or farms.",
+    care: "Their coat is easy to maintain with occasional brushing; they need lots of physical exercise, mental stimulation, and space to run — not ideal for sedentary or small-space living.",
+    idealHome: "Rural or suburban homes, farms — owners who are active, enjoy dog sports or have livestock. Best for people who can commit to daily exercise and training.",
+    funFact: "Working Kelpies have been used for decades in Australia to herd sheep and cattle — they are often regarded as some of the most hardworking and resilient herding dogs." 
+  }
+
 
 
 ];
