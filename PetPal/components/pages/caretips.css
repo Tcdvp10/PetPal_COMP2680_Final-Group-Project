@@ -117,7 +117,7 @@ header {
 .care-main {
     max-width: 1200px;          /* big but still centered */
     margin: 0 auto;
-    padding: 2.5rem 2.5rem 4rem;
+    padding: 0 2.5rem 4rem;   
 }
 
 /* generic section blocks (Common Diseases, Vaccines, etc.) */
@@ -131,25 +131,42 @@ header {
 /* ===== HERO  ===== */
 
 .hero {
+    /* full-width breakout */
+    width: 100vw;
     position: relative;
-    margin: 0 0 3.5rem;           /* no negative margins */
-    padding: 5rem 1.5rem;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 0;
+    margin-bottom: 0;
 
-   background-image:
-    linear-gradient(rgba(44, 62, 80, 0.55), rgba(44, 62, 80, 0.55)),
-        url("https://plus.unsplash.com/premium_photo-1707410050248-a8a8c7e2fffd?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
-    background-size: cover;
-    background-position: center;
+    /* FILL THE SCREEN */
+    min-height: 100vh;              /* hero = whole screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;        /* centers content vertically */
+    align-items: center;
+
+    padding-top: 26rem;    /* small breathing room */
+    gap: 2.2rem;
+
+    color: #fff;
+    text-align: center;
+
+    background-image:
+      linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.18)),
+      url("https://plus.unsplash.com/premium_photo-1700403547202-86691e3c4d8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center top;
+    background-size: 120%;
     background-repeat: no-repeat;
 }
-
-/* makes inner hero content sit on top */
-.hero-banner,
+/* Move hero text lower */
+.hero-banner {
+    margin-top: 7rem;   /* adjust this number to move text lower */
+}
 .hero-actions {
-    position: relative;
+    margin-top: 8rem;   /* spacing between heading & buttons */
 }
 
 .hero-banner h1 {
@@ -165,6 +182,13 @@ header {
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-top: 1.5rem;
+}
+.hero-banner {
+    margin-top: 1.5rem;          /* pushes title a little lower */
+}
+
+.hero-actions {
+    margin-top: 1.8rem;          /* space between title and buttons */
 }
 
 /* buttons styled like screenshot */
@@ -206,10 +230,11 @@ header {
 /* ===== CATEGORY TABS – DAILY CARE ESSENTIALS STYLE ===== */
 
 .care-categories {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 1rem;
-    margin: 3rem 0 2.3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 4rem auto 2.5rem;   /* 4rem = move downward */
 }
 
 .category-card {
@@ -252,18 +277,41 @@ header {
 
 /* ===== COMMON DISEASES CARDS ===== */
 
-.disease-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap:1.5rem;
+.diseases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* bigger width */
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .disease-card {
-    background:#ffffff;
-    border-radius: 16px;
-    padding: 1.5rem 1.3rem;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.disease-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.disease-card img {
+  width: 100%;
+  height: 240px;   /* 🔥 increased from 150-180px to much bigger */
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 1rem;
+}
+
+.disease-card h3 {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #2c3e50;
 }
 
 .disease-card .disease-image {
@@ -931,4 +979,180 @@ header {
   padding: 10px 0;
   color: #777;
   font-size: 0.9rem;
+}
+
+/* Remove box background & shadow from the outer card */
+.flip-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 260px; /* keep your size */
+    perspective: 1000px;
+}
+
+/* Remove background & shadow from front/back faces */
+.flip-front,
+.flip-back {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Keep flip animation */
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+}
+
+/* Keep flip animation on hover */
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* Keep 3D faces */
+.flip-front,
+.flip-back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* front */
+.flip-front img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 0.5rem;
+}
+
+/* back */
+.flip-back {
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 1rem !important;
+}
+
+/* Disease title on front */
+.disease-name {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Layout grid stays the same */
+.disease-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+/* ==== FLAT LAYOUT: remove outer section boxes for health area ==== */
+
+/* Common Diseases outer wrapper – no big box */
+.section.diseases-section {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;          /* let the grid sit flat */
+    margin-bottom: 2.5rem;          /* keep spacing below */
+}
+
+/* Vaccination + When to call the Vet outer wrapper – no big box */
+.section.two-column {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;          /* remove “card” padding */
+    margin-bottom: 2.5rem;
+}
+
+/* === BONUS QUIZ – FLOATING DOGS BACKGROUND === */
+
+.section.quiz {
+    position: relative;
+    overflow: hidden;      /* hides dogs that float outside edges */
+}
+
+/* Left-side floating dog */
+.section.quiz::before {
+    content: "🐶";
+    position: absolute;
+    font-size: 3.5rem;
+    opacity: 0.22;
+    top: 4%;
+    left: 3%;
+    pointer-events: none;
+    animation: dogFloatLeft 14s ease-in-out infinite alternate;
+}
+
+/* Right-side floating dog */
+.section.quiz::after {
+    content: "🐶";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.22;
+    bottom: -5%;
+    right: 8%;
+    pointer-events: none;
+    animation: dogFloatRight 18s ease-in-out infinite alternate;
+}
+
+/* Keep the quiz card above the dogs */
+.quiz-card.quiz-card-animated {
+    position: relative;
+    z-index: 1;
+}
+
+/* floating animations */
+@keyframes dogFloatLeft {
+    0%   { transform: translate3d(0, 0, 0) rotate(-8deg); }
+    50%  { transform: translate3d(16px, -10px, 0) rotate(-2deg); }
+    100% { transform: translate3d(-8px, 8px, 0) rotate(-10deg); }
+}
+
+@keyframes dogFloatRight {
+    0%   { transform: translate3d(0, 0, 0) rotate(6deg); }
+    50%  { transform: translate3d(-12px, -14px, 0) rotate(0deg); }
+    100% { transform: translate3d(10px, 10px, 0) rotate(10deg); }
+}
+/* Grooming photo gallery */
+.grooming-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.groom-item {
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.3rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.groom-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.groom-item img {
+  width: 100%;
+  height: 220px;          /* 🔥 increased height */
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 1rem;
+}
+
+.groom-item p {
+  font-weight: 700;
+  color: #2c7a7b;
+  font-size: 1.1rem;
 }
