@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Afghan Hound - Dog Breed Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dogbreeds.css">
+</head>
+
+<body>
+
+    <!-- HEADER (same as your other pages) -->
+    <div class="box">
+        <header>
+            <nav class="nav">
+                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="nav-links">
+                    <a href="../breeds.html">Breeds</a>
+                    <a href="../caretips.html">Caretips & Training</a>
+                    <a href="../shop.html">Shop</a>
+                    <a href="../about.html">About</a>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                        <input id="breedSearch" type="text" placeholder="Search..." />
+                    </div>
+                    <i class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </i>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- ========= MAIN BREED PROFILE ========= -->
+        <main class="breed-main">
+
+            <!-- HERO: image + summary -->
+            <section class="breed-hero">
+                <div class="breed-hero-image">
+                    <span class="paw-stamp"></span>
+                    <img src="https://www.thesprucepets.com/thmb/AgD-vFGRxz1l8ijBn4z3IF3WQEo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-988045138-5be0740146e0fb0026ddae02.jpg"
+                        alt="Afghan Hound standing outdoors with long flowing coat">
+                </div>
+
+                <div class="breed-hero-info">
+                    <h1 class="breed-name">Afghan Hound</h1>
+                    <p class="breed-tagline">
+                        Elegant, independent, and athletic. Afghan Hounds are ancient sighthounds known for their
+                        dramatic silky coat, speed, and cat-like personality—affectionate with their people but often
+                        reserved and aloof with strangers.
+                    </p>
+
+                    <dl class="breed-stats">
+                        <div class="breed-stat">
+                            <dt>Group</dt>
+                            <dd>Hound</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Lifespan</dt>
+                            <dd>12–15 years</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Origin</dt>
+                            <dd>Afghanistan</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Coat</dt>
+                            <dd>Long, fine, silky coat</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- TABS -->
+            <section class="breed-tabs">
+                <button class="breed-tab active" data-breed-tab="overview">Breed Overview</button>
+                <button class="breed-tab" data-breed-tab="caretips">Care</button>
+                <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+                <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+                <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+            </section>
+
+            <!-- PANELS -->
+            <section class="breed-panels">
+
+                <!-- OVERVIEW -->
+                <article class="breed-panel" data-breed-panel="overview">
+                    <h2 class="section-title section-title--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M64 176C80.6 176 94.2 188.6 95.8 204.7L96.1 211.3C97.8 227.4 111.4 240 128 240L307.1 240L448 300.4L448 544C448 561.7 433.7 576 416 576L384 576C366.3 576 352 561.7 352 544L352 412.7C328 425 300.8 432 272 432C243.2 432 216 425 192 412.7L192 544C192 561.7 177.7 576 160 576L128 576C110.3 576 96 561.7 96 544L96 298.4C58.7 285.2 32 249.8 32 208C32 190.3 46.3 176 64 176zM387.8 32C395.5 32 402.7 35.6 407.4 41.8L424 64L476.1 64C488.8 64 501 69.1 510 78.1L528 96L584 96C597.3 96 608 106.7 608 120L608 144C608 188.2 572.2 224 528 224L464 224L457 252L332.3 198.6L363.9 51.4C366.3 40.1 376.2 32 387.8 32zM480 108C469 108 460 117 460 128C460 139 469 148 480 148C491 148 500 139 500 128C500 117 491 108 480 108z" />
+                        </svg>
+                        Breed Overview
+                    </h2>
+
+                    <div class="overview-layout">
+
+                        <!-- LEFT: QUICK FACTS -->
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Quick Facts</h3>
+                            <dl class="overview-facts">
+                                <div class="fact-row">
+                                    <dt>Group</dt>
+                                    <dd>Hound</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Height</dt>
+                                    <dd>25 to 27 inches (males); slightly smaller (females)</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Weight</dt>
+                                    <dd>50 to 60 pounds</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat</dt>
+                                    <dd>Long, thick, silky coat with shorter hair on the face and back</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat Colour</dt>
+                                    <dd>Many colours: cream, fawn, gold, red, black, blue, brindle, and combinations</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Temperament</dt>
+                                    <dd>Independent, sensitive, dignified, sometimes aloof</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Hypoallergenic</dt>
+                                    <dd>No</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Origin</dt>
+                                    <dd>Afghanistan (ancient sighthound)</dd>
+                                </div>
+                            </dl>
+                        </section>
+
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Characteristics</h3>
+
+                            <table class="char-table">
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark</td>
+                                    <td><span class="char-chip char-low">Low</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Amount of Shedding</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                            </table>
+                        </section>
+
+
+                    </div>
+                    <figure class="overview-photo">
+                        <img src="https://www.thesprucepets.com/thmb/JNKINqujWzqicIh9alXC6o6lgbc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/afghan-hound-dog-breed-4178150-6306826dce854857b00378b30f9f12c7.jpg"
+                            alt="Afghan Hound standing in a field with long coat flowing">
+                        <figcaption>Credit: The Spruce Pets</figcaption>
+                    </figure>
+
+                </article>
+
+                <!-- CARE -->
+                <article class="breed-panel" data-breed-panel="caretips" hidden>
+                    <h2 class="section-title section-title--left">Care</h2>
+
+                    <p class="care-intro">
+                        Afghan Hounds are glamorous athletes. Their coat needs serious grooming, and their sighthound
+                        body needs regular exercise and safe space to run. With the right routine, they’re calm,
+                        graceful companions at home.
+                    </p>
+
+                    <div class="care-grid">
+
+                        <div class="care-card">
+                            <div class="care-icon">🧼</div>
+                            <h3>General Care (All Life Stages)</h3>
+                            <ul>
+                                <li><strong>Feeding:</strong> High-quality diet appropriate for active, medium-to-large
+                                    dogs. Keep them lean to protect joints.</li>
+                                <li><strong>Grooming:</strong> Long coat needs thorough brushing several times a week
+                                    (often daily) plus regular baths to avoid tangles and mats.</li>
+                                <li><strong>Ears &amp; feet:</strong> Check and clean ears regularly; keep hair between
+                                    toes tidy to prevent slipping and matting.</li>
+                                <li><strong>Environment:</strong> Secure fencing is essential—sighthounds may chase
+                                    anything that moves.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐶</div>
+                            <h3>Puppy Care</h3>
+                            <ul>
+                                <li><strong>Growth:</strong> Use a balanced large- or medium-breed puppy food; avoid
+                                    overfeeding to protect growing joints.</li>
+                                <li><strong>Grooming training:</strong> Teach them early to accept baths, blow-drying,
+                                    and brushing sessions calmly.</li>
+                                <li><strong>Socialisation:</strong> Expose them positively to different people, places,
+                                    and surfaces to prevent shyness.</li>
+                                <li><strong>Exercise:</strong> Short, gentle play sessions rather than long runs while
+                                    bones are developing.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐕‍🦺</div>
+                            <h3>Adult Care</h3>
+                            <ul>
+                                <li><strong>Exercise:</strong> Daily walks plus chances to run in a safely fenced area
+                                    help them stay fit and content.</li>
+                                <li><strong>Coat care:</strong> A regular grooming schedule (home care + professional
+                                    if needed) keeps the coat healthy.</li>
+                                <li><strong>Mind:</strong> They enjoy free running, scent trails, and sighthound sports
+                                    like lure coursing.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🧓</div>
+                            <h3>Senior Care</h3>
+                            <ul>
+                                <li><strong>Movement:</strong> Lower-impact exercise (shorter walks, gentle play) helps
+                                    manage arthritis and stiffness.</li>
+                                <li><strong>Comfort:</strong> Provide soft bedding and draft-free resting spots for
+                                    their bony frame.</li>
+                                <li><strong>Monitoring:</strong> Watch for changes in weight, coat quality, or stamina
+                                    and discuss with your vet.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">☀️</div>
+                            <h3>Seasonal Tips</h3>
+                            <ul>
+                                <li><strong>Hot weather:</strong> Exercise in cooler parts of the day and provide shade
+                                    and water; their coat can trap heat.</li>
+                                <li><strong>Cold weather:</strong> The long coat provides some insulation, but slim
+                                    dogs may still appreciate a coat in very cold climates.</li>
+                                <li><strong>Rain &amp; mud:</strong> Long hair can drag dirt—rinse and dry thoroughly to
+                                    prevent skin issues and tangles.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">❤️</div>
+                            <h3>Common Health Issues</h3>
+                            <ul>
+                                <li><strong>Hip dysplasia:</strong> Can cause pain and lameness; maintain a healthy
+                                    weight and appropriate exercise.</li>
+                                <li><strong>Bloat (GDV):</strong> Deep-chested dogs are at risk; learn the signs and
+                                    discuss prevention with your vet.</li>
+                                <li><strong>Eye conditions:</strong> Cataracts and other eye issues can occur—regular
+                                    eye checks are helpful.</li>
+                                <li><strong>Allergies &amp; skin issues:</strong> Their skin and coat can be sensitive
+                                    to diet or environment.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- TRAINING -->
+                <article class="breed-panel" data-breed-panel="training" hidden>
+                    <h2 class="section-title section-title--left">Training Tips</h2>
+
+                    <p class="training-intro">
+                        Afghan Hounds are intelligent but very independent. Think “polite partnership” rather than
+                        “obedient robot.” Gentle, patient, and consistent training works best—never harsh methods.
+                    </p>
+
+                    <div class="two-column training-grid">
+
+                        <div class="training-card">
+                            <div class="training-icon">🎓</div>
+                            <h3>Puppy &amp; Basic Manners</h3>
+                            <ul>
+                                <li>Start early with sit, down, stay, recall, and loose-leash walking using positive
+                                    reinforcement.</li>
+                                <li>Keep training sessions short and fun; they can get bored with too much repetition.</li>
+                                <li>Practise calm handling (ears, feet, brushing) so grooming is easier later.</li>
+                                <li>Work on a strong recall, but always remember their natural instinct to chase.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🌿</div>
+                            <h3>Exercise &amp; Enrichment</h3>
+                            <ul>
+                                <li>Daily walks plus opportunities to sprint in a safely fenced area help burn energy.</li>
+                                <li>Sighthound sports like lure coursing, or chasing toys, tap into their natural drive.</li>
+                                <li>Use puzzle toys and scent games, but expect them to prefer running and exploring
+                                    over intense obedience drills.</li>
+                                <li>Provide safe vantage points—many Afghans enjoy quietly watching the world.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">⚠️</div>
+                            <h3>Common Training Challenges</h3>
+                            <ul>
+                                <li><strong>Recall:</strong> Once chasing, they may ignore cues—so practise in fenced
+                                    areas and use long lines in open spaces.</li>
+                                <li><strong>Sensitivity:</strong> They can shut down with harsh corrections; use gentle
+                                    guidance and high-value rewards instead.</li>
+                                <li><strong>Household rules:</strong> Be consistent about furniture, jumping up, and
+                                    door manners to avoid bad habits.</li>
+                                <li><strong>Prey drive:</strong> Be cautious around small animals—Afghans were bred to
+                                    hunt.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🩺</div>
+                            <h3>Health &amp; Safety Notes</h3>
+                            <ul>
+                                <li>Warm up and cool down properly around intense running to protect muscles and
+                                    joints.</li>
+                                <li>Use a secure harness or well-fitting collar; never let them off-leash near roads or
+                                    wildlife.</li>
+                                <li>Because they’re slim and athletic, protect them from high-impact collisions and
+                                    slippery surfaces.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- FUN FACTS -->
+                <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                    <h2 class="section-title section-title--left">Fun Facts</h2>
+
+                    <ul class="funfacts-list mini-facts icon-facts">
+                        <li data-icon="mountain">Afghan Hounds were originally bred to hunt in the mountains and deserts
+                            of Afghanistan.</li>
+                        <li data-icon="speed">They’re powerful sighthounds, built for speed and agility over rough
+                            terrain.</li>
+                        <li data-icon="coat">Their long coat once helped protect them from harsh weather and rough
+                            landscapes.</li>
+                        <li data-icon="ancient">Afghan Hounds are considered one of the oldest dog breeds, with a long
+                            history in art and legend.</li>
+                        <li data-icon="star">Their dramatic looks have made them popular in fashion photography and
+                            advertising.</li>
+                    </ul>
+                </article>
+
+                <!-- PHOTO GALLERY -->
+                <article class="breed-panel" data-breed-panel="gallery" hidden>
+                    <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                    <div class="photo-grid">
+                        <img src="https://www.thesprucepets.com/thmb/JNGKL1nzLHyB__PPicwayn9XX70=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/Afghanhoundpuppy-GettyImages-486482127-3aa9d21816eb416f91199eaa9d92382e.jpg"
+                            alt="Afghan Hound lying down with long coat spread out">
+                        <img src="https://images.unsplash.com/photo-1509981540399-03322d638f79?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Afghan Hound running in a field">
+                        <img src="https://images.unsplash.com/photo-1568033951564-914f351989a0?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Afghan Hound looking at the camera">
+                        <img src="https://images.unsplash.com/photo-1601758174609-3a789c37dfa8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Afghan Hound standing in green field">
+                        <img src="https://images.unsplash.com/photo-1483434748604-140edba26886?q=80&w=1626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Afghan Hound in profile with long coat blowing in the wind">
+                        <img src="https://images.unsplash.com/photo-1649263395648-0ac58cfa8d75?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Afghan Hound sitting on grass">
+                    </div>
+                </article>
+            </section>
+
+
+            <!-- SIMILAR BREEDS -->
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+                <div class="similar-grid">
+
+                    <!-- CARD 1: Saluki -->
+                    <a href="saluki.html" class="similar-card">
+                        <img src="https://www.thesprucepets.com/thmb/svqWduYJAOShMI6vU5iqDku7kCI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1273562658-78041f1f54494eb692b01e8c6ad2c187.jpg"
+                            alt="Saluki standing in a field">
+                        <h3>Saluki</h3>
+                        <p>Another ancient sighthound with a graceful, feathered coat and independent temperament.</p>
+                    </a>
+
+                    <!-- CARD 2: Borzoi -->
+                    <a href="borzoi.html" class="similar-card">
+                        <img src="https://www.thesprucepets.com/thmb/jAaJlf13EFPVtENj6WrGq9v-kPk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-462377425-ce5e266ef4654a4886379326ac9841f4.jpg"
+                            alt="Borzoi standing outdoors">
+                        <h3>Borzoi</h3>
+                        <p>Elegant Russian sighthound with a long, wavy coat and calm, dignified personality.</p>
+                    </a>
+
+                    <!-- CARD 3: Greyhound -->
+                    <a href="greyhound.html" class="similar-card">
+                        <img src="https://www.thesprucepets.com/thmb/E_g9bHXZSFANwKGfeLowAnzP3es=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/spruce-pets-greyhound-508691e4528a403da1e4fa5908064265.jpg"
+                            alt="Greyhound standing outdoors">
+                        <h3>Greyhound</h3>
+                        <p>Famous racing sighthound—sleek, fast, and surprisingly gentle and quiet at home.</p>
+                    </a>
+
+                </div>
+            </section>
+
+
+        </main>
+
+        <!--footer-->
+        <footer class="site-footer">
+            <div class="footer-inner">
+
+                <!-- Column 1: Tagline -->
+                <div class="footer-col footer-intro">
+                    <h3>Find your pet pal <span class="paw">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                            </svg>
+                        </span></h3>
+                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                    <p>Save favourites and share them with friends and family.</p>
+                    <p>Start your adoption journey with PetPal today.</p>
+                </div>
+
+                <!-- Column 2: Information & Resources -->
+                <div class="footer-col">
+                    <h4>Information &amp; Resources</h4>
+                    <ul>
+                        <li><a href="#">Adoption FAQ</a></li>
+                        <li><a href="#">Preparing for Your New Pet</a></li>
+                        <li><a href="#">Care &amp; Training Guides</a></li>
+                        <li><a href="#">Health &amp; Nutrition Tips</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Events &amp; Meetups</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                        <li><a href="#">Shelter Partners</a></li>
+                        <li><a href="#">Newsletter Sign-up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Logo / Contact -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">PetPal</div>
+                    <p class="footer-address">
+                        123 PetPal Lane<br>
+                        Kamloops, BC<br>
+                        Canada
+                    </p>
+
+                    <p class="footer-contact">
+                        <strong>Contact us</strong><br>
+                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+    </div>
+
+    <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+    <script>
+        // Tabs
+        const breedTabs = document.querySelectorAll('[data-breed-tab]');
+        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+
+        breedTabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.breedTab;
+
+                breedTabs.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                breedPanels.forEach(panel => {
+                    panel.hidden = panel.dataset.breedPanel !== target;
+                });
+            });
+        });
+
+        // Cart button -> checkout
+        const cartButton = document.getElementById('cart-button');
+        if (cartButton) {
+            cartButton.addEventListener('click', () => {
+                window.location.href = '../checkout.html';
+            });
+        }
+
+        // Simple breed search: go back to breeds page with ?q=
+        const breedSearchForm = document.getElementById('breed-search-form');
+        if (breedSearchForm) {
+            breedSearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const term = breedSearchForm.q.value.trim();
+                if (!term) return;
+                window.location.href = 'breeds.html?q=' + encodeURIComponent(term);
+            });
+        }
+    </script>
+</body>
+
+</html>
