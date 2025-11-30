@@ -271,7 +271,7 @@ const breedsData = [
         care: "They have a short to medium double coat that needs weekly brushing and more during shedding season. They need 1–2 hours of daily vigorous exercise and mental tasks like herding games, obedience, or agility.",
         idealHome: "Ideal for active homes that can provide lots of exercise, training, and a job to do.",
         funFact: "Appenzellers were traditionally used for herding cattle and pulling carts in the Swiss Alps.",
-        profileLink: 'dog breeds/AppensellerSennenhund.html'
+        profileLink: 'dog breeds/AppenzellerSennenhund.html'
     },
 
     {
