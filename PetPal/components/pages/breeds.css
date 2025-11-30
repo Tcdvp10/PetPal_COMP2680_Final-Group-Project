@@ -441,6 +441,17 @@ body {
     gap: 1.5rem;
 }
 
+/* Make all cards equal height and align "View Profile" button */
+.breed-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.breed-card .view-profile-btn {
+    margin-top: auto;
+}
+
 /* Mobile behavior */
 @media (max-width: 900px) {
     .filter-toggle-btn {
