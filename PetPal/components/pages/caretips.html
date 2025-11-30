@@ -610,7 +610,7 @@
                 const breed = input.value.trim();
                 if (!breed) return;
 
-                // Example alternative: 'breeds.html#' + slug;
+               
                 const url = 'breeds.html?breed=' + encodeURIComponent(breed);
                 window.location.href = url;
             });
@@ -621,7 +621,7 @@
         diseaseFlipCards.forEach(card => {
             card.addEventListener('click', () => {
 
-                // optionally close others first:
+               
                 diseaseFlipCards.forEach(c => {
                     if (c !== card) c.classList.remove('flipped');
                 });

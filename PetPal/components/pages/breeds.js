@@ -705,7 +705,7 @@ const breedsData = [
         care: "High-maintenance coat requiring several brushings per week, daily grooming during shedding season, and careful temperature management due to heat sensitivity. Requires early socialization and gentle, consistent training.",
         idealHome: "Families wanting a gentle, affectionate giant breed. Best for cooler climates and homes with plenty of space and access to water.",
         funFact: "Newfoundlands have webbed feet and incredible swimming ability; they are historically famous for saving lives at sea.",
-        profileLink: 'dog breeds/NewFoundLand.html'
+        profileLink: 'dog breeds/Newfoundland.html'
     },
     {
         id: 'pembroke-welsh-corgi',
