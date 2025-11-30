@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Boerboel - Dog Breed Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dogbreeds.css">
+</head>
+
+<body>
+
+    <!-- HEADER (same as your other pages) -->
+    <div class="box">
+        <header>
+            <nav class="nav">
+                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="nav-links">
+                    <a href="../breeds.html">Breeds</a>
+                    <a href="../caretips.html">Caretips & Training</a>
+                    <a href="../shop.html">Shop</a>
+                    <a href="../about.html">About</a>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                        <input id="breedSearch" type="text" placeholder="Search..." />
+                    </div>
+                    <i class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ========= MAIN BREED PROFILE ========= -->
+        <main class="breed-main">
+
+            <!-- HERO: image + summary -->
+            <section class="breed-hero">
+                <div class="breed-hero-image">
+                    <span class="paw-stamp"></span>
+                    <!-- use your own image file here -->
+                    <img src="https://www.dogster.com/wp-content/uploads/2024/02/Boerboel-dog-with-collar-standing-on-grass_AleksaMayer_Shutterstock.jpg"
+                        alt="Boerboel standing outdoors, large muscular fawn dog with black mask">
+                </div>
+
+                <div class="breed-hero-info">
+                    <h1 class="breed-name">Boerboel</h1>
+                    <p class="breed-tagline">
+                        A powerful, confident guardian from South Africa, the Boerboel is a steady, devoted family dog
+                        bred to protect home and farm. Calm and watchful with their people yet imposing to strangers,
+                        they thrive with experienced owners who can give them structure, training, and plenty of time
+                        with the family they love.
+                    </p>
+
+                    <dl class="breed-stats">
+                        <div class="breed-stat">
+                            <dt>Group</dt>
+                            <dd>Working / Mastiff-type</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Lifespan</dt>
+                            <dd>9–11 years</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Origin</dt>
+                            <dd>South Africa</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Coat</dt>
+                            <dd>Short, smooth, dense coat</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- TABS -->
+            <section class="breed-tabs">
+                <button class="breed-tab active" data-breed-tab="overview">Breed Overview</button>
+                <button class="breed-tab" data-breed-tab="caretips">Care</button>
+                <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+                <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+                <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+            </section>
+
+            <!-- PANELS -->
+            <section class="breed-panels">
+
+                <!-- OVERVIEW -->
+                <article class="breed-panel" data-breed-panel="overview">
+                    <h2 class="section-title section-title--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M64 176C80.6 176 94.2 188.6 95.8 204.7L96.1 211.3C97.8 227.4 111.4 240 128 240L307.1 240L448 300.4L448 544C448 561.7 433.7 576 416 576L384 576C366.3 576 352 561.7 352 544L352 412.7C328 425 300.8 432 272 432C243.2 432 216 425 192 412.7L192 544C192 561.7 177.7 576 160 576L128 576C110.3 576 96 561.7 96 544L96 298.4C58.7 285.2 32 249.8 32 208C32 190.3 46.3 176 64 176zM387.8 32C395.5 32 402.7 35.6 407.4 41.8L424 64L476.1 64C488.8 64 501 69.1 510 78.1L528 96L584 96C597.3 96 608 106.7 608 120L608 144C608 188.2 572.2 224 528 224L464 224L457 252L332.3 198.6L363.9 51.4C366.3 40.1 376.2 32 387.8 32zM480 108C469 108 460 117 460 128C460 139 469 148 480 148C491 148 500 139 500 128C500 117 491 108 480 108z" />
+                        </svg>
+                        Breed Overview
+                    </h2>
+
+                    <div class="overview-layout">
+
+                        <!-- LEFT: QUICK FACTS -->
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Quick Facts</h3>
+                            <dl class="overview-facts">
+                                <div class="fact-row">
+                                    <dt>Group</dt>
+                                    <dd>Working / Mastiff-type</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Height</dt>
+                                    <dd>22 to 27 inches</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Weight</dt>
+                                    <dd>110 to 200 pounds</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat</dt>
+                                    <dd>Short, smooth, dense coat</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat Colour</dt>
+                                    <dd>Shades of fawn, red, brown, or brindle; often with a black mask and some white
+                                        markings</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Temperament</dt>
+                                    <dd>Confident, protective, calm, devoted</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Hypoallergenic</dt>
+                                    <dd>No; moderate shedding</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Origin</dt>
+                                    <dd>South Africa</dd>
+                                </div>
+                            </dl>
+                        </section>
+
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Characteristics</h3>
+
+                            <table class="char-table">
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-medium">Medium–High (with supervision)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-medium">Medium–High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark</td>
+                                    <td><span class="char-chip char-medium">Medium (watchful)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Amount of Shedding</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                            </table>
+                        </section>
+
+                    </div>
+
+                    <figure class="overview-photo">
+                        <!-- use your own image file here -->
+                        <img src="../images/Boerboel.png"
+                            alt="Boerboel standing in profile showing large muscular build">
+                        <figcaption>Credit: Add your Boerboel photo credit here</figcaption>
+                    </figure>
+
+                </article>
+
+                <!--CARE-->
+                <article class="breed-panel" data-breed-panel="caretips" hidden>
+                    <h2 class="section-title section-title--left">Care</h2>
+
+                    <p class="care-intro">
+                        Boerboels are large, powerful guardians with big hearts and strong bodies. They are low
+                        maintenance in grooming but high maintenance in training, management, and space. Consistent
+                        routines, thoughtful socialisation, and responsible ownership are essential.
+                    </p>
+
+                    <div class="care-grid">
+
+                        <div class="care-card">
+                            <div class="care-icon">🧼</div>
+                            <h3>General Care (All Life Stages)</h3>
+                            <ul>
+                                <li><strong>Feeding:</strong> High-quality large-breed formula to support joints and
+                                    steady growth. Measure meals to prevent obesity, which can stress their joints.</li>
+                                <li><strong>Grooming:</strong> Short coat is easy-care—weekly brushing, nail trims, ear
+                                    checks, and regular baths as needed keep them clean and healthy.</li>
+                                <li><strong>Training &amp; socialisation:</strong> This is not a beginner breed. They
+                                    need confident, fair leadership, early socialisation, and clear rules from day one.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐶</div>
+                            <h3>Puppy Care</h3>
+                            <ul>
+                                <li><strong>Growth:</strong> Boerboel puppies grow rapidly. Use a large-breed puppy
+                                    food, avoid overfeeding, and keep jumps and stairs limited to protect developing
+                                    joints.</li>
+                                <li><strong>Activity:</strong> Several short, gentle play sessions on non-slippery
+                                    surfaces are better than long, hard exercise.</li>
+                                <li><strong>Handling:</strong> Get them used to being handled all over—ears, paws,
+                                    mouth, tail—so vet visits and grooming are stress-free later.</li>
+                                <li><strong>Learning:</strong> Start name recognition, recall, and basic manners early
+                                    with calm, positive reinforcement.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐕‍🦺</div>
+                            <h3>Adult Care</h3>
+                            <ul>
+                                <li><strong>Exercise:</strong> Daily brisk walks plus secure off-leash time or
+                                    structured
+                                    activities (obedience, tracking, nose work) help meet their physical and mental
+                                    needs.</li>
+                                <li><strong>Coat care:</strong> Brush weekly to remove loose hair and check skin for
+                                    irritation, lumps, or parasites.</li>
+                                <li><strong>Mind:</strong> Boerboels like having a “job.” Training sessions, scent
+                                    games, and problem-solving toys keep them engaged.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🧓</div>
+                            <h3>Senior Care</h3>
+                            <ul>
+                                <li><strong>Movement:</strong> Shorter, more frequent walks on soft surfaces; adjust
+                                    activity based on joint comfort and stamina.</li>
+                                <li><strong>Comfort:</strong> Provide thick, supportive beds and keep them at a healthy
+                                    weight to reduce pressure on hips and elbows.</li>
+                                <li><strong>Diet:</strong> Senior-appropriate diets and joint supplements may be
+                                    recommended by your vet.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">☀️</div>
+                            <h3>Seasonal Tips</h3>
+                            <ul>
+                                <li><strong>Hot weather:</strong> Large, dark-coated dogs can overheat quickly. Walk in
+                                    the cool parts of the day and always offer shade and water.</li>
+                                <li><strong>Cold weather:</strong> Their short coat offers some protection, but extreme
+                                    cold can still be uncomfortable—limit time outside if they’re shivering.</li>
+                                <li><strong>Rain &amp; mud:</strong> Towel them dry after wet walks and clean muddy
+                                    paws to protect floors and skin.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">❤️</div>
+                            <h3>Common Health Issues</h3>
+                            <ul>
+                                <li><strong>Hip &amp; elbow dysplasia:</strong> Maintain a lean weight, avoid over-
+                                    exercise in puppies, and consider joint screening for breeding dogs.</li>
+                                <li><strong>Bloat (GDV):</strong> Like many large deep-chested breeds, they may be at
+                                    risk—ask your vet about preventative steps and watch for signs of distress.</li>
+                                <li><strong>Heart &amp; eyelid issues:</strong> Regular vet exams and screening help
+                                    catch conditions early.</li>
+                                <li><strong>Skin &amp; allergy problems:</strong> Some Boerboels may have sensitive
+                                    skin; work with your vet if you notice itching or recurrent infections.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- TRAINING -->
+                <article class="breed-panel" data-breed-panel="training" hidden>
+                    <h2 class="section-title section-title--left">Training Tips</h2>
+
+                    <p class="training-intro">
+                        Boerboels are intelligent, confident, and naturally protective. They learn quickly but need
+                        experienced, consistent guidance. Early socialisation, clear boundaries, and positive
+                        reinforcement are key to raising a stable adult.
+                    </p>
+
+                    <div class="two-column training-grid">
+
+                        <div class="training-card">
+                            <div class="training-icon">🎓</div>
+                            <h3>Puppy &amp; Basic Manners</h3>
+                            <ul>
+                                <li>Start puppy classes early to build good habits and safe, positive exposure to other
+                                    dogs and people.</li>
+                                <li>Teach sit, down, stay, and recall using food rewards, toys, and calm praise.</li>
+                                <li>Practise polite greetings—no jumping or mouthing—and reinforce calm behaviour in the
+                                    home.</li>
+                                <li>Decide household rules (couch, door manners, etc.) early and enforce them
+                                    consistently.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🌿</div>
+                            <h3>Exercise &amp; Enrichment</h3>
+                            <ul>
+                                <li>Daily walks, structured play, and training games help burn energy and strengthen
+                                    your bond.</li>
+                                <li>Use scent games, puzzle feeders, and basic tracking or nose-work games to give
+                                    their brain a workout.</li>
+                                <li>A secure, fenced yard is ideal for off-leash play, but they should never roam
+                                    unsupervised.</li>
+                                <li>Rotate toys and make training a part of everyday routines.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">⚠️</div>
+                            <h3>Common Training Challenges</h3>
+                            <ul>
+                                <li><strong>Over-protectiveness:</strong> Poorly socialised Boerboels can become too
+                                    suspicious. Pair early socialisation with calm, confident leadership.</li>
+                                <li><strong>Strength &amp; pulling:</strong> Teach loose-leash walking from puppyhood
+                                    before they reach full size.</li>
+                                <li><strong>Stubbornness:</strong> Keep sessions short, interesting, and fair—avoid
+                                    harsh corrections that can damage trust.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🩺</div>
+                            <h3>Health &amp; Safety Notes</h3>
+                            <ul>
+                                <li>Supervise interactions with children—teach kids to be respectful and gentle with
+                                    such a large dog.</li>
+                                <li>Because of their size and strength, secure fencing and reliable recall are safety
+                                    essentials.</li>
+                                <li>Schedule regular vet visits, joint checks, and dental care as part of their routine.
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- FUN FACTS -->
+                <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                    <h2 class="section-title section-title--left">Fun Facts</h2>
+
+                    <ul class="funfacts-list mini-facts icon-facts">
+                        <li data-icon="cart">The Boerboel was developed on South African farms to guard homesteads,
+                            livestock, and families from predators and intruders.</li>
+                        <li data-icon="mountain">The name “Boerboel” comes from Afrikaans: “Boer” meaning farmer and
+                            “boel” loosely meaning big dog or mastiff.</li>
+                        <li data-icon="heart">Despite their imposing size, well-bred Boerboels are deeply devoted to
+                            their families and often form strong bonds with children.</li>
+                        <li data-icon="snow">They are known for their confident, steady temperament—calm at home, but
+                            ready to act if they sense a threat.</li>
+                        <li data-icon="bond">Modern Boerboels can excel in obedience, protection sports, and therapy
+                            work when carefully trained and socialised.</li>
+                    </ul>
+
+                </article>
+
+                <!-- PHOTO GALLERY -->
+                <article class="breed-panel" data-breed-panel="gallery" hidden>
+                    <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                    <div class="photo-grid">
+                        <!-- replace these with your own photos if you like -->
+                        <img src="https://www.thesprucepets.com/thmb/2nR_zE4QAElIPib6ZsFbCanJicI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/Boerboelcloseup-d17ade79565949dbad91a80cb98073ab.jpg"
+                            alt="Boerboel standing alert in a field">
+                        <img src="https://www.madpaws.com.au/wp-content/uploads/2021/05/Mastiff-from-SA.jpg"
+                            alt="Boerboel lying on grass looking at camera">
+                        <img src="https://www.thesprucepets.com/thmb/oWMEOGSxrwAyWw4SXDV5qZj8Ky0=/3429x0/filters:no_upscale():strip_icc()/PortraitofBoerboel-d6619884efbe4e1e93ad034c1c7f76f6.jpg"
+                            alt="Boerboel puppy lying on the grass">
+                        <img src="https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=720,height=405,fit=cover/animal/breed/dog/adult/67066d7e35b5f574289497.jpg"
+                            alt="Boerboel sitting outside with tongue out">
+                        <img src="https://jordandogtraining.com.au/wp-content/uploads/2025/06/Boerbull.webp"
+                            alt="Boerboel standing ">
+                        <img src="https://www.shutterstock.com/image-photo/handler-shows-dog-breed-boerboel-600nw-2464388591.jpg"
+                            alt="Boerboel relaxing with owner">
+                    </div>
+                </article>
+            </section>
+
+            <!-- SIMILAR BREEDS -->
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+                <div class="similar-grid">
+                    <!-- CARD 1: Anatolian Shepherd Dog -->
+                    <a href="AnatolianShepherdDog.html" class="similar-card">
+                        <img src="https://consumer-cms.petfinder.com/sites/default/files/images/content/Anatolian%20Shepherd%20Dog%204.jpg"
+                            alt="Anatolian Shepherd Dog standing in a field">
+                        <h3>Anatolian Shepherd Dog</h3>
+                        <p>Italian mastiff-type dog known for its protective instincts, athleticism, and loyalty.</p>
+                    </a>
+
+
+                    <!-- CARD 2: Doberman Pinscher-->
+                    <a href="DobermanPinscher.html" class="similar-card">
+                        <img src="https://www.carecredit.com/sites/cc/image/hero_doberman_pinscher.jpg"
+                            alt="Bullmastiff standing outdoors">
+                        <h3>Doberman Pinscher</h3>
+                        <p>Another powerful guardian breed with a calm, watchful nature and strong devotion to family.
+                        </p>
+                    </a>
+
+                    <!-- CARD 3: Rottweiler -->
+                    <a href="Rottweiler.html" class="similar-card">
+                        <img src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg"
+                            alt="Rottweiler standing on grass">
+                        <h3>Rottweiler</h3>
+                        <p>Confident working dog with strong guarding instincts and a steady, dependable temperament.
+                        </p>
+                    </a>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!--footer-->
+        <footer class="site-footer">
+            <div class="footer-inner">
+
+                <!-- Column 1: Tagline -->
+                <div class="footer-col footer-intro">
+                    <h3>Find your pet pal <span class="paw">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                            </svg>
+                        </span></h3>
+                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                    <p>Save favourites and share them with friends and family.</p>
+                    <p>Start your adoption journey with PetPal today.</p>
+                </div>
+
+                <!-- Column 2: Information & Resources -->
+                <div class="footer-col">
+                    <h4>Information &amp; Resources</h4>
+                    <ul>
+                        <li><a href="#">Adoption FAQ</a></li>
+                        <li><a href="#">Preparing for Your New Pet</a></li>
+                        <li><a href="#">Care &amp; Training Guides</a></li>
+                        <li><a href="#">Health &amp; Nutrition Tips</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Events &amp; Meetups</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                        <li><a href="#">Shelter Partners</a></li>
+                        <li><a href="#">Newsletter Sign-up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Logo / Contact -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">PetPal</div>
+                    <p class="footer-address">
+                        123 PetPal Lane<br>
+                        Kamloops, BC<br>
+                        Canada
+                    </p>
+
+                    <p class="footer-contact">
+                        <strong>Contact us</strong><br>
+                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+    </div>
+
+    <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+    <script>
+        // Tabs
+        const breedTabs = document.querySelectorAll('[data-breed-tab]');
+        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+
+        breedTabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.breedTab;
+
+                breedTabs.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                breedPanels.forEach(panel => {
+                    panel.hidden = panel.dataset.breedPanel !== target;
+                });
+            });
+        });
+
+        // Cart button -> checkout
+        const cartButton = document.getElementById('cart-button');
+        if (cartButton) {
+            cartButton.addEventListener('click', () => {
+                window.location.href = 'checkout.html';
+            });
+        }
+
+        // Simple breed search: go back to breeds page with ?q=
+        const breedSearchForm = document.getElementById('breed-search-form');
+        if (breedSearchForm) {
+            breedSearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const term = breedSearchForm.q.value.trim();
+                if (!term) return;
+                window.location.href = 'breeds.html?q=' + encodeURIComponent(term);
+            });
+        }
+    </script>
+</body>
+
+</html>

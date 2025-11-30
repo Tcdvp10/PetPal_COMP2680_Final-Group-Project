@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biewer Terrier - Dog Breed Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dogbreeds.css">
+</head>
+
+<body>
+
+    <!-- HEADER (same as your other pages) -->
+    <div class="box">
+        <header>
+            <nav class="nav">
+                <div class="logo"><a href="../index.html">PetPal</a></div>
+                <div class="nav-links">
+                    <a href="../breeds.html">Breeds</a>
+                    <a href="../caretips.html">Caretips & Training</a>
+                    <a href="../shop.html">Shop</a>
+                    <a href="../about.html">About</a>
+                </div>
+                <div style="display:flex; align-items:center;">
+                    <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                        <input id="breedSearch" type="text" placeholder="Search..." />
+                    </div>
+                    <i class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                    </i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ========= MAIN BREED PROFILE ========= -->
+        <main class="breed-main">
+
+            <!-- HERO: image + summary -->
+            <section class="breed-hero">
+                <div class="breed-hero-image">
+                    <span class="paw-stamp"></span>
+                    <!-- use your own image file here -->
+                    <img src="https://www.thesprucepets.com/thmb/FhOwVAHr9XmhTcmqRSFpftM-3lM=/6148x0/filters:no_upscale():strip_icc()/biewer-terrier-173d8ec8107146f7ab7feb54f31a841c.jpg"
+                        alt="Biewer Terrier standing on grass with long silky tri-colour coat">
+                </div>
+
+                <div class="breed-hero-info">
+                    <h1 class="breed-name">Biewer Terrier</h1>
+                    <p class="breed-tagline">
+                        An elegant, longhaired toy terrier with a whimsical personality. Biewer Terriers are playful,
+                        affectionate companions who love being with their people. Small in size but big in charm,
+                        they’re outgoing, confident, and happy to trot along on adventures or curl up in your lap.
+                    </p>
+
+                    <dl class="breed-stats">
+                        <div class="breed-stat">
+                            <dt>Group</dt>
+                            <dd>Toy</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Lifespan</dt>
+                            <dd>12–16 years</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Origin</dt>
+                            <dd>Germany</dd>
+                        </div>
+                        <div class="breed-stat">
+                            <dt>Coat</dt>
+                            <dd>Long, silky single coat (hair, not fur)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- TABS -->
+            <section class="breed-tabs">
+                <button class="breed-tab active" data-breed-tab="overview">Breed Overview</button>
+                <button class="breed-tab" data-breed-tab="caretips">Care</button>
+                <button class="breed-tab" data-breed-tab="training">Training Tips</button>
+                <button class="breed-tab" data-breed-tab="funfacts">Fun Facts</button>
+                <button class="breed-tab" data-breed-tab="gallery">Photo Gallery</button>
+            </section>
+
+            <!-- PANELS -->
+            <section class="breed-panels">
+
+                <!-- OVERVIEW -->
+                <article class="breed-panel" data-breed-panel="overview">
+                    <h2 class="section-title section-title--left">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path
+                                d="M64 176C80.6 176 94.2 188.6 95.8 204.7L96.1 211.3C97.8 227.4 111.4 240 128 240L307.1 240L448 300.4L448 544C448 561.7 433.7 576 416 576L384 576C366.3 576 352 561.7 352 544L352 412.7C328 425 300.8 432 272 432C243.2 432 216 425 192 412.7L192 544C192 561.7 177.7 576 160 576L128 576C110.3 576 96 561.7 96 544L96 298.4C58.7 285.2 32 249.8 32 208C32 190.3 46.3 176 64 176zM387.8 32C395.5 32 402.7 35.6 407.4 41.8L424 64L476.1 64C488.8 64 501 69.1 510 78.1L528 96L584 96C597.3 96 608 106.7 608 120L608 144C608 188.2 572.2 224 528 224L464 224L457 252L332.3 198.6L363.9 51.4C366.3 40.1 376.2 32 387.8 32zM480 108C469 108 460 117 460 128C460 139 469 148 480 148C491 148 500 139 500 128C500 117 491 108 480 108z" />
+                        </svg>
+                        Breed Overview
+                    </h2>
+
+                    <div class="overview-layout">
+
+                        <!-- LEFT: QUICK FACTS -->
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Quick Facts</h3>
+                            <dl class="overview-facts">
+                                <div class="fact-row">
+                                    <dt>Group</dt>
+                                    <dd>Toy</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Height</dt>
+                                    <dd>7 to 11 inches</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Weight</dt>
+                                    <dd>4 to 8 pounds</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat</dt>
+                                    <dd>Long, straight, silky single coat</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Coat Colour</dt>
+                                    <dd>Tri-colour: white with blue/black and gold/tan (or chocolate/tan) patches</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Temperament</dt>
+                                    <dd>Playful, affectionate, confident</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Hypoallergenic</dt>
+                                    <dd>Low-shedding; often tolerated by allergy sufferers</dd>
+                                </div>
+                                <div class="fact-row">
+                                    <dt>Origin</dt>
+                                    <dd>Germany</dd>
+                                </div>
+                            </dl>
+                        </section>
+
+                        <section class="overview-card">
+                            <h3 class="overview-subtitle">Characteristics</h3>
+
+                            <table class="char-table">
+                                <tr>
+                                    <th>Trait</th>
+                                    <th>Level</th>
+                                </tr>
+                                <tr>
+                                    <td>Affection Level</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kid-friendly</td>
+                                    <td><span class="char-chip char-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Exercise Needs</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Energy Level</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Tendency to Bark</td>
+                                    <td><span class="char-chip char-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Amount of Shedding</td>
+                                    <td><span class="char-chip char-low">Low</span></td>
+                                </tr>
+                            </table>
+                        </section>
+
+                    </div>
+
+                    <figure class="overview-photo">
+                        <!-- use your own image file here -->
+                        <img src="../images/BiewerTerrier.png"
+                            alt="Biewer Terrier with long coat standing outdoors">
+                        <figcaption>Credit: Add your photo credit here</figcaption>
+                    </figure>
+
+                </article>
+
+                <!--CARE-->
+                <article class="breed-panel" data-breed-panel="caretips" hidden>
+                    <h2 class="section-title section-title--left">Care</h2>
+
+                    <p class="care-intro">
+                        Biewer Terriers are small, cheerful companions with a glamorous coat and a big personality.
+                        They’re relatively easy to exercise but do need consistent grooming and gentle handling.
+                        Use the cards below as a quick guide for each life stage and season.
+                    </p>
+
+                    <div class="care-grid">
+
+                        <div class="care-card">
+                            <div class="care-icon">🧼</div>
+                            <h3>General Care (All Life Stages)</h3>
+                            <ul>
+                                <li><strong>Feeding:</strong> High-quality small- or toy-breed diet. Because of their
+                                    size, they can be prone to low blood sugar—regular, measured meals are important.
+                                </li>
+                                <li><strong>Grooming:</strong> Long, silky hair needs daily brushing or a shorter
+                                    “puppy cut” plus weekly brushing to prevent tangles and mats.</li>
+                                <li><strong>Training &amp; socialisation:</strong> Intelligent, people-focused, and
+                                    generally eager to please. They respond best to gentle, positive training and early
+                                    socialisation with people and other animals.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐶</div>
+                            <h3>Puppy Care</h3>
+                            <ul>
+                                <li><strong>Growth:</strong> Toy-breed puppies are delicate. Feed small, frequent meals
+                                    and watch for signs of hypoglycemia (weakness, wobbliness, extreme sleepiness).</li>
+                                <li><strong>Activity:</strong> Short play sessions on safe, non-slippery surfaces.
+                                    Avoid jumping off furniture and rough play with larger dogs.</li>
+                                <li><strong>Handling:</strong> Gently introduce brushing, face and paw handling, and
+                                    quiet time in a crate or pen so they learn to relax.</li>
+                                <li><strong>Learning:</strong> Begin basic obedience, house training, and name
+                                    recognition in short, fun sessions.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🐕‍🦺</div>
+                            <h3>Adult Care</h3>
+                            <ul>
+                                <li><strong>Exercise:</strong> Daily walks plus indoor play (fetch, tug, sniff games)
+                                    are usually enough. They don’t need long hikes but do enjoy exploring.</li>
+                                <li><strong>Coat care:</strong> Regular brushing, gentle detangling, and professional
+                                    grooming as needed. Keep the hair around the eyes clean and tied back if long.</li>
+                                <li><strong>Mind:</strong> Puzzle toys, trick training, and small “jobs” (like learning
+                                    new cues) keep them mentally satisfied.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">🧓</div>
+                            <h3>Senior Care</h3>
+                            <ul>
+                                <li><strong>Movement:</strong> Short, frequent strolls and soft play rather than long
+                                    outings. Watch for signs of joint pain or tiring quickly.</li>
+                                <li><strong>Comfort:</strong> Provide warm, soft beds away from drafts. Use pet steps
+                                    if they’re used to getting on furniture.</li>
+                                <li><strong>Diet:</strong> Adjust calories to maintain a lean weight; older small dogs
+                                    are prone to dental issues, so keep up with dental care.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">☀️</div>
+                            <h3>Seasonal Tips</h3>
+                            <ul>
+                                <li><strong>Hot weather:</strong> Small dogs overheat quickly. Walk in cooler hours,
+                                    offer shade and water, and never leave them in a car.</li>
+                                <li><strong>Cold weather:</strong> They have hair, not a dense insulating undercoat.
+                                    Short-coated Biewers may appreciate a sweater on chilly walks.</li>
+                                <li><strong>Rain &amp; mud:</strong> Use a light raincoat or towel-dry after wet walks
+                                    to protect skin and coat.</li>
+                            </ul>
+                        </div>
+
+                        <div class="care-card">
+                            <div class="care-icon">❤️</div>
+                            <h3>Common Health Issues</h3>
+                            <ul>
+                                <li><strong>Dental disease:</strong> Toy breeds often develop tartar and gum disease;
+                                    daily tooth brushing is ideal.</li>
+                                <li><strong>Luxating patella &amp; joint issues:</strong> Avoid lots of jumping and
+                                    slippery floors; keep them at a healthy weight.</li>
+                                <li><strong>Tracheal collapse:</strong> Use a harness instead of a collar for walks to
+                                    protect their airway.</li>
+                                <li><strong>Liver shunt &amp; bladder stones:</strong> Some Biewers can be predisposed;
+                                    regular vet checks and bloodwork help catch issues early.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- TRAINING -->
+                <article class="breed-panel" data-breed-panel="training" hidden>
+                    <h2 class="section-title section-title--left">Training Tips</h2>
+
+                    <p class="training-intro">
+                        Biewer Terriers are lively, clever, and people-oriented. They enjoy learning and do best with
+                        positive, reward-based training and clear routines. Keep sessions short and fun.
+                    </p>
+
+                    <div class="two-column training-grid">
+
+                        <div class="training-card">
+                            <div class="training-icon">🎓</div>
+                            <h3>Puppy &amp; Basic Manners</h3>
+                            <ul>
+                                <li>Start early socialisation with gentle, positive experiences: new people, sounds,
+                                    and safe dogs.</li>
+                                <li>Teach sit, down, stay, and recall using tiny treats, toys, and praise.</li>
+                                <li>House training can take patience; take them out frequently and reward success.</li>
+                                <li>Teach calm behaviours like settling on a mat and waiting politely before going
+                                    through doors.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🌿</div>
+                            <h3>Exercise &amp; Enrichment</h3>
+                            <ul>
+                                <li>Short daily walks plus indoor play help burn off energy without overdoing it.</li>
+                                <li>Use sniffy walks, food puzzles, and gentle games like fetch or hide-and-seek.</li>
+                                <li>Rotate toys and introduce simple trick training to keep their minds busy.</li>
+                                <li>Be mindful of their small size around big dogs and young children.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">⚠️</div>
+                            <h3>Common Training Challenges</h3>
+                            <ul>
+                                <li><strong>Barking:</strong> Terriers can be vocal. Reward quiet moments and teach a
+                                    reliable “quiet” cue.</li>
+                                <li><strong>Clinginess:</strong> Practise short, positive alone-time so they don’t panic
+                                    when you leave.</li>
+                                <li><strong>Stubborn streak:</strong> If they lose focus, keep sessions short, raise the
+                                    reward value, or change the environment.</li>
+                            </ul>
+                        </div>
+
+                        <div class="training-card">
+                            <div class="training-icon">🩺</div>
+                            <h3>Health &amp; Safety Notes</h3>
+                            <ul>
+                                <li>Use a harness instead of a collar on walks to protect their delicate neck and
+                                    trachea.</li>
+                                <li>Supervise interactions with children—Biewers are tiny and can be easily injured if
+                                    dropped or stepped on.</li>
+                                <li>Keep them at a healthy weight and schedule regular vet and dental check-ups.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- FUN FACTS -->
+                <article class="breed-panel" data-breed-panel="funfacts" hidden>
+                    <h2 class="section-title section-title--left">Fun Facts</h2>
+
+                    <ul class="funfacts-list mini-facts icon-facts">
+                        <li data-icon="cart">The Biewer Terrier was first developed in Germany in the 1980s by breeders
+                            Werner and Gertrud Biewer.</li>
+                        <li data-icon="mountain">Their original name was “Biewer Yorkshire Terrier à la Pom Pon,”
+                            inspired by their fluffy, pom-pom look.</li>
+                        <li data-icon="heart">They have hair instead of fur and shed very little, which many allergy
+                            sufferers appreciate.</li>
+                        <li data-icon="snow">The breed’s name is pronounced “beaver” – like the animal.</li>
+                        <li data-icon="bond">The Biewer Terrier was officially recognised by the American Kennel Club in
+                            2021 as a member of the Toy Group.</li>
+                    </ul>
+
+                </article>
+
+                <!-- PHOTO GALLERY -->
+                <article class="breed-panel" data-breed-panel="gallery" hidden>
+                    <h2 class="section-title section-title--left">Photo Gallery</h2>
+
+                    <div class="photo-grid">
+                        <!-- replace these with your own photos if you like -->
+                        <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/06113341/Biewer-Terrier-puppy-standing-in-profile-in-the-grass.jpg" alt="Biewer Terrier standing on grass">
+                        <img src="https://www.akc.org/wp-content/uploads/2021/01/Biewer-Terriers-1.jpg" alt="Biewer Terrier puppies with bow in hair">
+                        <img src="https://image.petmd.com/files/inline-images/biewer-terrier-3.jpg?VersionId=f6hK4.TMuIb7kP1EgbTKGxQRbiV1hkIY" alt="Biewer Terrier running across lawn">
+                        <img src="https://img1.wsimg.com/isteam/ip/3c49eb39-f945-493b-bb98-c320887afdf2/2B822996-781A-4A2E-8080-482E9BF6F5F4_1_105_c.jpeg/:/rs=h:1000,cg:true,m" alt="Biewer Terrier sitting and looking at camera">
+                        <img src="https://static.wixstatic.com/media/db516d_d95486ba87eb431fafa6014dfd8800bf~mv2.jpg/v1/fill/w_280,h_204,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/db516d_d95486ba87eb431fafa6014dfd8800bf~mv2.jpg" alt="Biewer Terrier with long show coat">
+                        <img src="https://www.dogpackapp.com/blog/wp-content/uploads/2024/10/biewer-terrier-dog-toy.webp" alt="Biewer Terrier playing with a toy">
+                    </div>
+                </article>
+            </section>
+
+            <!-- SIMILAR BREEDS -->
+            <section class="similar-section">
+                <h2 class="section-title section-title--left">Find Similar Breeds</h2>
+
+                <div class="similar-grid">
+
+                    <!-- CARD 1: Yorkshire Terrier -->
+                    <a href="YorkshireTerrier.html" class="similar-card">
+                        <img src="https://www.yorkshire.com/wp-content/uploads/2022/10/yorkshire-terrier-on-grass.jpg"
+                            alt="Yorkshire Terrier standing outdoors">
+                        <h3>Yorkshire Terrier</h3>
+                        <p>Toy terrier with a long silky coat and confident, lively personality—close cousin to the
+                            Biewer.</p>
+                    </a>
+
+                    <!-- CARD 2: Bolognese -->
+                    <a href="Bolognese.html" class="similar-card">
+                        <img src="https://www.dogster.com/wp-content/uploads/2019/11/bolognese-outdoor.jpg"
+                            alt="Bolognese dog with long white coat standing outdoors">
+                        <h3>Bolognese</h3>
+                        <p>Gentle lap dog with a flowing white coat, known for being affectionate, playful, and
+                            people-focused.</p>
+                    </a>
+
+                    <!-- CARD 3: Shih Tzu -->
+                    <a href="RussianTsvetnayaBolonka.html" class="similar-card">
+                        <img src="https://www.rtbca.com/wp-content/uploads/2022/02/zz-side.jpeg" alt="Shih Tzu standing on grass">
+                        <h3>Russian Tsvetnaya Bolonka</h3>
+                        <p>Small companion breed with a luxurious coat and friendly, outgoing nature—another great
+                            apartment-sized pal.</p>
+                    </a>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!--footer-->
+        <footer class="site-footer">
+            <div class="footer-inner">
+
+                <!-- Column 1: Tagline -->
+                <div class="footer-col footer-intro">
+                    <h3>Find your pet pal <span class="paw">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M234.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5 .3-86.2 32.6-96.8 70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3-14.3-70.1 10.2-84.1 59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5l0 1.6c0 25.8-20.9 46.7-46.7 46.7-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2-25.8 0-46.7-20.9-46.7-46.7l0-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3 29.1 51.7 10.2 84.1-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5 46.9 53.9 32.6 96.8-52.1 69.1-84.4 58.5z" />
+                            </svg>
+                        </span></h3>
+                    <p>Browse adoptable pets from trusted shelters and rescues.</p>
+                    <p>Filter by breed, size, and temperament to find your perfect match.</p>
+                    <p>Save favourites and share them with friends and family.</p>
+                    <p>Start your adoption journey with PetPal today.</p>
+                </div>
+
+                <!-- Column 2: Information & Resources -->
+                <div class="footer-col">
+                    <h4>Information &amp; Resources</h4>
+                    <ul>
+                        <li><a href="#">Adoption FAQ</a></li>
+                        <li><a href="#">Preparing for Your New Pet</a></li>
+                        <li><a href="#">Care &amp; Training Guides</a></li>
+                        <li><a href="#">Health &amp; Nutrition Tips</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Community -->
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Events &amp; Meetups</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                        <li><a href="#">Shelter Partners</a></li>
+                        <li><a href="#">Newsletter Sign-up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Logo / Contact -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">PetPal</div>
+                    <p class="footer-address">
+                        123 PetPal Lane<br>
+                        Kamloops, BC<br>
+                        Canada
+                    </p>
+
+                    <p class="footer-contact">
+                        <strong>Contact us</strong><br>
+                        <a href="mailto:hello@petpal.ca">hello@petpal.ca</a><br>
+                        <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2l0 178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16l0 89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8l0-349.4 88 0c-.1 7.4 .6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1l0 87.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5l0-170.3-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 175.9C413.8 494.8 512 386.9 512 256z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <p class="Copyright">&copy; 2025 PetPal - All Rights Reserved</p>
+    </div>
+
+    <!-- SIMPLE JS FOR TABS + SEARCH + CART -->
+    <script>
+        // Tabs
+        const breedTabs = document.querySelectorAll('[data-breed-tab]');
+        const breedPanels = document.querySelectorAll('[data-breed-panel]');
+
+        breedTabs.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.breedTab;
+
+                breedTabs.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                breedPanels.forEach(panel => {
+                    panel.hidden = panel.dataset.breedPanel !== target;
+                });
+            });
+        });
+
+        // Cart button -> checkout
+        const cartButton = document.getElementById('cart-button');
+        if (cartButton) {
+            cartButton.addEventListener('click', () => {
+                window.location.href = 'checkout.html';
+            });
+        }
+
+        // Simple breed search: go back to breeds page with ?q=
+        const breedSearchForm = document.getElementById('breed-search-form');
+        if (breedSearchForm) {
+            breedSearchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const term = breedSearchForm.q.value.trim();
+                if (!term) return;
+                window.location.href = 'breeds.html?q=' + encodeURIComponent(term);
+            });
+        }
+    </script>
+</body>
+
+</html>
