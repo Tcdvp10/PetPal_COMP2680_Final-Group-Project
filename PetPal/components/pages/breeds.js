@@ -50,7 +50,7 @@ const breedsData = [
         care: "They have a dense, wiry coat that needs regular brushing and periodic hand-stripping or clipping. High energy and smart, they require plenty of daily exercise and mental work such as training, games, and jobs.",
         idealHome: "Great for active families who want an energetic, playful dog and are willing to provide ongoing training and stimulation.",
         funFact: "Airedales have served as police dogs, war dogs, and hunting companions, showing how versatile they are.",
-        profileLink: 'dog breeds/Airedale.html'
+        profileLink: 'dog breeds/AiredaleTerrier.html'
     },
 
     {
