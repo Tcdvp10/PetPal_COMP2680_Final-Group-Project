@@ -510,7 +510,7 @@ const breedsData = [
     {
         id: 'cavalier-king-charles-spaniel',
         name: 'Cavalier King Charles Spaniel',
-        image: 'https://www.dailypaws.com/thmb/1M_3_30QiwVnj6MwFSUWe1utQ84=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tan-white-cavalier-king-charles-reoutch-685086913-92a7f2e6c89d4c52be6a732d89c1251c.jpg',
+        image: 'https://www.jadpo.co.uk/cdn-cgi/image/fit=cover,format=auto,width=607,height=420/https://images.ctfassets.net/4cuokmrwdiqv/5r3f7dbEJxIc5xNnsMoT6p/fe6b26ad65795f4a73b7a8b219e8095d/cavalier-spaniel-breed-page-large-image-2.jpg',
         size: 'small',
         coat: 'long',
         temperament: ['gentle', 'affectionate', 'friendly', 'sensitive'],
@@ -612,7 +612,7 @@ const breedsData = [
     {
         id: 'golden-retriever',
         name: 'Golden Retriever',
-        image: 'https://images.squarespace-cdn.com/content/v1/55ede48ee4b0f67fc8251118/1612268124443-5Z5DPY42GV65GKJ9O4ZN/Golden+retriever+at+beach',
+        image: 'https://thepetlabco.com/learn/_next/image?url=https%3A%2F%2Fblog.thepetlabco.com%2Fwp-content%2Fuploads%2F2024%2F06%2Fshutterstock_2272555627-1.jpg&w=3840&q=75',
         size: 'large',
         coat: 'double',
         temperament: ['friendly', 'intelligent', 'devoted', 'gentle'],

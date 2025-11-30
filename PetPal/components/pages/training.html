@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pet Pal - Care and Tips</title>
-    <link rel="stylesheet" href="practising.css">
+    <link rel="stylesheet" href="training.css">
  <!-- Google Material Icons (Rounded) -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
 
@@ -72,27 +72,18 @@
 
     <!-- HEALTH FIRST -->
     <button class="care-card active" data-category-tab="health">
-      <span class="material-symbols-rounded icon">Obedience training</span>
-      <h3>Basic Obidience</h3>
-    </button>
-
-    <button class="care-card" data-category-tab="feeding">
-      <span class="material-symbols-rounded icon">feeding</span>
-      <h3>Feeding & Nutrition</h3>
+      <h3>Basic Obedience</h3>
     </button>
 
     <button class="care-card" data-category-tab="grooming">
-      <span class="material-symbols-rounded icon">behaviour pets</span>
       <h3>Behaviour Training</h3>
     </button>
 
     <button class="care-card" data-category-tab="exercise">
-      <span class="material-symbols-rounded icon">reinforcement</span>
       <h3>Positive reinforcement</h3>
     </button>
 
     <button class="care-card" data-category-tab="comfort">
-      <span class="material-symbols-rounded icon">Training</span>
       <h3>Advanced Training</h3>
     </button>
 
@@ -101,7 +92,8 @@
 
             <!-- ========== HEALTH & VET PANEL (DEFAULT VISIBLE) ========== -->
            <section class="category-panel" data-category-panel="health"> 
-            <!-- Common Behaviour --> <section class="diseases-section">
+            <!-- Common Behaviour --> 
+             <section class="diseases-section">
                  <div class="diseases-header"> 
                     <h2 class="section-title">Common Behaviours to Identify</h2> 
                     <p class="diseases-subtitle ">
@@ -136,6 +128,7 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
                     </section>
                     </section>
 
+                    <section class="category-panel" data-category-panel="health"></section>
                         <!-- Behaviour 3-->
                         <div class="behaviour-row">
                                     <img src="https://media.tenor.com/f-paU3H3PAMAAAAM/dog-happy.gif" alt="Dog wagging tail">
@@ -148,8 +141,7 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
                 
                                 </div>
                                 </div>
-
-
+                            </section>
                 <!-- Vaccines + When to call vet -->
                 <section class="section two-column">
                     <div class="card vaccination">
@@ -157,10 +149,8 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
                         <p class="vaccine-intro">Tick the things checked before your dog training</p>
                         <ul class="vaccine-list">
                             <li><label><input type="checkbox"> health Check(is your dog feeling well?)</label></li>
-                            <li><label><input type="checkbox"> Energy levels(not overly exhausted or excited?)</label>
-                            </li>
-                            <li><label><input type="checkbox"> Do you know the skill you are going to be working
-                                    on</label></li>
+                            <li><label><input type="checkbox"> Energy levels(not overly exhausted or excited?)</label></li>
+                            <li><label><input type="checkbox"> Do you know the skill you are going to be working</label></li>
                             <li><label><input type="checkbox"> Do you have all the required training tools </label></li>
                             <li><label><input type="checkbox"> Is your dog showing any signs of stress </label></li>
                         </ul>
@@ -264,68 +254,9 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
 
             </section>
 
- <!-- ========== Feeding and Nutrition PANEL ========== -->
-                <!-- BOX 2: INFO -->
-                  <section class="category-panel" data-category-panel="grooming" hidden>
-
-                <section class="section">
-                    <h2 class="section-title">Feeding &amp; Nutrition</h2>
-
-                    <p class="panel-text">
-                        A balanced diet keeps your dog energized, supports healthy digestion,
-                        and helps maintain a shiny coat and strong immune system.
-                    </p>
-
-                    <ul class="panel-list">
-                        <li><strong>Puppies:</strong> 3–4 small meals per day with puppy-formula food.</li>
-                        <li><strong>Adults:</strong> 2 meals per day, ideally at the same times each day.</li>
-                        <li><strong>Seniors:</strong> lower calories with extra joint and digestive support.</li>
-                        <li>Measure meals with a cup instead of guessing to prevent obesity.</li>
-                        <li>Introduce new food over 5–7 days to avoid stomach upset.</li>
-                        <li>Always provide fresh, clean water in a washed bowl.</li>
-                        <li>Avoid dangerous foods like chocolate, grapes, raisins, onions, and xylitol.</li>
-                    </ul>
-                </section>
-
-                <!-- BOX 2: QUIZ -->
-                <section class="section">
-                    <div class="panel-questions">
-                        <h3>Feeding &amp; Nutrition Quiz</h3>
-
-                        <div class="quiz-card">
-                            <p class="quiz-progress">
-                                Question <span id="feed-current">1</span> of <span id="feed-total">3</span>
-                            </p>
-
-                            <div class="quiz-inner" id="feed-inner">
-                                <p class="quiz-question" id="feed-question"></p>
-                                <div class="quiz-options" id="feed-options"></div>
-                            </div>
-
-                            <button class="quiz-next-btn" id="feed-next" disabled>Next question</button>
-
-                            <p class="quiz-feedback" id="feed-feedback"></p>
-                            <div class="quiz-score" id="feed-score" hidden></div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- BOX 3: BREED SEARCH -->
-                <section class="section">
-                    <div class="breed-search">
-                        <h3>Want feeding tips for your dog’s breed?</h3>
-                        <p>Type your dog’s breed to see more information on the Breeds page.</p>
-                        <form class="breed-form">
-                            <input type="text" name="breed" placeholder="e.g. Chihuahua" required>
-                            <button type="submit">Go to breed page</button>
-                        </form>
-                    </div>
-                </section>
-
-            </section>
 
             <!-- ========== Behaviour Training PANEL ========== -->
-            <section class="category-panel" data-category-panel="Behaviour Training" hidden>
+            <section class="category-panel" data-category-panel="grooming" hidden>
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
@@ -425,7 +356,7 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
 
                 <!-- BOX 1: INFO -->
                 <section class="section">
-                    <h2 class="section-title">Exercise</h2>
+                    <h2 class="section-title">Positive Reinforcement</h2>
 
                     <p class="panel-text">
                         Positive reinforcement in dog training is a method where you reward the dog for the behaviors you want to see more often
@@ -444,7 +375,7 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
                 <!-- BOX 2: QUIZ -->
                 <section class="section">
                     <div class="panel-questions">
-                        <h3>Exercise Quiz</h3>
+                        <h3>Reinforcement Quiz</h3>
 
                         <div class="quiz-card">
                             <p class="quiz-progress">
@@ -467,7 +398,7 @@ Most of the time, it’s completely normal and simply your dog preparing a comfo
                 <!-- BOX 3: BREED SEARCH -->
                 <section class="section">
                     <div class="breed-search">
-                        <h3>Want exercise ideas for your breed?</h3>
+                        <h3>Want reinforcement ideas for your breed?</h3>
                         <p>Type your dog’s breed to see more exercise suggestions on the Breeds page.</p>
                         <form class="breed-form">
                             <input type="text" name="breed" placeholder="e.g. Border Collie" required>
