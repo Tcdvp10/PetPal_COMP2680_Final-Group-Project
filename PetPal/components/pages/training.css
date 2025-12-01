@@ -1,37 +1,37 @@
 /* ===== RESET & BASE ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #ffffff !important;
-  color: #333;
-  line-height: 1.7;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff !important;
+    color: #333;
+    line-height: 1.7;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 img {
-  max-width: 45%;
-  display: block;
+    max-width:45%;
+    display:block;
 
 }
 
 .page {
-  width: 100%;
-  min-height: 100vh;
-  background: #ffffff !important;
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff !important;
 }
 
 
 .box {
-  width: 100%;
+    width: 100%;
 }
 
 /* ===== HEADER ===== */
@@ -105,9 +105,8 @@ header {
   border-radius: 25px;
   outline: none;
   width: 200px;
-  background: #ffffff;
+  background: #ffffff;   
 }
-
 .cart-icon svg {
   width: 24px;
   height: 24px;
@@ -117,128 +116,116 @@ header {
 
 /* ===== MAIN WRAPPER ===== */
 .care-main {
-  max-width: 1200px;
-  /* big but still centered */
-  margin: 0 auto;
-  padding: 0 2.5rem 4rem;
+    max-width: 1200px;          /* big but still centered */
+    margin: 0 auto;
+    padding: 0 2.5rem 4rem;   
 }
 
 /* generic section blocks (Common Diseases, Vaccines, etc.) */
 .section {
-  background: #f2f9ff;
-  border-radius: 18px;
-  padding: 1.8rem 2.2rem 2.2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    background: #f2f9ff;
+    border-radius: 18px;
+    padding: 1.8rem 2.2rem 2.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
-
 /* ===== HERO  ===== */
 
 .hero {
-  /* full-width breakout */
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-top: 0;
-  margin-bottom: 0;
+    /* full-width breakout */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 0;
+    margin-bottom: 0;
 
-  /* FILL THE SCREEN */
-  min-height: 100vh;
-  /* hero = whole screen */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* centers content vertically */
-  align-items: center;
+    /* FILL THE SCREEN */
+    min-height: 100vh;              /* hero = whole screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;        /* centers content vertically */
+    align-items: center;
 
-  padding-top: 26rem;
-  /* small breathing room */
-  gap: 2.2rem;
+    padding-top: 26rem;    /* small breathing room */
+    gap: 2.2rem;
 
-  color: #fff;
-  text-align: center;
+    color: #fff;
+    text-align: center;
 
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
-    url("https://plus.unsplash.com/premium_photo-1700403547202-86691e3c4d8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-position: center top;
-  background-size: 120%;
-  background-repeat: no-repeat;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.18)),
+      url("https://plus.unsplash.com/premium_photo-1700403547202-86691e3c4d8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center top;
+    background-size: 120%;
+    background-repeat: no-repeat;
 }
-
 /* Move hero text lower */
 .hero-banner {
-  margin-top: 7rem;
-  /* adjust this number to move text lower */
+    margin-top: 7rem;   /* adjust this number to move text lower */
 }
-
 .hero-actions {
-  margin-top: 8rem;
-  /* spacing between heading & buttons */
+    margin-top: 8rem;   /* spacing between heading & buttons */
 }
 
 .hero-banner h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-  letter-spacing: 0.04em;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.4);  
+    letter-spacing: 0.04em;
 }
 
 .hero-actions {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
-
 .hero-banner {
-  margin-top: 1.5rem;
-  /* pushes title a little lower */
+    margin-top: 1.5rem;          /* pushes title a little lower */
 }
 
 .hero-actions {
-  margin-top: 1.8rem;
-  /* space between title and buttons */
+    margin-top: 1.8rem;          /* space between title and buttons */
 }
 
 /* buttons styled like screenshot */
 .pill-btn {
-  padding: 0.8rem 2rem;
-  min-width: 180px;
-  border-radius: 999px;
-  font-size: 0.97rem;
-  font-weight: 600;
-  border: none;
-  background: #ffffff;
-  color: #2c3e50;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  transition: all 0.25s;
+    padding: 0.8rem 2rem;
+    min-width: 180px;
+    border-radius: 999px;
+    font-size: 0.97rem;
+    font-weight: 600;
+    border: none;
+    background: #ffffff;
+    color: #2c3e50;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.25s;
 }
 
 .pill-btn--outline {
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  box-shadow: none;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: none;
 }
 
 .pill-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
-  background: #ffffff;
-  color: #2c3e50;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+    background: #ffffff;
+    color: #2c3e50;
 }
 
 .pill-btn--outline:hover {
-  background: #ffffff;
-  color: #2c3e50
+    background: #ffffff;
+    color: #2c3e50
 }
 
 /* ===== CATEGORY TABS – DAILY training ESSENTIALS STYLE ===== */
@@ -268,7 +255,7 @@ header {
   border-radius: 16px;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   cursor: pointer;
   transition: 0.2s ease;
   border: 1px solid #e5e5e5;
@@ -276,12 +263,12 @@ header {
 
 .care-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.10);
 }
 
 .care-card.active {
   border-color: #1d4f81;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
 }
 
 .care-card .icon {
@@ -298,7 +285,6 @@ header {
   color: #1d4f81;
   font-family: 'Poppins', sans-serif;
 }
-
 .groom-item {
   display: flex;
   align-items: center;
@@ -326,52 +312,50 @@ header {
 /* ===== GENERIC SECTION CARDS ===== */
 
 .section {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 1.8rem 1.6rem 2rem;
-  border: 1px solid #e2ded4;
-  margin-bottom: 2rem;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.6rem 2rem;
+    border: 1px solid #e2ded4;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
 }
 
 .section-title {
-  text-align: center;
-  font-size: 2.1rem;
-  margin-bottom: 1.8rem;
-  color: #2c3e50
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 1.8rem;
+    color: #2c3e50
 }
 
 /* ===== COMMON DISEASES CARDS ===== */
 
 .diseases-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  /* bigger width */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* bigger width */
   gap: 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .disease-card {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap:20px;
   background: #ffffff;
   border-radius: 22px;
   padding: 1.5rem;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-  align-items: normal;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
+  align-items:normal;
   transition: 0.3s ease;
 }
 
 .disease-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
 }
 
 .disease-card img {
   width: 180px;
-  height: 320px;
-  /* 🔥 increased from 150-180px to much bigger */
+  height: 320px;   /* 🔥 increased from 150-180px to much bigger */
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -385,604 +369,583 @@ header {
 }
 
 .disease-card .disease-image {
-  border-radius: 12px;
-  margin-bottom: 0.8rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
 }
 
 .disease-name {
-  font-weight: 600;
-  font-size: 0.95rem;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
-
 /* 3D flip card for diseases */
 .disease-card {
-  background: transparent;
-  /* front/back handle bg */
-  border-radius: 16px;
-  perspective: 1000px;
-  /* enables 3D effect */
-  cursor: pointer;
+    background: transparent;      /* front/back handle bg */
+    border-radius: 16px;
+    perspective: 1000px;         /* enables 3D effect */
+    cursor: pointer;
 }
 
 .disease-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s ease;
-  border-radius: 16px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    border-radius: 16px;
 }
 
 /* when card is flipped */
 .disease-card.flipped .disease-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* front & back faces */
 .disease-front,
 .disease-back {
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  background: #ffffff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  padding: 1.2rem 1rem;
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 1.2rem 1rem;
 }
 
 /* front: center image + name */
 .disease-front {
-  text-align: center;
+    text-align: center;
 }
 
 .disease-front .disease-image {
-  border-radius: 12px;
-  margin-bottom: 0.7rem;
+    border-radius: 12px;
+    margin-bottom: 0.7rem;
 }
 
 /* back: text side */
 .disease-back {
-  transform: rotateY(180deg);
-  text-align: left;
-  font-size: 0.9rem;
+    transform: rotateY(180deg);
+    text-align: left;
+    font-size: 0.9rem;
 }
 
 .disease-back h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #2c3e50;
 }
-
 /* Add spacing before the vaccination & training section */
 .section.two-column {
-  margin-top: 4rem !important;
+    margin-top: 4rem !important;
 }
-
 /* ========== FLIP CARD STYLES ========== */
 
 .flip-card {
-  background: transparent;
-  perspective: 1000px;
-  height: 260px;
-  /* bigger cards */
+    background: transparent;
+    perspective: 1000px;
+    height: 260px;       /* bigger cards */
 }
 
 .flip-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-  cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .flip-card:hover .flip-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* FRONT / BACK inside card */
-.flip-front,
-.flip-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 14px;
-  overflow: hidden;
-  padding: 12px;
-  background: #fff;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
 .flip-front img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .flip-back {
-  transform: rotateY(180deg);
-  background: #f2f9ff;
-  padding: 18px;
-  text-align: left;
-  font-size: 0.9rem;
-  overflow-y: scroll;
+    transform: rotateY(180deg);
+    background: #f2f9ff;
+    padding: 18px;
+    text-align: left;
+    font-size: 0.9rem;
+    overflow-y: scroll;
 
 }
 
 .disease-card {
-  width: 100%;
+    width: 100%;
 }
 
 .disease-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
 }
 
 /* ===== VACCINATION + VET TWO-COLUMN ===== */
 
 .two-column {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
 }
-
 .card ul li {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 0.7rem;
-  font-size: 1.05rem;
-  color: #2c3e50;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: #2c3e50;
 }
-
 .card p {
-  color: #375a7f;
-  margin-bottom: 1rem;
+    color: #375a7f;
+    margin-bottom: 1rem;
 }
-
-.category-panel[hidden] {
-  display: none !important;
+.category-panel[hidden]{
+  display : none !important;
 }
 
 .two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
 }
 
 .card ul li {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 0.7rem;
-  font-size: 1.05rem;
-  color: #2c3e50;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: #2c3e50;
 }
 
 .vaccine-intro {
-  font-size: 0.9rem;
-  margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
 }
 
 .vaccine-list {
-  list-style: none;
+    list-style: none;
 }
 
 .vaccine-list li {
-  margin-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 
 .vaccine-list label {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
 }
 
 .vaccine-list input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #2c3e50;
+    width: 18px;
+    height: 18px;
+    accent-color: #2c3e50;
 }
 
 .vet-call ul {
-  margin-left: 1.1rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+    margin-left: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .vet-call li {
-  margin-bottom: 0.35rem;
+    margin-bottom: 0.35rem;
 }
 
 .vet-note {
-  font-size: 0.85rem;
-  margin-top: 0.6rem;
-  font-style: italic;
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    font-style: italic;
 }
 
 /* ===== GENERIC PANEL TEXT FOR OTHER TABS ===== */
 
 .panel-text {
-  font-size: 0.97rem;
-  margin-bottom: 0.9rem;
+    font-size: 0.97rem;
+    margin-bottom: 0.9rem;
 }
 
 .panel-list {
-  margin-left: 1.1rem;
-  font-size: 0.95rem;
+    margin-left: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .panel-list li {
-  margin-bottom: 0.45rem;
+    margin-bottom: 0.45rem;
 }
 
 .panel-questions {
-  margin-top: 1.1rem;
-  font-size: 0.92rem;
+    margin-top: 1.1rem;
+    font-size: 0.92rem;
 }
 
 .panel-questions h3 {
-  margin-bottom: 0.4rem;
-  font-size: 1.03rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.03rem;
 }
-
 /* Multiple-choice style blocks inside each panel */
 .panel-questions .mcq {
-  margin-bottom: 0.9rem;
+    margin-bottom: 0.9rem;
 }
 
 .panel-questions .mcq p {
-  font-size: 0.95rem;
-  margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
 }
 
 .mcq-options {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .mcq-options li {
-  background: #f5f7f7;
-  border-radius: 999px;
-  padding: 0.45rem 0.85rem;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
+    background: #f5f7f7;
+    border-radius: 999px;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
 }
-
 /* multiple-choice questions inside panels, using quiz styles */
 .panel-questions .quiz-question {
-  margin-top: 1.1rem;
-  margin-bottom: 0.7rem;
-  font-size: 0.96rem;
+    margin-top: 1.1rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.96rem;
 }
 
 .panel-questions .quiz-options {
-  margin-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 
 /* breed search cards */
 .breed-search {
-  margin-top: 1.3rem;
-  padding: 0.9rem 1rem 1.1rem;
-  background: #ffffff;
-  border-radius: 12px;
-  border: 1px dashed #d7cfbe;
+    margin-top: 1.3rem;
+    padding: 0.9rem 1rem 1.1rem;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px dashed #d7cfbe;
 }
 
 .breed-search h3 {
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .breed-search p {
-  font-size: 0.9rem;
-  margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
 }
 
 .breed-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
 }
 
 .breed-form input[type="text"] {
-  flex: 1;
-  min-width: 180px;
-  padding: 0.55rem 0.8rem;
-  border-radius: 999px;
-  border: 1px solid #d0cbc0;
-  font-size: 0.9rem;
+    flex: 1;
+    min-width: 180px;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid #d0cbc0;
+    font-size: 0.9rem;
 }
 
 .breed-form button {
-  border-radius: 999px;
-  border: none;
-  padding: 0.55rem 1.2rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  background: #2c3e50;
-  color: #ffffff;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s;
+    border-radius: 999px;
+    border: none;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: #2c3e50;
+    color: #ffffff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s;
 }
 
 .breed-form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
-
 .behaviour-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin: 30px 0;
-  background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 30px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.08);
 }
 
 .behaviour-row img {
-  width: 200px;
-  height: auto;
-  border-radius: 14px;
-  object-fit: cover;
+    width: 200px;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
 }
 
 .behaviour-content h3 {
-  margin: 0 0 10px;
-  font-weight: 600;
-  color: #2b3a46;
+    margin: 0 0 10px;
+    font-weight: 600;
+    color: #2b3a46;
 }
 
 .behaviour-content p {
-  margin: 0;
-  line-height: 1.6;
-  color: #4a5a65;
+    margin: 0;
+    line-height: 1.6;
+    color: #4a5a65;
 }
 
 
 /* ===== BONUS QUIZ (match mint card look) ===== */
 
 .quiz {
-  text-align: center;
+    text-align: center;
 }
 
 .quiz-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 1.8rem 1.4rem 2rem;
-  border: 1px solid #c9e4df;
-  color: #2c3e50;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.4rem 2rem;
+    border: 1px solid #c9e4df;
+    color: #2c3e50;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 /* soft glow animation */
 .quiz-card-animated {
-  animation: quizGlow 3s ease-in-out infinite alternate;
+    animation: quizGlow 3s ease-in-out infinite alternate;
 }
 
 .quiz-progress {
-  color: #256064;
-  font-size: 0.9rem;
-  margin-bottom: 0.8rem;
+    color: #256064;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
 }
 
 .quiz-inner {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .quiz-question {
-  font-size: 1.02rem;
-  margin-bottom: 0.8rem;
+    font-size: 1.02rem;
+    margin-bottom: 0.8rem;
 }
 
 /* fade animation when question changes */
 .quiz-inner.animate-in {
-  animation: fadeSlideIn 0.4s ease;
+    animation: fadeSlideIn 0.4s ease;
 }
 
 .quiz-options {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
 }
 
 .quiz-option-btn {
-  border-radius: 999px;
-  border: 1px solid #cfe4df;
-  background: #ffffff;
-  color: #2c5e61;
-  padding: 0.6rem 0.9rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.25s;
+    border-radius: 999px;
+    border: 1px solid #cfe4df;
+    background: #ffffff;
+    color: #2c5e61;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s;
 }
 
 .quiz-option-btn:hover {
-  background: #2c3e50;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    background:#2c3e50;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 .quiz-option-btn.selected {
-  background: #2c3e50;
-  color: #fff;
-  border-color: #1a535c;
+    background: #2c3e50;
+    color: #fff;
+    border-color: #1a535c;
 }
 
 .quiz-next-btn {
-  margin-top: 0.8rem;
-  border-radius: 999px;
-  border: none;
-  padding: 0.7rem 1.7rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  background: #2c3e50;
-  color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
-  transition: opacity 0.1s ease, transform 0.08s ease;
+    margin-top: 0.8rem;
+    border-radius: 999px;
+    border: none;
+    padding: 0.7rem 1.7rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: #2c3e50;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+    transition: opacity 0.1s ease, transform 0.08s ease;
 }
 
 .quiz-next-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  box-shadow: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
 }
 
 .quiz-feedback {
-  font-size: 0.9rem;
-  margin-top: 0.6rem;
-  min-height: 20px;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    min-height: 20px;
 }
 
 .quiz-score {
-  margin-top: 0.8rem;
-  font-size: 1rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
 }
 
 /* pop animation for score */
 .quiz-score.score-pop {
-  animation: scorePop 0.7s ease;
+    animation: scorePop 0.7s ease;
 }
 
 /* ===== ANIMATIONS ===== */
 
 @keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes scorePop {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-
-  60% {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* soft breathing glow around quiz card */
 @keyframes quizGlow {
-  from {
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-  }
-
-  to {
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.55);
-  }
+    from {
+        box-shadow: 0 0 0 rgba(255,255,255,0);
+    }
+    to {
+        box-shadow: 0 0 18px rgba(255,255,255,0.55);
+    }
 }
 
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
-  .nav {
-    padding-inline: 1rem;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+    .nav {
+        padding-inline: 1rem;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 
-  .nav-links {
-    display: none;
-    /* simple mobile behaviour */
-  }
+    .nav-links {
+        display: none;   /* simple mobile behaviour */
+    }
 
-  .hero {
-    margin-inline: -1rem;
-    padding-inline: 1rem;
-  }
+    .hero {
+        margin-inline: -1rem;
+        padding-inline: 1rem;
+    }
 
-  .hero-banner h1 {
-    font-size: 2.2rem;
-  }
+    .hero-banner h1 {
+        font-size: 2.2rem;
+    }
 
-  .care-categories {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+    .care-categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-  .disease-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+    .disease-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-  .two-column {
-    grid-template-columns: 1fr;
-  }
+    .two-column {
+        grid-template-columns: 1fr;
+    }
 
-  .quiz-options {
-    grid-template-columns: 1fr;
-  }
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
 }
-
 /* ---------- FOOTER STYLE ---------- */
 .site-footer {
-  background: #0e3a44;
-  /* dark teal blue */
-  color: #e4f7f6;
-  padding: 3rem 0 1rem;
-  margin-top: 3rem;
+    background: #0e3a44;        /* dark teal blue */
+    color: #e4f7f6;
+    padding: 3rem 0 1rem;
+    margin-top: 3rem;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
 }
 
 .footer-section h3 {
-  color: #ffffff;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .footer-section p {
-  font-size: 0.95rem;
-  margin-bottom: 0.4rem;
-  opacity: 0.85;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.85;
 }
 
 .footer-social i {
-  font-size: 1.2rem;
-  margin-right: 0.7rem;
-  cursor: pointer;
-  transition: 0.2s;
+    font-size: 1.2rem;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .footer-social i:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.9rem;
-  opacity: 0.7;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
-
 /* ================== FOOTER  ================== */
 
 .site-footer {
@@ -1012,7 +975,7 @@ header {
 }
 
 .footer-intro svg {
-  width: 22px;
+  width: 22px; 
   height: 22px;
   fill: #ffffff;
 }
@@ -1034,8 +997,7 @@ header {
 }
 
 .footer-col a {
-  color: #fcffc9;
-  /* teal-ish links */
+  color: #fcffc9; /* teal-ish links */
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -1053,8 +1015,7 @@ header {
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   font-size: 1.8rem;
-  color: #5c999b;
-  /* PetPal teal */
+  color: #5c999b; /* PetPal teal */
   margin-bottom: 10px;
 }
 
@@ -1089,7 +1050,7 @@ header {
 }
 
 .footer-social svg {
-  width: 22px;
+  width: 22px; 
   height: 22px;
   fill: #e0ddc8;
 }
@@ -1127,167 +1088,144 @@ header {
 
 /* Remove box background & shadow from the outer card */
 .flip-card {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 260px;
-  /* keep your size */
-  perspective: 1000px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 260px; /* keep your size */
+    perspective: 1000px;
 }
 
 /* Remove background & shadow from front/back faces */
 .flip-front,
 .flip-back {
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
 }
 
 /* Keep flip animation */
 .flip-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.7s;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
 }
 
 /* Keep flip animation on hover */
 .flip-card:hover .flip-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* Keep 3D faces */
 .flip-front,
 .flip-back {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 14px;
-  overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
 }
 
 /* front */
 .flip-front img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 0.5rem;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 0.5rem;
 }
 
 /* back */
 .flip-back {
-  transform: rotateY(180deg);
-  text-align: left;
-  padding: 1rem !important;
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 1rem !important;
 }
 
 /* Disease title on front */
 .disease-name {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #2c3e50;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
 }
 
 /* Layout grid stays the same */
 .disease-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
 }
-
 /* ==== FLAT LAYOUT: remove outer section boxes for health area ==== */
 
 /* Common Diseases outer wrapper – no big box */
 .section.diseases-section {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  /* let the grid sit flat */
-  margin-bottom: 2.5rem;
-  /* keep spacing below */
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;          /* let the grid sit flat */
+    margin-bottom: 2.5rem;          /* keep spacing below */
 }
 
 /* Vaccination + When to call the Vet outer wrapper – no big box */
 .section.two-column {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  /* remove “card” padding */
-  margin-bottom: 2.5rem;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;          /* remove “card” padding */
+    margin-bottom: 2.5rem;
 }
 
 /* === BONUS QUIZ – FLOATING DOGS BACKGROUND === */
 
 .section.quiz {
-  position: relative;
-  overflow: hidden;
-  /* hides dogs that float outside edges */
+    position: relative;
+    overflow: hidden;      /* hides dogs that float outside edges */
 }
 
 /* Left-side floating dog */
 .section.quiz::before {
-  content: "🐶";
-  position: absolute;
-  font-size: 3.5rem;
-  opacity: 0.22;
-  top: 4%;
-  left: 3%;
-  pointer-events: none;
-  animation: dogFloatLeft 14s ease-in-out infinite alternate;
+    content: "🐶";
+    position: absolute;
+    font-size: 3.5rem;
+    opacity: 0.22;
+    top: 4%;
+    left: 3%;
+    pointer-events: none;
+    animation: dogFloatLeft 14s ease-in-out infinite alternate;
 }
 
 /* Right-side floating dog */
 .section.quiz::after {
-  content: "🐶";
-  position: absolute;
-  font-size: 4rem;
-  opacity: 0.22;
-  bottom: -5%;
-  right: 8%;
-  pointer-events: none;
-  animation: dogFloatRight 18s ease-in-out infinite alternate;
+    content: "🐶";
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.22;
+    bottom: -5%;
+    right: 8%;
+    pointer-events: none;
+    animation: dogFloatRight 18s ease-in-out infinite alternate;
 }
 
 /* Keep the quiz card above the dogs */
 .quiz-card.quiz-card-animated {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 /* floating animations */
 @keyframes dogFloatLeft {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(-8deg);
-  }
-
-  50% {
-    transform: translate3d(16px, -10px, 0) rotate(-2deg);
-  }
-
-  100% {
-    transform: translate3d(-8px, 8px, 0) rotate(-10deg);
-  }
+    0%   { transform: translate3d(0, 0, 0) rotate(-8deg); }
+    50%  { transform: translate3d(16px, -10px, 0) rotate(-2deg); }
+    100% { transform: translate3d(-8px, 8px, 0) rotate(-10deg); }
 }
 
 @keyframes dogFloatRight {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(6deg);
-  }
-
-  50% {
-    transform: translate3d(-12px, -14px, 0) rotate(0deg);
-  }
-
-  100% {
-    transform: translate3d(10px, 10px, 0) rotate(10deg);
-  }
+    0%   { transform: translate3d(0, 0, 0) rotate(6deg); }
+    50%  { transform: translate3d(-12px, -14px, 0) rotate(0deg); }
+    100% { transform: translate3d(10px, 10px, 0) rotate(10deg); }
 }
-
 /* Grooming photo gallery */
 .grooming-gallery {
   display: grid;
@@ -1301,19 +1239,18 @@ header {
   border-radius: 22px;
   padding: 1.3rem;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   transition: 0.3s ease;
 }
 
 .groom-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
 }
 
 .groom-item img {
   width: 100%;
-  height: 220px;
-  /* 🔥 increased height */
+  height: 220px;          /* 🔥 increased height */
   object-fit: cover;
   border-radius: 18px;
   margin-bottom: 1rem;
@@ -1324,12 +1261,10 @@ header {
   color: #2c3e50;
   font-size: 1.1rem;
 }
-
 /* ===== COMMON DISEASES – NEW LAYOUT ===== */
 
 .diseases-section {
-  margin-top: 3rem;
-  /* moves the whole section DOWN */
+  margin-top: 3rem;             /* moves the whole section DOWN */
   margin-bottom: 2.5rem;
 }
 
@@ -1357,19 +1292,19 @@ header {
   background: #ffffff;
   border-radius: 22px;
   padding: 1.4rem 1.4rem 1.6rem;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   text-align: left;
 }
 
 .disease-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.13);
 }
 
 .disease-card img {
   width: 100%;
-  height: 260px;
+  height: 260px;          
   border-radius: 18px;
   margin-bottom: 1rem;
 }
@@ -1384,7 +1319,6 @@ header {
   font-size: 0.95rem;
   color: #2c3e50;
 }
-
 /* === EXTRA AESTHETIC ANIMATIONS FOR BONUS QUIZ === */
 
 .section.quiz {
@@ -1401,16 +1335,13 @@ header {
   0% {
     background-position: 0% 0%;
   }
-
   50% {
     background-position: 50% 50%;
   }
-
   100% {
     background-position: 100% 0%;
   }
 }
-
 .quiz-card.quiz-card-animated {
   animation: cardGlow 5s ease-in-out infinite alternate;
 }
@@ -1419,12 +1350,10 @@ header {
   0% {
     box-shadow: 0 10px 26px rgba(15, 57, 96, 0.10);
   }
-
   100% {
     box-shadow: 0 20px 44px rgba(15, 57, 96, 0.22);
   }
 }
-
 .quiz-option-btn {
   position: relative;
   overflow: hidden;
@@ -1437,14 +1366,13 @@ header {
 /* when selected (JS already adds .selected) */
 .quiz-option-btn.selected {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 12px 26px rgba(22, 101, 158, 0.35);
+  box-shadow: 0 12px 26px rgba(22,101,158,0.35);
 }
 
 /* tiny paw on selected option */
 .quiz-option-btn.selected::after {
   content: " 🐾";
 }
-
 .quiz-next-btn {
   position: relative;
 }
@@ -1455,27 +1383,12 @@ header {
 }
 
 @keyframes nextBtnWiggle {
-  0% {
-    transform: translateY(-2px) translateX(0);
-  }
-
-  25% {
-    transform: translateY(-2px) translateX(-1px);
-  }
-
-  50% {
-    transform: translateY(-2px) translateX(1px);
-  }
-
-  75% {
-    transform: translateY(-2px) translateX(-0.5px);
-  }
-
-  100% {
-    transform: translateY(-2px) translateX(0);
-  }
+  0%   { transform: translateY(-2px) translateX(0); }
+  25%  { transform: translateY(-2px) translateX(-1px); }
+  50%  { transform: translateY(-2px) translateX(1px); }
+  75%  { transform: translateY(-2px) translateX(-0.5px); }
+  100% { transform: translateY(-2px) translateX(0); }
 }
-
 .quiz-score.score-pop::before {
   content: "🎉🐶🎉";
   display: block;
@@ -1489,13 +1402,12 @@ header {
   font-size: 1.2rem;
   margin-top: 0.3rem;
 }
-
 /* ACTIVE BTN = white pill */
 .active-btn {
   background: #ffffff !important;
   color: #2c3e50 !important;
   border: none !important;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18) !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18) !important;
 }
 
 /* INACTIVE BTN = transparent outline */
@@ -1517,8 +1429,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   max-width: 1000px;
-  margin: 3.5rem auto 2.5rem;
-  /* similar spacing to Daily Care Essentials */
+  margin: 3.5rem auto 2.5rem;   /* similar spacing to Daily Care Essentials */
 }
 
 /* each card */
@@ -1558,23 +1469,19 @@ header {
 }
 
 .training-video {
-  width: 90%;
-  /* make it big */
-  max-width: 900px;
-  /* limit size */
-  height: auto;
-  border-radius: 20px;
-  display: block;
-  margin: 2rem auto;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;       /* make it big */
+    max-width: 900px; /* limit size */
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 2rem auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
 /* Make TRAINING buttons match the Daily Care Essentials buttons */
 .training-categories {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  /* space between buttons */
+  gap: 1.5rem;              /* space between buttons */
 }
 
 .training-categories .category-card {
@@ -1583,10 +1490,8 @@ header {
   align-items: center;
   justify-content: center;
 
-  padding: 1.25rem 1.75rem;
-  /* size of the card */
-  min-width: 160px;
-  /* width similar to top cards */
+  padding: 1.25rem 1.75rem; /* size of the card */
+  min-width: 160px;         /* width similar to top cards */
   border-radius: 18px;
   border: 1px solid #d9e2ec;
   background-color: #ffffff;
@@ -1606,11 +1511,10 @@ header {
   display: block;
   margin-top: 0.1rem;
 }
-
 .video-section video {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
 }
