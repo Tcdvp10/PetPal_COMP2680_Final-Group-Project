@@ -7,14 +7,42 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-  color: #5a3d0b;
+  background: #ffffff !important;
+  color: #333;
+  line-height: 1.7;
 }
 
-/* Header */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 45%;
+  display: block;
+
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff !important;
+}
+
+
+.box {
+  width: 100%;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Nav bar */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -50,6 +78,12 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* right side: search + cart – same as home */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
 .search-container {
   position: relative;
   display: flex;
@@ -62,7 +96,7 @@ body {
   height: 20px;
   position: absolute;
   left: 10px;
-  fill: #666;
+  fill: #ffffff;
 }
 
 .search-container input {
@@ -71,6 +105,7 @@ body {
   border-radius: 25px;
   outline: none;
   width: 200px;
+  background: #ffffff;
 }
 
 .cart-icon svg {
@@ -80,188 +115,133 @@ body {
   cursor: pointer;
 }
 
-/* Hero / slideshow section */
-.hero-section {
+/* ===== MAIN WRAPPER ===== */
+.care-main {
+  max-width: 1200px;
+  /* big but still centered */
+  margin: 0 auto;
+  padding: 0 2.5rem 4rem;
+}
+
+/* generic section blocks (Common Diseases, Vaccines, etc.) */
+.section {
+  background: #f2f9ff;
+  border-radius: 18px;
+  padding: 1.8rem 2.2rem 2.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== HERO  ===== */
+
+.hero {
+  /* full-width breakout */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* FILL THE SCREEN */
+  min-height: 100vh;
+  /* hero = whole screen */
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-  display: flex;
+  justify-content: flex-start;
+  /* centers content vertically */
   align-items: center;
-  justify-content: center;
-  position: relative;
-}
 
-.slideshow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-}
+  padding-top: 26rem;
+  /* small breathing room */
+  gap: 2.2rem;
 
-.slideshow .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+  color: #fff;
+  text-align: center;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
+    url("https://plus.unsplash.com/premium_photo-1700403547202-86691e3c4d8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center top;
+  background-size: 120%;
   background-repeat: no-repeat;
-  opacity: 0;
-  animation: slideAnim 15s infinite;
 }
 
-.slideshow .slide:nth-child(1) {
-  animation-delay: 0s;
+/* Move hero text lower */
+.hero-banner {
+  margin-top: 7rem;
+  /* adjust this number to move text lower */
 }
 
-.slideshow .slide:nth-child(2) {
-  animation-delay: 5s;
+.hero-actions {
+  margin-top: 8rem;
+  /* spacing between heading & buttons */
 }
 
-.slideshow .slide:nth-child(3) {
-  animation-delay: 10s;
-}
-
-@keyframes slideAnim {
-  0% {
-    opacity: 0;
-  }
-
-  8% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  38% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.hero-title {
-  font-size: 1.5rem;
-  text-align: center;
-  position: relative;
-  z-index: 2;
+.hero-banner h1 {
   font-size: 3rem;
-  text-transform: uppercase;
-  padding: 0 10px;
-  color: white;
-  border-radius: 8px;
-}
-
-.hero-title h1 {
-  font-size: 2.8rem;
-  /* Set a smaller size for larger screens */
-  font-weight: 700;
-  text-align: center;
-  color: white;
-  position: relative;
-  z-index: 2;
-  text-transform: uppercase;
-  padding: 0 20px;
-  max-width: 80%;
-  line-height: 1.3;
   margin-bottom: 1rem;
-  margin-left: 10%;
-  /* Space below the title */
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.04em;
 }
 
 .hero-actions {
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  margin-top: 1rem;
-  z-index: 2;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
+.hero-banner {
+  margin-top: 1.5rem;
+  /* pushes title a little lower */
+}
+
+.hero-actions {
+  margin-top: 1.8rem;
+  /* space between title and buttons */
+}
+
+/* buttons styled like screenshot */
 .pill-btn {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  min-width: 180px;
+  border-radius: 999px;
+  font-size: 0.97rem;
   font-weight: 600;
-  border-radius: 25px;
+  border: none;
+  background: #ffffff;
+  color: #2c3e50;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
   cursor: pointer;
-  transition: background-color 0.3s;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.25s;
 }
 
-.pill-btn.active-btn {
-  background-color: #3495db;
-  color: white;
-}
-
-.pill-btn.pill-btn--outline {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
+.pill-btn--outline {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: none;
 }
 
 .pill-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  background: #ffffff;
+  color: #2c3e50;
 }
 
-/* Keyframe for slideshow transitions */
-@keyframes slideAnim {
-  0% {
-    opacity: 0;
-  }
-
-  8% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  38% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
+.pill-btn--outline:hover {
+  background: #ffffff;
+  color: #2c3e50
 }
 
-@media (max-width: 768px) {
-  .hero-title h1 {
-    font-size: 1.6rem;
-    /* Smaller font on tablets */
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .pill-btn {
-    padding: 0.6rem 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 1.4rem;
-    /* Even smaller on mobile */
-  }
-
-  .pill-btn {
-    padding: 0.5rem 1rem;
-  }
-}
-
-/* ===== CATEGORY TABS – DAILY CARE ESSENTIALS STYLE ===== */
+/* ===== CATEGORY TABS – DAILY training ESSENTIALS STYLE ===== */
 #care-tips {
   margin-top: 3rem;
   text-align: center;
@@ -319,6 +299,30 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.groom-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.groom-item img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.groom-item-text h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+
+.groom-item-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
 /* ===== GENERIC SECTION CARDS ===== */
 
 .section {
@@ -352,8 +356,8 @@ body {
   display: flex;
   gap: 20px;
   background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 22px;
+  padding: 1.5rem;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
   align-items: normal;
   transition: 0.3s ease;
@@ -450,7 +454,7 @@ body {
   color: #2c3e50;
 }
 
-/* Add spacing before the vaccination & vet section */
+/* Add spacing before the vaccination & training section */
 .section.two-column {
   margin-top: 4rem !important;
 }
@@ -537,6 +541,10 @@ body {
 .card p {
   color: #375a7f;
   margin-bottom: 1rem;
+}
+
+.category-panel[hidden] {
+  display: none !important;
 }
 
 .two-column {
