@@ -12,14 +12,12 @@ function saveCart() {
 // Update cart icon with number of items
 function updateCartIcon() {
     const cartIcon = document.querySelector('.cart-icon');
-    if (!cartIcon) return; // Only runs if cart icon exists
+    if (!cartIcon) return;
     let count = cart.reduce((sum, item) => sum + item.quantity, 0);
 
-    // Remove old badge if exists
     const oldBadge = cartIcon.querySelector('.cart-count');
     if (oldBadge) oldBadge.remove();
 
-    // Add badge if there are items
     if (count > 0) {
         const badge = document.createElement('span');
         badge.classList.add('cart-count');
@@ -48,10 +46,42 @@ function addToCart(product) {
     saveCart();
 }
 
+// ---------- MODIFY CART ITEMS ----------
+function increaseQuantity(id) {
+    const item = cart.find(i => i.id === id);
+    if (item) item.quantity++;
+    saveCart();
+    displayCart();
+}
+
+function decreaseQuantity(id) {
+    const item = cart.find(i => i.id === id);
+    if (item) {
+        item.quantity--;
+        if (item.quantity <= 0) removeItem(id);
+    }
+    saveCart();
+    displayCart();
+}
+
+function removeItem(id) {
+    cart = cart.filter(item => item.id !== id);
+    saveCart();
+    displayCart();
+}
+
+function clearCart() {
+    cart = [];
+    saveCart();
+    displayCart();
+}
+
 // ---------- DISPLAY CART ON CHECKOUT ----------
 function displayCart() {
     const cartList = document.getElementById('cart-items');
     const totalPriceEl = document.getElementById('total-price');
+    const clearBtn = document.getElementById('clear-cart');
+
     if (!cartList) return;
 
     cartList.innerHTML = '';
@@ -59,12 +89,42 @@ function displayCart() {
 
     cart.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = `${item.name} x ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+
+        li.innerHTML = `
+            <strong>${item.name}</strong> - $${item.price.toFixed(2)}
+            <br>
+            <button class="qty-btn" data-id="${item.id}" data-action="decrease">−</button>
+            <span class="qty-num">${item.quantity}</span>
+            <button class="qty-btn" data-id="${item.id}" data-action="increase">+</button>
+
+            <button class="remove-btn" data-id="${item.id}">Remove</button>
+
+            <span class="item-total"> = $${(item.price * item.quantity).toFixed(2)}</span>
+        `;
+
         cartList.appendChild(li);
         total += item.price * item.quantity;
     });
 
     totalPriceEl.textContent = total.toFixed(2);
+
+    // Enable or disable "Clear Cart" button
+    if (clearBtn) clearBtn.style.display = cart.length > 0 ? 'block' : 'none';
+
+    // Attach event listeners for +, -, remove buttons
+    cartList.querySelectorAll('.qty-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = btn.dataset.id;
+            const action = btn.dataset.action;
+
+            if (action === 'increase') increaseQuantity(id);
+            if (action === 'decrease') decreaseQuantity(id);
+        });
+    });
+
+    cartList.querySelectorAll('.remove-btn').forEach(btn => {
+        btn.addEventListener('click', () => removeItem(btn.dataset.id));
+    });
 }
 
 // ---------- SIMULATE PAYMENT ----------
@@ -73,17 +133,10 @@ if (checkoutForm) {
     checkoutForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // Clear cart
         cart = [];
         saveCart();
-
-        // Clear order summary
         displayCart();
-
-        // Optionally, reset form
         checkoutForm.reset();
-
-        //redirection to success page
         window.location.href = 'success.html';
     });
 }
@@ -96,12 +149,18 @@ if (cartIcon) {
     });
 }
 
+// ---------- CLEAR CART BUTTON ----------
+const clearBtn = document.getElementById('clear-cart');
+if (clearBtn) {
+    clearBtn.addEventListener('click', clearCart);
+}
+
 // ---------- INITIALIZATION ----------
 displayCart();
 updateCartIcon();
 
-// ---------- OPTIONAL: Add buy buttons on shop page ----------
-const buyButtons = document.querySelectorAll('.buy-button'); // Make sure buttons have this class
+// ---------- BUY BUTTONS ON SHOP PAGE ----------
+const buyButtons = document.querySelectorAll('.buy-button');
 buyButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const product = {

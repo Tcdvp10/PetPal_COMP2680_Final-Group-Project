@@ -169,6 +169,56 @@ p.tagline {
     font-weight: bold;
 }
 
+/* Order summary buttons */
+.qty-btn {
+    padding: 4px 10px;
+    margin: 0 5px;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.qty-btn:hover {
+    background-color: #ddd;
+}
+
+.remove-btn {
+    margin-left: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+.clear-cart-btn {
+    margin-top: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-cart-btn:hover {
+    background: #222;
+}
+
+/* Qty number styling */
+.qty-num {
+    font-weight: bold;
+    margin: 0 6px;
+}
+
 /* Checkout Form */
 form#checkoutForm {
     background: #ffffff;
