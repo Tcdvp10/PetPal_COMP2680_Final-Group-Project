@@ -172,3 +172,58 @@ buyButtons.forEach(btn => {
         alert(`${product.name} added to cart!`);
     });
 });
+
+// Quantity selectors on product cards
+document.querySelectorAll(".product-box").forEach(box => {
+    let qtyDisplay = box.querySelector(".qty-display");
+    let minus = box.querySelector(".minus");
+    let plus = box.querySelector(".plus");
+    let buyButton = box.querySelector(".buy-button");
+
+    let quantity = 1;
+
+    minus.addEventListener("click", () => {
+        if (quantity > 1) {
+            quantity--;
+            qtyDisplay.textContent = quantity;
+        }
+    });
+
+    plus.addEventListener("click", () => {
+        quantity++;
+        qtyDisplay.textContent = quantity;
+    });
+
+    buyButton.addEventListener("click", () => {
+        // Override buy amount with chosen quantity
+        const product = {
+            id: buyButton.dataset.id,
+            name: buyButton.dataset.name,
+            price: parseFloat(buyButton.dataset.price)
+        };
+
+        for (let i = 0; i < quantity; i++) {
+            addToCart(product);
+        }
+
+        alert(`${quantity} × ${product.name} added to cart!`);
+        quantity = 1;
+        qtyDisplay.textContent = 1;
+    });
+});
+
+// Fade-in animation on scroll
+const productBoxes = document.querySelectorAll(".product-box");
+
+const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+productBoxes.forEach(box => revealObserver.observe(box));
+
