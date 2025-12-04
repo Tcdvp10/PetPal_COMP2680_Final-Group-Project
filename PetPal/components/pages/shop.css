@@ -239,6 +239,22 @@ body {
   padding: 40px 40px;
   transition: all 0.3s ease;
   /* Smooth transition for layout change */
+
+  #no-results {
+    display: none;
+    /* hidden by default */
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3495db;
+    padding: 25px 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: none;
+    margin: 20px 0;
+    transform: translateX(20px);
+    /* shift right */
+  }
 }
 
 .product-box h3 {

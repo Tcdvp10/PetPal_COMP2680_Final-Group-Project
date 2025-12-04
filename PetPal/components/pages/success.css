@@ -5,16 +5,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f8f8ec;
+    background: #f8f9fa;
     font-family: "Poppins", sans-serif;
-    color: #5a3d0b;
+    color: #3495db;
 }
 
 .tick {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #61a6ab;
+    border: 5px solid #3495db;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,8 @@ body {
     position: absolute;
     width: 20px;
     height: 50px;
-    border-left: 5px solid #61a6ab;
-    border-bottom: 5px solid #61a6ab;
+    border-left: 5px solid #3495db;
+    border-bottom: 5px solid #3495db;
     transform: rotate(45deg) scaleX(-1);
     animation: tickAnim 0.5s ease forwards 0.5s;
 }
